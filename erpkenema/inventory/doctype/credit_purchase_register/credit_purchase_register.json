@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{CPR}-{branch}-{MM}-{YYYY}-{requisition_section}",
+ "creation": "2023-02-09 10:34:35.012800",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "from_date",
+  "to_date",
+  "column_break_3",
+  "branch",
+  "requisition_section",
+  "section_break_6",
+  "credit_purchase",
+  "section_break_8",
+  "column_break_9",
+  "grand_debit_total",
+  "grand_credit_total"
+ ],
+ "fields": [
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Kenema Branches"
+  },
+  {
+   "fieldname": "requisition_section",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Requisition Section",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "credit_purchase",
+   "fieldtype": "Table",
+   "label": "Credit Purchase",
+   "options": "Credit Purchase Register Child"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "grand_debit_total",
+   "fieldtype": "Float",
+   "label": "Grand Debit Total"
+  },
+  {
+   "fieldname": "grand_credit_total",
+   "fieldtype": "Float",
+   "label": "Grand Credit Total"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-02-09 11:55:17.167760",
+ "modified_by": "Administrator",
+ "module": "Inventory",
+ "name": "Credit Purchase Register",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

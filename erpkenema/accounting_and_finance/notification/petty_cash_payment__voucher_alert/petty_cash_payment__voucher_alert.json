@@ -1,0 +1,37 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "creation": "2023-01-26 12:08:09.737348",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Petty Cash Payment  Voucher",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Add your message here",
+ "modified": "2023-01-28 12:31:57.226751",
+ "modified_by": "Administrator",
+ "module": "Accounting and Finance",
+ "name": "Petty Cash Payment  Voucher Alert",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "condition": "doc.workflow_state==\"pending Approval\"",
+   "receiver_by_document_field": "approved_by_email"
+  },
+  {
+   "condition": "doc.workflow_state==\"Pending Authorization\"",
+   "receiver_by_document_field": "authorized_by_email"
+  },
+  {
+   "condition": "doc.workflow_state==\"Authorized\"",
+   "receiver_by_document_field": "prepared_by_email"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Petty Cash Payment  Voucher",
+ "value_changed": "workflow_state"
+}

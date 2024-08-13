@@ -1,0 +1,200 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{EMP}-{PROMO}-{YYYY}-{refno}",
+ "creation": "2023-02-23 14:09:31.272250",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "column_break_4",
+  "refno",
+  "column_break_olvx",
+  "promotion_date",
+  "section_break_2",
+  "full_name",
+  "division",
+  "branch",
+  "date_of_joining",
+  "column_break_7",
+  "from_department",
+  "from_position",
+  "from_employement_type",
+  "column_break_13",
+  "to_department",
+  "to_position",
+  "to_employement_type",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "employee.full_name",
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.division",
+   "fieldname": "division",
+   "fieldtype": "Select",
+   "label": "Division",
+   "options": "\nHead Office\nBranch",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval: doc.division == 'Branch'",
+   "fetch_from": "employee.branch",
+   "fieldname": "branch",
+   "fieldtype": "Data",
+   "label": "Branch",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.date_of_joining",
+   "fieldname": "date_of_joining",
+   "fieldtype": "Date",
+   "label": "Date Of Joining",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "promotion_date",
+   "fieldtype": "Date",
+   "label": "Promotion date",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.employement_type",
+   "fieldname": "from_employement_type",
+   "fieldtype": "Data",
+   "label": "From Employement Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "to_employement_type",
+   "fieldtype": "Select",
+   "label": "To Employement Type",
+   "options": "\nFull Time\nContract\nCommission\nPart Time\nIntern\nOthers"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Employee Promotion",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "refno",
+   "fieldtype": "Int",
+   "label": "PROMO. ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "from_department",
+   "fieldtype": "Data",
+   "label": "From Department",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.designation",
+   "fieldname": "from_position",
+   "fieldtype": "Data",
+   "label": "From Position",
+   "read_only": 1
+  },
+  {
+   "fieldname": "to_department",
+   "fieldtype": "Link",
+   "label": "To Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "to_position",
+   "fieldtype": "Link",
+   "label": "To Position",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_olvx",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-07-11 10:56:32.719752",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Employee Promotion",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Head Quarter Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

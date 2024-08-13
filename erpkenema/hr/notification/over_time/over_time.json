@@ -1,0 +1,38 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "creation": "2023-01-31 11:00:20.250170",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Over Time",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Over Time",
+ "modified": "2023-02-12 12:34:09.394953",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Over Time",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "condition": "doc.workflow_state==\"pending Approval\"",
+   "receiver_by_document_field": "approved_by_email",
+   "receiver_by_role": ""
+  },
+  {
+   "condition": "doc.workflow_state==\"Pending Authorization\"",
+   "receiver_by_document_field": "hr_manager_email"
+  },
+  {
+   "condition": "doc.workflow_state==\"Authorized\"",
+   "receiver_by_document_field": "finance_head_email"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Over Time",
+ "value_changed": "workflow_state"
+}

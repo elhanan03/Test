@@ -1,0 +1,428 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{branch_number}-{datetime}",
+ "creation": "2022-08-29 14:35:02.286763",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sales_type",
+  "column_break_2",
+  "cashier",
+  "section_break_4",
+  "column_break_3",
+  "date",
+  "branch_number",
+  "subcity",
+  "woreda",
+  "house_number",
+  "column_break_9",
+  "to",
+  "full_name",
+  "id_number",
+  "tin_no",
+  "customer_subcity",
+  "customer_woreda",
+  "customer_house_number",
+  "column_break_zmgh",
+  "customer_var_registration_number",
+  "vat_date_of_registration",
+  "organization_type",
+  "organization",
+  "credit_limit",
+  "focal_person",
+  "datetime",
+  "section_break_8",
+  "purchased_medicine",
+  "section_break_10",
+  "amount_in_words",
+  "column_break_14",
+  "total_for_vat_items",
+  "total",
+  "vat",
+  "total_inc_vat",
+  "section_break_22",
+  "prepared",
+  "prepared_by_email",
+  "column_break_34",
+  "cashier_email",
+  "cashier_full_name",
+  "column_break_35",
+  "mode_of_payment",
+  "cheque_number",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "sales_type",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Sales Type",
+   "options": "\nCredit Sales\nCash Sales",
+   "reqd": 1
+  },
+  {
+   "fieldname": "branch_number",
+   "fieldtype": "Data",
+   "label": "Branch Number",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "branch_number.subcity",
+   "fieldname": "subcity",
+   "fieldtype": "Data",
+   "label": "Subcity",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "branch_number.woreda",
+   "fieldname": "woreda",
+   "fieldtype": "Data",
+   "label": "Woreda",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "branch_number.house_number",
+   "fieldname": "house_number",
+   "fieldtype": "Data",
+   "label": "House Number",
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "to",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "To",
+   "options": "Customer Information",
+   "print_hide": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "to.full_name",
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "read_only_depends_on": "to"
+  },
+  {
+   "default": "0000000000",
+   "depends_on": "eval: doc.sales_type == 'Cash Sales';",
+   "fetch_from": "to.tin_number",
+   "fieldname": "tin_no",
+   "fieldtype": "Data",
+   "label": "Customer Tin Number",
+   "read_only_depends_on": "to"
+  },
+  {
+   "depends_on": "eval: doc.sales_type == 'Credit Sales'",
+   "fetch_from": "to.insurance_coverage_company",
+   "fieldname": "organization",
+   "fieldtype": "Data",
+   "label": "Organization",
+   "read_only_depends_on": "to"
+  },
+  {
+   "depends_on": "eval: doc.sales_type == 'Credit Sales'",
+   "fetch_from": "to.insurance_coverage_status",
+   "fetch_if_empty": 1,
+   "fieldname": "credit_limit",
+   "fieldtype": "Data",
+   "label": "Credit Limit",
+   "print_hide": 1,
+   "read_only": 1,
+   "read_only_depends_on": "to"
+  },
+  {
+   "depends_on": "eval: doc.sales_type == 'Cash Sales';",
+   "fetch_from": "to.subcity",
+   "fieldname": "customer_subcity",
+   "fieldtype": "Data",
+   "label": "Subcity",
+   "read_only_depends_on": "to"
+  },
+  {
+   "depends_on": "eval: doc.sales_type == 'Cash Sales';",
+   "fetch_from": "to.woreda",
+   "fetch_if_empty": 1,
+   "fieldname": "customer_woreda",
+   "fieldtype": "Data",
+   "label": "Woreda",
+   "read_only_depends_on": "to"
+  },
+  {
+   "depends_on": "eval: doc.sales_type == 'Cash Sales';",
+   "fetch_from": "to.house_number",
+   "fieldname": "customer_house_number",
+   "fieldtype": "Data",
+   "label": "House Number",
+   "read_only_depends_on": "to"
+  },
+  {
+   "depends_on": "eval: doc.sales_type == 'Cash Sales';",
+   "fetch_from": "to.customer_vat_registration_number",
+   "fieldname": "customer_var_registration_number",
+   "fieldtype": "Data",
+   "label": "Customer VAR Registration Number",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval: doc.sales_type == 'Cash Sales';",
+   "fetch_from": "to.vat_date_of_registration",
+   "fieldname": "vat_date_of_registration",
+   "fieldtype": "Date",
+   "label": "VAT Date of Registration",
+   "read_only": 1
+  },
+  {
+   "default": "Now",
+   "fieldname": "datetime",
+   "fieldtype": "Datetime",
+   "hidden": 1,
+   "label": "datetime",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "purchased_medicine",
+   "fieldtype": "Table",
+   "label": "Purchased Medicine",
+   "options": "Purchased Medicine",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0.0",
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "label": "Total",
+   "non_negative": 1,
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_for_vat_items",
+   "fieldtype": "Currency",
+   "label": "Total for VAT Items",
+   "non_negative": 1,
+   "precision": "2",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0.0",
+   "fieldname": "vat",
+   "fieldtype": "Float",
+   "label": "15% Vat.",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.0",
+   "fieldname": "total_inc_vat",
+   "fieldtype": "Currency",
+   "label": "Total inc. VAT",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amount_in_words",
+   "fieldtype": "Data",
+   "label": "Amount in Words",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_22",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval: doc.sales_type == 'Cash Sales'",
+   "fieldname": "mode_of_payment",
+   "fieldtype": "Select",
+   "label": "Mode of Payment",
+   "options": "Cash\nCheque"
+  },
+  {
+   "depends_on": "eval: doc.mode_of_payment == 'Cheque';",
+   "fieldname": "cheque_number",
+   "fieldtype": "Data",
+   "label": "Cheque Number"
+  },
+  {
+   "fieldname": "column_break_35",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Sales Attachment",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval: doc.sales_type == 'Credit Sales'",
+   "fetch_from": "to.credit_customers_category",
+   "fieldname": "organization_type",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Organization type",
+   "print_hide": 1,
+   "read_only_depends_on": "to"
+  },
+  {
+   "fetch_from": "to.code",
+   "fieldname": "id_number",
+   "fieldtype": "Data",
+   "label": "ID Number",
+   "print_hide": 1,
+   "read_only_depends_on": "to"
+  },
+  {
+   "fieldname": "prepared_by_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Prepared By Email",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "cashier",
+   "fieldtype": "Link",
+   "label": "Cashier",
+   "options": "Cashier",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "cashier.cashier",
+   "fieldname": "cashier_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Cashier Email",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "prepared",
+   "fieldtype": "Data",
+   "label": "Dispenser",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_34",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "cashier.full_name",
+   "fieldname": "cashier_full_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Cashier Full Name"
+  },
+  {
+   "depends_on": "eval: doc.sales_type == 'Credit Sales'",
+   "fetch_from": "to.focal_person",
+   "fieldname": "focal_person",
+   "fieldtype": "Data",
+   "label": "Focal Person",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_zmgh",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-04-06 08:16:11.635063",
+ "modified_by": "Administrator",
+ "module": "Inventory",
+ "name": "Sales Attachment",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Branch Cashier",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Dispensary",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "show_preview_popup": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

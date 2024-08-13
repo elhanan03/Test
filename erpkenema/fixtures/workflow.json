@@ -1,0 +1,4275 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Petty Cash Payment  Voucher",
+  "is_active": 0,
+  "modified": "2024-03-19 11:49:59.768127",
+  "name": "PCPV workflow",
+  "override_status": 0,
+  "send_email_alert": 1,
+  "states": [
+   {
+    "allow_edit": "Branch Cashier",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Branch Accountant",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "pending Approval",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Branch Accountant",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Approved",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Branch Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Pending Authorization",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Branch Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Authorized",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Branch Cashier",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Pending payment",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Branch Cashier",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Paid",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "All",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Rejected",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Send To Branch Accountant",
+    "allow_self_approval": 1,
+    "allowed": "Branch Cashier",
+    "condition": "doc.division==\"Branch\"",
+    "next_state": "pending Approval",
+    "state": "Draft",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Send To HQ Accountant",
+    "allow_self_approval": 1,
+    "allowed": "HQ Cashier",
+    "condition": "doc.division==\"Head Office\"",
+    "next_state": "pending Approval",
+    "state": "Draft",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "Branch Accountant",
+    "condition": "doc.division==\"Branch\"",
+    "next_state": "Approved",
+    "state": "pending Approval",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "Head Quarter Accountant",
+    "condition": "doc.division==\"Head Office\"",
+    "next_state": "Approved",
+    "state": "pending Approval",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Branch Accountant",
+    "condition": "doc.division==\"Branch\"",
+    "next_state": "Rejected",
+    "state": "pending Approval",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Head Quarter Accountant",
+    "condition": "doc.division==\"Head Office\"",
+    "next_state": "Rejected",
+    "state": "pending Approval",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Send To Branch Manager",
+    "allow_self_approval": 1,
+    "allowed": "Branch Accountant",
+    "condition": "doc.division==\"Branch\"",
+    "next_state": "Pending Authorization",
+    "state": "Approved",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Send To Finance Head",
+    "allow_self_approval": 1,
+    "allowed": "Head Quarter Accountant",
+    "condition": "doc.division==\"Head Office\"",
+    "next_state": "Pending Authorization",
+    "state": "Approved",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Authorize",
+    "allow_self_approval": 1,
+    "allowed": "Branch Manager",
+    "condition": "doc.division==\"Branch\"",
+    "next_state": "Authorized",
+    "state": "Pending Authorization",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Authorize",
+    "allow_self_approval": 1,
+    "allowed": "Finance Head",
+    "condition": "doc.division==\"Head Office\"",
+    "next_state": "Authorized",
+    "state": "Pending Authorization",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Branch Manager",
+    "condition": "doc.division==\"Branch\"",
+    "next_state": "Rejected",
+    "state": "Pending Authorization",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Finance Head",
+    "condition": "doc.division==\"Head Office\"",
+    "next_state": "Rejected",
+    "state": "Pending Authorization",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Pay",
+    "allow_self_approval": 1,
+    "allowed": "Branch Cashier",
+    "condition": "doc.division==\"Branch\"",
+    "next_state": "Paid",
+    "state": "Authorized",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Pay",
+    "allow_self_approval": 1,
+    "allowed": "HQ Cashier",
+    "condition": "doc.division==\"Head Office\"",
+    "next_state": "Paid",
+    "state": "Authorized",
+    "workflow_builder_id": null
+   }
+  ],
+  "workflow_data": null,
+  "workflow_name": "PCPV workflow",
+  "workflow_state_field": "workflow_state"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Monthly Performance Report",
+  "is_active": 1,
+  "modified": "2024-02-09 09:32:50.635338",
+  "name": "Monthly Performance Report",
+  "override_status": 0,
+  "send_email_alert": 1,
+  "states": [
+   {
+    "allow_edit": "Branch Accountant",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Branch Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "pending Approval",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Branch Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Rejected",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Branch Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Approved",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Operation Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Pending Authorization",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Operation Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Authorized",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Finance Head",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Pending  Acceptance",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Finance Head",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Accepted",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Send To Branch Manager",
+    "allow_self_approval": 1,
+    "allowed": "Branch Accountant",
+    "condition": null,
+    "next_state": "pending Approval",
+    "state": "Draft",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "Branch Manager",
+    "condition": null,
+    "next_state": "Approved",
+    "state": "pending Approval",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Branch Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "state": "pending Approval",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Send To Operation Manager",
+    "allow_self_approval": 1,
+    "allowed": "Branch Manager",
+    "condition": null,
+    "next_state": "Pending Authorization",
+    "state": "Approved",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Authorize",
+    "allow_self_approval": 1,
+    "allowed": "Operation Manager",
+    "condition": null,
+    "next_state": "Authorized",
+    "state": "Pending Authorization",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Operation Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "state": "Pending Authorization",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Send to Head of Finance",
+    "allow_self_approval": 1,
+    "allowed": "Operation Manager",
+    "condition": null,
+    "next_state": "Pending  Acceptance",
+    "state": "Authorized",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Accept",
+    "allow_self_approval": 1,
+    "allowed": "Finance Head",
+    "condition": null,
+    "next_state": "Accepted",
+    "state": "Pending  Acceptance",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Finance Head",
+    "condition": null,
+    "next_state": "Rejected",
+    "state": "Pending  Acceptance",
+    "workflow_builder_id": null
+   }
+  ],
+  "workflow_data": null,
+  "workflow_name": "Monthly Performance Report",
+  "workflow_state_field": "workflow_state"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Store Return Note",
+  "is_active": 1,
+  "modified": "2024-02-09 09:32:51.045541",
+  "name": "Store Return Note",
+  "override_status": 0,
+  "send_email_alert": 1,
+  "states": [
+   {
+    "allow_edit": "Dispensary",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Branch Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "pending Approval",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Branch Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Pending  Acceptance",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Branch Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Approved",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Store Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Rejected",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Store Manager",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Accepted",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Send To Branch Manager",
+    "allow_self_approval": 1,
+    "allowed": "Dispensary",
+    "condition": null,
+    "next_state": "pending Approval",
+    "state": "Draft",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "Branch Manager",
+    "condition": null,
+    "next_state": "Approved",
+    "state": "pending Approval",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Branch Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "state": "pending Approval",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Send To Store Manager",
+    "allow_self_approval": 1,
+    "allowed": "Branch Manager",
+    "condition": null,
+    "next_state": "Pending  Acceptance",
+    "state": "Approved",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Accept",
+    "allow_self_approval": 1,
+    "allowed": "Store Manager",
+    "condition": null,
+    "next_state": "Accepted",
+    "state": "Pending  Acceptance",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Store Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "state": "Pending  Acceptance",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Send To Branch Manager",
+    "allow_self_approval": 1,
+    "allowed": "Store Manager",
+    "condition": "doc.from_doc=='Inventory Area Store'",
+    "next_state": "pending Approval",
+    "state": "Draft",
+    "workflow_builder_id": null
+   }
+  ],
+  "workflow_data": null,
+  "workflow_name": "Store Return Note",
+  "workflow_state_field": "workflow_state"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Store Issue Voucher",
+  "is_active": 1,
+  "modified": "2024-02-09 09:32:51.381601",
+  "name": "Store Issue Voucher",
+  "override_status": 0,
+  "send_email_alert": 1,
+  "states": [
+   {
+    "allow_edit": "Dispensary",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Sales Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "pending Approval",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Store Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Approved",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Store Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Pending issue",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Store Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Issued",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Dispensary",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Rejected",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Dispensary",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "denied",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Dispensary",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Confirmed",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Send To Sales Manager",
+    "allow_self_approval": 1,
+    "allowed": "Dispensary",
+    "condition": null,
+    "next_state": "pending Approval",
+    "state": "Draft",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "Sales Manager",
+    "condition": null,
+    "next_state": "Approved",
+    "state": "pending Approval",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Sales Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "state": "pending Approval",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Send To Store Manager",
+    "allow_self_approval": 1,
+    "allowed": "Sales Manager",
+    "condition": null,
+    "next_state": "Pending issue",
+    "state": "Approved",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Issue",
+    "allow_self_approval": 1,
+    "allowed": "Store Manager",
+    "condition": null,
+    "next_state": "Issued",
+    "state": "Pending issue",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Deny",
+    "allow_self_approval": 1,
+    "allowed": "Store Manager",
+    "condition": null,
+    "next_state": "denied",
+    "state": "Pending issue",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Confirm",
+    "allow_self_approval": 1,
+    "allowed": "Dispensary",
+    "condition": null,
+    "next_state": "Confirmed",
+    "state": "Issued",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Dispensary",
+    "condition": null,
+    "next_state": "Rejected",
+    "state": "Issued",
+    "workflow_builder_id": null
+   }
+  ],
+  "workflow_data": null,
+  "workflow_name": "Store Issue Voucher",
+  "workflow_state_field": "workflow_state"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Stock Transfer Memo",
+  "is_active": 1,
+  "modified": "2024-02-09 09:32:51.790162",
+  "name": "Stock Transfer Memo",
+  "override_status": 0,
+  "send_email_alert": 1,
+  "states": [
+   {
+    "allow_edit": "Store Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Store Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Issued",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Branch Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "pending Approval",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Branch Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Approved",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Operation Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Pending Authorization",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Operation Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Authorized",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Branch Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Accepted",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Branch Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Rejected",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Store Manager",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Received",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Store Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Cancelled",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Issue",
+    "allow_self_approval": 1,
+    "allowed": "Store Manager",
+    "condition": null,
+    "next_state": "Issued",
+    "state": "Draft",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Send To Branch Manager",
+    "allow_self_approval": 1,
+    "allowed": "Store Manager",
+    "condition": null,
+    "next_state": "pending Approval",
+    "state": "Issued",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "Branch Manager",
+    "condition": null,
+    "next_state": "Approved",
+    "state": "pending Approval",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Branch Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "state": "pending Approval",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Send To Operation Manager",
+    "allow_self_approval": 1,
+    "allowed": "Branch Manager",
+    "condition": null,
+    "next_state": "Pending Authorization",
+    "state": "Approved",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Authorize",
+    "allow_self_approval": 1,
+    "allowed": "Operation Manager",
+    "condition": null,
+    "next_state": "Authorized",
+    "state": "Pending Authorization",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Operation Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "state": "Pending Authorization",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Accept",
+    "allow_self_approval": 1,
+    "allowed": "Branch Manager",
+    "condition": null,
+    "next_state": "Accepted",
+    "state": "Authorized",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Branch Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "state": "Authorized",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Receive",
+    "allow_self_approval": 1,
+    "allowed": "Store Manager",
+    "condition": null,
+    "next_state": "Received",
+    "state": "Accepted",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Cancel",
+    "allow_self_approval": 1,
+    "allowed": "Store Manager",
+    "condition": null,
+    "next_state": "Cancelled",
+    "state": "Accepted",
+    "workflow_builder_id": null
+   }
+  ],
+  "workflow_data": null,
+  "workflow_name": "Stock Transfer Memo",
+  "workflow_state_field": "workflow_state"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Employee Onboard Request Form",
+  "is_active": 1,
+  "modified": "2024-02-09 09:32:52.170699",
+  "name": "Employee Onboard Request",
+  "override_status": 0,
+  "send_email_alert": 1,
+  "states": [
+   {
+    "allow_edit": "Branch Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Department Head",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "HR Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "pending Approval",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "HR Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Approved",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Head Quarter Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Pending Authorization",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "HR Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Authorized",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Administrator",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Rejected",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "HR Manager",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Accepted",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Send To HR Manager",
+    "allow_self_approval": 1,
+    "allowed": "Branch Manager",
+    "condition": null,
+    "next_state": "pending Approval",
+    "state": "Draft",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Send To HR Manager",
+    "allow_self_approval": 1,
+    "allowed": "Department Head",
+    "condition": null,
+    "next_state": "pending Approval",
+    "state": "Draft",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "HR Manager",
+    "condition": null,
+    "next_state": "Approved",
+    "state": "pending Approval",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "HR Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "state": "pending Approval",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Send To HQ Manager",
+    "allow_self_approval": 1,
+    "allowed": "HR Manager",
+    "condition": null,
+    "next_state": "Pending Authorization",
+    "state": "Approved",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Authorize",
+    "allow_self_approval": 1,
+    "allowed": "Head Quarter Manager",
+    "condition": null,
+    "next_state": "Authorized",
+    "state": "Pending Authorization",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Head Quarter Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "state": "Pending Authorization",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Accept",
+    "allow_self_approval": 1,
+    "allowed": "HR Manager",
+    "condition": null,
+    "next_state": "Accepted",
+    "state": "Authorized",
+    "workflow_builder_id": null
+   }
+  ],
+  "workflow_data": null,
+  "workflow_name": "Employee Onboard Request",
+  "workflow_state_field": "workflow_state"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Employee Onboarding",
+  "is_active": 1,
+  "modified": "2024-02-09 09:32:52.506945",
+  "name": "Employee Onboard workflow",
+  "override_status": 0,
+  "send_email_alert": 1,
+  "states": [
+   {
+    "allow_edit": "HR Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Head Quarter Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Pending Authorization",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Head Quarter Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Authorized",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Head Quarter Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Rejected",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Finance Head",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Confirmed",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Finance Head",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Rejected",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Send To HQ Manager",
+    "allow_self_approval": 1,
+    "allowed": "HR Manager",
+    "condition": null,
+    "next_state": "Pending Authorization",
+    "state": "Draft",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Authorize",
+    "allow_self_approval": 1,
+    "allowed": "Head Quarter Manager",
+    "condition": null,
+    "next_state": "Authorized",
+    "state": "Pending Authorization",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Head Quarter Department Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "state": "Pending Authorization",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Confirm",
+    "allow_self_approval": 1,
+    "allowed": "Finance Head",
+    "condition": null,
+    "next_state": "Confirmed",
+    "state": "Authorized",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Finance Head",
+    "condition": null,
+    "next_state": "Rejected",
+    "state": "Authorized",
+    "workflow_builder_id": null
+   }
+  ],
+  "workflow_data": null,
+  "workflow_name": "Employee Onboard workflow",
+  "workflow_state_field": "workflow_state"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Leave Application",
+  "is_active": 1,
+  "modified": "2024-02-09 09:32:52.949303",
+  "name": "Leave Application Workflow",
+  "override_status": 0,
+  "send_email_alert": 1,
+  "states": [
+   {
+    "allow_edit": "All",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Branch Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "pending Approval",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Head Quarter Department Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "pending Approval",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Branch Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Approved",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Branch Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Rejected",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Head Quarter Department Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Approved",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Head Quarter Department Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Rejected",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Send To Branch Manager",
+    "allow_self_approval": 1,
+    "allowed": "All",
+    "condition": null,
+    "next_state": "pending Approval",
+    "state": "Draft",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "Branch Manager",
+    "condition": null,
+    "next_state": "Approved",
+    "state": "pending Approval",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "Head Quarter Department Manager",
+    "condition": null,
+    "next_state": "Approved",
+    "state": "pending Approval",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Branch Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "state": "pending Approval",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Head Quarter Department Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "state": "pending Approval",
+    "workflow_builder_id": null
+   }
+  ],
+  "workflow_data": null,
+  "workflow_name": "Leave Application Workflow",
+  "workflow_state_field": "workflow_state"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Good Return Note",
+  "is_active": 1,
+  "modified": "2024-02-09 09:32:53.242180",
+  "name": "Good return workflow",
+  "override_status": 0,
+  "send_email_alert": 1,
+  "states": [
+   {
+    "allow_edit": "Store Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Branch Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "pending Approval",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Branch Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Approved",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Branch Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Rejected",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Supplier",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Pending Supplier Acceptance",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Supplier",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Accepted",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Send To Branch Manager",
+    "allow_self_approval": 1,
+    "allowed": "Store Manager",
+    "condition": null,
+    "next_state": "pending Approval",
+    "state": "Draft",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "Branch Manager",
+    "condition": null,
+    "next_state": "Approved",
+    "state": "pending Approval",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Branch Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "state": "pending Approval",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Send To Supplier",
+    "allow_self_approval": 1,
+    "allowed": "Branch Manager",
+    "condition": null,
+    "next_state": "Pending Supplier Acceptance",
+    "state": "Approved",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Accept",
+    "allow_self_approval": 1,
+    "allowed": "Supplier",
+    "condition": null,
+    "next_state": "Accepted",
+    "state": "Pending Supplier Acceptance",
+    "workflow_builder_id": null
+   }
+  ],
+  "workflow_data": null,
+  "workflow_name": "Good return workflow",
+  "workflow_state_field": "workflow_state"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Cheque Payment Voucher",
+  "is_active": 1,
+  "modified": "2024-03-26 11:05:51.129975",
+  "name": "Cheque Payment Voucher Workflow",
+  "override_status": 0,
+  "send_email_alert": 1,
+  "states": [
+   {
+    "allow_edit": "Head Quarter Accountant",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Finance Head",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Pending Check",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Finance Head",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Checked",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Internal Auditor",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Pending Audit",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Internal Auditor",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Audited",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Head Quarter Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Pending Authorization",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Finance Head",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Authorized",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Finance Head",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "pending Approval",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Finance Head",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Approved",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Supplier",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Accepted",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "All",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Rejected",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Finance Head",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Paid",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Finance Head",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Unpaid",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Send To Finance Head",
+    "allow_self_approval": 1,
+    "allowed": "Head Quarter Accountant",
+    "condition": "doc.payment_type==\"Payment For Supplier\"",
+    "next_state": "Pending Check",
+    "state": "Draft",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Check",
+    "allow_self_approval": 1,
+    "allowed": "Finance Head",
+    "condition": "doc.payment_type==\"Payment For Supplier\"",
+    "next_state": "Checked",
+    "state": "Pending Check",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Finance Head",
+    "condition": "doc.payment_type==\"Payment For Supplier\"",
+    "next_state": "Rejected",
+    "state": "Pending Check",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Send To Auditor",
+    "allow_self_approval": 1,
+    "allowed": "Finance Head",
+    "condition": "doc.payment_type==\"Payment For Supplier\"",
+    "next_state": "Pending Audit",
+    "state": "Checked",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Audit",
+    "allow_self_approval": 1,
+    "allowed": "Internal Auditor",
+    "condition": "doc.payment_type==\"Payment For Supplier\"",
+    "next_state": "Audited",
+    "state": "Pending Audit",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Internal Auditor",
+    "condition": "doc.payment_type==\"Payment For Supplier\"",
+    "next_state": "Rejected",
+    "state": "Pending Audit",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Send To HQ Manager",
+    "allow_self_approval": 1,
+    "allowed": "Internal Auditor",
+    "condition": "doc.payment_type==\"Payment For Supplier\"",
+    "next_state": "Pending Authorization",
+    "state": "Audited",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Head Quarter Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "state": "Pending Authorization",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Authorize",
+    "allow_self_approval": 1,
+    "allowed": "Head Quarter Manager",
+    "condition": "doc.payment_type==\"Payment For Supplier\"",
+    "next_state": "Authorized",
+    "state": "Pending Authorization",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "Finance Head",
+    "condition": "doc.payment_type==\"Payment For Supplier\"",
+    "next_state": "Approved",
+    "state": "Authorized",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Finance Head",
+    "condition": "doc.payment_type==\"Payment For Supplier\"",
+    "next_state": "Rejected",
+    "state": "Authorized",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Accept",
+    "allow_self_approval": 1,
+    "allowed": "Supplier",
+    "condition": "doc.payment_type==\"Payment For Supplier\"",
+    "next_state": "Accepted",
+    "state": "Approved",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Supplier",
+    "condition": "doc.payment_type==\"Payment For Supplier\"",
+    "next_state": "Rejected",
+    "state": "Approved",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Send To Deputy Manager",
+    "allow_self_approval": 1,
+    "allowed": "Head Quarter Accountant",
+    "condition": "doc.payment_type==\"Payment For Loan\"",
+    "next_state": "pending Approval",
+    "state": "Draft",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "Deputy Manager",
+    "condition": "doc.payment_type==\"Payment For Loan\"",
+    "next_state": "Approved",
+    "state": "pending Approval",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Deputy Manager",
+    "condition": "doc.payment_type==\"Payment For Loan\"",
+    "next_state": "Rejected",
+    "state": "pending Approval",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Send To Finance Head",
+    "allow_self_approval": 1,
+    "allowed": "Deputy Manager",
+    "condition": "doc.payment_type==\"Payment For Loan\"",
+    "next_state": "Pending Check",
+    "state": "Approved",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Check",
+    "allow_self_approval": 1,
+    "allowed": "Finance Head",
+    "condition": "doc.payment_type==\"Payment For Loan\"",
+    "next_state": "Checked",
+    "state": "Pending Check",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Finance Head",
+    "condition": "doc.payment_type==\"Payment For Loan\"",
+    "next_state": "Rejected",
+    "state": "Pending Check",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Send To HQ Manager",
+    "allow_self_approval": 1,
+    "allowed": "Finance Head",
+    "condition": "doc.payment_type==\"Payment For Loan\"",
+    "next_state": "Pending Authorization",
+    "state": "Checked",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Authorize",
+    "allow_self_approval": 1,
+    "allowed": "Head Quarter Manager",
+    "condition": "doc.payment_type==\"Payment For Loan\"",
+    "next_state": "Authorized",
+    "state": "Pending Authorization",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Head Quarter Manager",
+    "condition": "doc.payment_type==\"Payment For Supplier\"",
+    "next_state": "Rejected",
+    "state": "Pending Authorization",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Paid",
+    "allow_self_approval": 1,
+    "allowed": "Finance Head",
+    "condition": "doc.payment_type==\"Payment For Loan\"",
+    "next_state": "Paid",
+    "state": "Authorized",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Unpaid",
+    "allow_self_approval": 1,
+    "allowed": "Finance Head",
+    "condition": "doc.payment_type==\"Payment For Loan\"",
+    "next_state": "Unpaid",
+    "state": "Authorized",
+    "workflow_builder_id": null
+   }
+  ],
+  "workflow_data": null,
+  "workflow_name": "Cheque Payment Voucher Workflow",
+  "workflow_state_field": "workflow_state"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Sales Attachment",
+  "is_active": 1,
+  "modified": "2024-02-09 09:32:54.448743",
+  "name": "Sales Attachment",
+  "override_status": 0,
+  "send_email_alert": 1,
+  "states": [
+   {
+    "allow_edit": "Dispensary",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Branch Cashier",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Pending payment",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Branch Cashier",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Paid",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Branch Cashier",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Unpaid",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Send to cashier",
+    "allow_self_approval": 1,
+    "allowed": "Dispensary",
+    "condition": null,
+    "next_state": "Pending payment",
+    "state": "Draft",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Paid",
+    "allow_self_approval": 1,
+    "allowed": "Branch Cashier",
+    "condition": null,
+    "next_state": "Paid",
+    "state": "Pending payment",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Unpaid",
+    "allow_self_approval": 1,
+    "allowed": "Branch Cashier",
+    "condition": null,
+    "next_state": "Unpaid",
+    "state": "Pending payment",
+    "workflow_builder_id": null
+   }
+  ],
+  "workflow_data": null,
+  "workflow_name": "Sales Attachment",
+  "workflow_state_field": "workflow_state"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Payment Request",
+  "is_active": 1,
+  "modified": "2024-02-09 09:32:54.817127",
+  "name": "Payment Request Workflow",
+  "override_status": 0,
+  "send_email_alert": 1,
+  "states": [
+   {
+    "allow_edit": "Finance Head",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Deputy Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "pending Approval",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Deputy Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Approved",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Deputy Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Rejected",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Head Quarter Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Pending Authorization",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Head Quarter Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Authorized",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Head Quarter Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Rejected",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Finance Head",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Checked",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Send To Deputy Manager",
+    "allow_self_approval": 1,
+    "allowed": "Finance Head",
+    "condition": null,
+    "next_state": "pending Approval",
+    "state": "Draft",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "Deputy Manager",
+    "condition": null,
+    "next_state": "Approved",
+    "state": "pending Approval",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Deputy Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "state": "pending Approval",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Send To HQ Manager",
+    "allow_self_approval": 1,
+    "allowed": "Deputy Manager",
+    "condition": null,
+    "next_state": "Pending Authorization",
+    "state": "Approved",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Authorize",
+    "allow_self_approval": 1,
+    "allowed": "Head Quarter Manager",
+    "condition": null,
+    "next_state": "Authorized",
+    "state": "Pending Authorization",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Head Quarter Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "state": "Pending Authorization",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Check",
+    "allow_self_approval": 1,
+    "allowed": "Finance Head",
+    "condition": null,
+    "next_state": "Checked",
+    "state": "Authorized",
+    "workflow_builder_id": null
+   }
+  ],
+  "workflow_data": null,
+  "workflow_name": "Payment Request Workflow",
+  "workflow_state_field": "workflow_state"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Employee Transfer",
+  "is_active": 1,
+  "modified": "2024-02-09 09:32:55.134927",
+  "name": "Employee Transfer workflow",
+  "override_status": 0,
+  "send_email_alert": 1,
+  "states": [
+   {
+    "allow_edit": "HR Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Head Quarter Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "pending Approval",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Head Quarter Manager",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Approved",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "HR Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Rejected",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Send To HQ Manager",
+    "allow_self_approval": 1,
+    "allowed": "HR Manager",
+    "condition": null,
+    "next_state": "pending Approval",
+    "state": "Draft",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "Head Quarter Manager",
+    "condition": null,
+    "next_state": "Approved",
+    "state": "pending Approval",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Head Quarter Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "state": "pending Approval",
+    "workflow_builder_id": null
+   }
+  ],
+  "workflow_data": null,
+  "workflow_name": "Employee Transfer workflow",
+  "workflow_state_field": "workflow_state"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Purchase request for drug and medical supplies",
+  "is_active": 1,
+  "modified": "2024-04-04 15:27:56.301400",
+  "name": "Purchase request for drug and medical supplies workflow",
+  "override_status": 0,
+  "send_email_alert": 1,
+  "states": [
+   {
+    "allow_edit": "Store Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": "1"
+   },
+   {
+    "allow_edit": "Branch Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Approved",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": "2"
+   },
+   {
+    "allow_edit": "Branch Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "pending Approval",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": "3"
+   },
+   {
+    "allow_edit": "Operation Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Pending Authorization",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": "4"
+   },
+   {
+    "allow_edit": "Supplier",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Authorized",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": "5"
+   },
+   {
+    "allow_edit": "Operation Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Rejected",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": "6"
+   },
+   {
+    "allow_edit": "Supplier",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Accepted",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": "7"
+   },
+   {
+    "allow_edit": "Operation Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "denied",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": "8"
+   },
+   {
+    "allow_edit": "Supplier",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Sent",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": "9"
+   },
+   {
+    "allow_edit": "Branch Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Checked",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": "10"
+   },
+   {
+    "allow_edit": "Branch Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Cancelled",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": "11"
+   },
+   {
+    "allow_edit": "Store Manager",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Received",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": "12"
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Send To Branch Manager",
+    "allow_self_approval": 1,
+    "allowed": "Store Manager",
+    "condition": null,
+    "next_state": "pending Approval",
+    "state": "Draft",
+    "workflow_builder_id": "action-1"
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "Branch Manager",
+    "condition": null,
+    "next_state": "Approved",
+    "state": "pending Approval",
+    "workflow_builder_id": "action-2"
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Branch Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "state": "pending Approval",
+    "workflow_builder_id": "action-3"
+   },
+   {
+    "action": "Send To Operation Manager",
+    "allow_self_approval": 1,
+    "allowed": "Branch Manager",
+    "condition": null,
+    "next_state": "Pending Authorization",
+    "state": "Approved",
+    "workflow_builder_id": "action-4"
+   },
+   {
+    "action": "Authorize",
+    "allow_self_approval": 1,
+    "allowed": "Operation Manager",
+    "condition": null,
+    "next_state": "Authorized",
+    "state": "Pending Authorization",
+    "workflow_builder_id": "action-5"
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Operation Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "state": "Pending Authorization",
+    "workflow_builder_id": "action-6"
+   },
+   {
+    "action": "Accept",
+    "allow_self_approval": 1,
+    "allowed": "Supplier",
+    "condition": null,
+    "next_state": "Accepted",
+    "state": "Authorized",
+    "workflow_builder_id": "action-7"
+   },
+   {
+    "action": "Deny",
+    "allow_self_approval": 1,
+    "allowed": "Supplier",
+    "condition": null,
+    "next_state": "denied",
+    "state": "Authorized",
+    "workflow_builder_id": "action-8"
+   },
+   {
+    "action": "Send To Branch Manager",
+    "allow_self_approval": 1,
+    "allowed": "Supplier",
+    "condition": null,
+    "next_state": "Sent",
+    "state": "Accepted",
+    "workflow_builder_id": "action-9"
+   },
+   {
+    "action": "Check",
+    "allow_self_approval": 1,
+    "allowed": "Branch Manager",
+    "condition": null,
+    "next_state": "Checked",
+    "state": "Sent",
+    "workflow_builder_id": "action-10"
+   },
+   {
+    "action": "Cancel",
+    "allow_self_approval": 1,
+    "allowed": "Branch Manager",
+    "condition": null,
+    "next_state": "Cancelled",
+    "state": "Sent",
+    "workflow_builder_id": "action-11"
+   },
+   {
+    "action": "Receive",
+    "allow_self_approval": 1,
+    "allowed": "Store Manager",
+    "condition": null,
+    "next_state": "Received",
+    "state": "Checked",
+    "workflow_builder_id": "action-12"
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Store Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "state": "Checked",
+    "workflow_builder_id": "action-13"
+   }
+  ],
+  "workflow_data": "[{\"type\":\"state\",\"dimensions\":{\"width\":85,\"height\":53},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":39.0711669921875,\"y\":-10.885406494140625,\"width\":7,\"height\":7},{\"id\":\"right\",\"position\":\"right\",\"x\":89.02783203125,\"y\":23.098968505859375,\"width\":7,\"height\":7},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":39.0711669921875,\"y\":57.1007080078125,\"width\":7,\"height\":7},{\"id\":\"left\",\"position\":\"left\",\"x\":-10.8853759765625,\"y\":23.098968505859375,\"width\":7,\"height\":7}]},\"computedPosition\":{\"x\":112.59104938271616,\"y\":-424.9143518518519,\"z\":0},\"id\":\"1\",\"position\":{\"x\":112.59104938271616,\"y\":-424.9143518518519}},{\"type\":\"state\",\"dimensions\":{\"width\":117,\"height\":53},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":55.026123046875,\"y\":-10.885406494140625,\"width\":7,\"height\":7},{\"id\":\"right\",\"position\":\"right\",\"x\":120.9375,\"y\":23.098968505859375,\"width\":7,\"height\":7},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":55.026123046875,\"y\":57.1007080078125,\"width\":7,\"height\":7},{\"id\":\"left\",\"position\":\"left\",\"x\":-10.8853759765625,\"y\":23.098968505859375,\"width\":7,\"height\":7}]},\"computedPosition\":{\"x\":373.04629629629585,\"y\":-373.9012395285775,\"z\":0},\"id\":\"2\",\"position\":{\"x\":373.04629629629585,\"y\":-373.9012395285775}},{\"type\":\"state\",\"dimensions\":{\"width\":162,\"height\":74},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":77.6129150390625,\"y\":-10.885406494140625,\"width\":7,\"height\":7},{\"id\":\"right\",\"position\":\"right\",\"x\":166.1112060546875,\"y\":33.60243225097656,\"width\":7,\"height\":7},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":77.6129150390625,\"y\":78.09027099609375,\"width\":7,\"height\":7},{\"id\":\"left\",\"position\":\"left\",\"x\":-10.8853759765625,\"y\":33.60243225097656,\"width\":7,\"height\":7}]},\"computedPosition\":{\"x\":63.75488683127605,\"y\":-170.08050411522635,\"z\":0},\"id\":\"3\",\"position\":{\"x\":63.75488683127605,\"y\":-170.08050411522635}},{\"type\":\"state\",\"dimensions\":{\"width\":162,\"height\":74},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":77.61279296875,\"y\":-10.885406494140625,\"width\":7,\"height\":7},{\"id\":\"right\",\"position\":\"right\",\"x\":166.111083984375,\"y\":33.60243225097656,\"width\":7,\"height\":7},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":77.61279296875,\"y\":78.09027099609375,\"width\":7,\"height\":7},{\"id\":\"left\",\"position\":\"left\",\"x\":-10.885498046875,\"y\":33.60243225097656,\"width\":7,\"height\":7}]},\"computedPosition\":{\"x\":402.3323045267498,\"y\":55.85828189300412,\"z\":0},\"id\":\"4\",\"position\":{\"x\":402.3323045267498,\"y\":55.85828189300412}},{\"type\":\"state\",\"dimensions\":{\"width\":125,\"height\":53},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":59.17529296875,\"y\":-10.885406494140625,\"width\":7,\"height\":7},{\"id\":\"right\",\"position\":\"right\",\"x\":129.236083984375,\"y\":23.098968505859375,\"width\":7,\"height\":7},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":59.17529296875,\"y\":57.1007080078125,\"width\":7,\"height\":7},{\"id\":\"left\",\"position\":\"left\",\"x\":-10.885498046875,\"y\":23.098968505859375,\"width\":7,\"height\":7}]},\"computedPosition\":{\"x\":672.0722736625507,\"y\":-355.1875,\"z\":0},\"id\":\"5\",\"position\":{\"x\":672.0722736625507,\"y\":-355.1875}},{\"type\":\"state\",\"dimensions\":{\"width\":111,\"height\":53},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":51.8662109375,\"y\":-10.885406494140625,\"width\":7,\"height\":7},{\"id\":\"right\",\"position\":\"right\",\"x\":114.635498046875,\"y\":23.098968505859375,\"width\":7,\"height\":7},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":51.8662109375,\"y\":57.1007080078125,\"width\":7,\"height\":7},{\"id\":\"left\",\"position\":\"left\",\"x\":-10.885498046875,\"y\":23.098968505859375,\"width\":7,\"height\":7}]},\"computedPosition\":{\"x\":1643.254629629629,\"y\":515.9472736625514,\"z\":0},\"id\":\"6\",\"position\":{\"x\":1643.254629629629,\"y\":515.9472736625514}},{\"type\":\"state\",\"dimensions\":{\"width\":116,\"height\":53},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":54.661376953125,\"y\":-10.885406494140625,\"width\":7,\"height\":7},{\"id\":\"right\",\"position\":\"right\",\"x\":120.2255859375,\"y\":23.098968505859375,\"width\":7,\"height\":7},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":54.661376953125,\"y\":57.1007080078125,\"width\":7,\"height\":7},{\"id\":\"left\",\"position\":\"left\",\"x\":-10.885498046875,\"y\":23.098968505859375,\"width\":7,\"height\":7}]},\"computedPosition\":{\"x\":840.964599703565,\"y\":118.90733302865999,\"z\":0},\"id\":\"7\",\"position\":{\"x\":840.964599703565,\"y\":118.90733302865999}},{\"type\":\"state\",\"dimensions\":{\"width\":98,\"height\":53},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":45.338623046875,\"y\":-10.885406494140625,\"width\":7,\"height\":7},{\"id\":\"right\",\"position\":\"right\",\"x\":101.579833984375,\"y\":23.098968505859375,\"width\":7,\"height\":7},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":45.338623046875,\"y\":57.1007080078125,\"width\":7,\"height\":7},{\"id\":\"left\",\"position\":\"left\",\"x\":-10.885498046875,\"y\":23.098968505859375,\"width\":7,\"height\":7}]},\"computedPosition\":{\"x\":1055.3333333333335,\"y\":-490,\"z\":0},\"id\":\"8\",\"position\":{\"x\":1055.3333333333335,\"y\":-490}},{\"type\":\"state\",\"dimensions\":{\"width\":83,\"height\":53},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":37.94287109375,\"y\":-10.885406494140625,\"width\":7,\"height\":7},{\"id\":\"right\",\"position\":\"right\",\"x\":86.7880859375,\"y\":23.098968505859375,\"width\":7,\"height\":7},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":37.94287109375,\"y\":57.1007080078125,\"width\":7,\"height\":7},{\"id\":\"left\",\"position\":\"left\",\"x\":-10.88525390625,\"y\":23.098968505859375,\"width\":7,\"height\":7}]},\"computedPosition\":{\"x\":1104.2913330078154,\"y\":-126.66666666666669,\"z\":0},\"id\":\"9\",\"position\":{\"x\":1104.2913330078154,\"y\":-126.66666666666669}},{\"type\":\"state\",\"dimensions\":{\"width\":112,\"height\":53},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":52.265625,\"y\":-10.885406494140625,\"width\":7,\"height\":7},{\"id\":\"right\",\"position\":\"right\",\"x\":115.41650390625,\"y\":23.098968505859375,\"width\":7,\"height\":7},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":52.265625,\"y\":57.1007080078125,\"width\":7,\"height\":7},{\"id\":\"left\",\"position\":\"left\",\"x\":-10.88525390625,\"y\":23.098968505859375,\"width\":7,\"height\":7}]},\"computedPosition\":{\"x\":1265.2499186197902,\"y\":-442.6666666666667,\"z\":0},\"id\":\"10\",\"position\":{\"x\":1265.2499186197902,\"y\":-442.6666666666667}},{\"type\":\"state\",\"dimensions\":{\"width\":119,\"height\":53},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":56.015625,\"y\":-10.885406494140625,\"width\":7,\"height\":7},{\"id\":\"right\",\"position\":\"right\",\"x\":122.93408203125,\"y\":23.098968505859375,\"width\":7,\"height\":7},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":56.015625,\"y\":57.1007080078125,\"width\":7,\"height\":7},{\"id\":\"left\",\"position\":\"left\",\"x\":-10.88525390625,\"y\":23.098968505859375,\"width\":7,\"height\":7}]},\"computedPosition\":{\"x\":1364.6666666666674,\"y\":136.33333333333337,\"z\":0},\"id\":\"11\",\"position\":{\"x\":1364.6666666666674,\"y\":136.33333333333337}},{\"type\":\"state\",\"dimensions\":{\"width\":114,\"height\":53},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":53.2900390625,\"y\":-10.885406494140625,\"width\":7,\"height\":7},{\"id\":\"right\",\"position\":\"right\",\"x\":117.48291015625,\"y\":23.098968505859375,\"width\":7,\"height\":7},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":53.2900390625,\"y\":57.1007080078125,\"width\":7,\"height\":7},{\"id\":\"left\",\"position\":\"left\",\"x\":-10.88525390625,\"y\":23.098968505859375,\"width\":7,\"height\":7}]},\"computedPosition\":{\"x\":1679.3288859049444,\"y\":-156,\"z\":0},\"id\":\"12\",\"position\":{\"x\":1679.3288859049444,\"y\":-156}},{\"type\":\"action\",\"dimensions\":{\"width\":190,\"height\":33},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":92.126708984375,\"y\":-1.875,\"width\":6,\"height\":6},{\"id\":\"right\",\"position\":\"right\",\"x\":186.1458740234375,\"y\":13.602432250976562,\"width\":6,\"height\":6},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":92.126708984375,\"y\":29.09722900390625,\"width\":6,\"height\":6},{\"id\":\"left\",\"position\":\"left\",\"x\":-1.875,\"y\":13.602432250976562,\"width\":6,\"height\":6}]},\"computedPosition\":{\"x\":63.25771604938291,\"y\":-258.50694444444446,\"z\":0},\"id\":\"action-1\",\"position\":{\"x\":63.25771604938291,\"y\":-258.50694444444446},\"data\":{\"from_id\":\"1\",\"to_id\":\"3\"}},{\"type\":\"action\",\"dimensions\":{\"width\":78,\"height\":33},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":36.223876953125,\"y\":-1.875,\"width\":6,\"height\":6},{\"id\":\"right\",\"position\":\"right\",\"x\":74.34033203125,\"y\":13.602432250976562,\"width\":6,\"height\":6},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":36.223876953125,\"y\":29.09722900390625,\"width\":6,\"height\":6},{\"id\":\"left\",\"position\":\"left\",\"x\":-1.875,\"y\":13.602432250976562,\"width\":6,\"height\":6}]},\"computedPosition\":{\"x\":341.9248971193416,\"y\":-462.3616480572235,\"z\":0},\"id\":\"action-2\",\"position\":{\"x\":341.9248971193416,\"y\":-462.3616480572235},\"data\":{\"from_id\":\"3\",\"to_id\":\"2\"}},{\"type\":\"action\",\"dimensions\":{\"width\":64,\"height\":33},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":29.0537109375,\"y\":-1.875,\"width\":6,\"height\":6},{\"id\":\"right\",\"position\":\"right\",\"x\":60,\"y\":13.602432250976562,\"width\":6,\"height\":6},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":29.0537109375,\"y\":29.09722900390625,\"width\":6,\"height\":6},{\"id\":\"left\",\"position\":\"left\",\"x\":-1.875,\"y\":13.602432250976562,\"width\":6,\"height\":6}]},\"computedPosition\":{\"x\":373.937697076994,\"y\":526.0095939793209,\"z\":0},\"id\":\"action-3\",\"position\":{\"x\":373.937697076994,\"y\":526.0095939793209},\"data\":{\"from_id\":\"3\",\"to_id\":\"6\"}},{\"type\":\"action\",\"dimensions\":{\"width\":209,\"height\":33},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":101.5364990234375,\"y\":-1.875,\"width\":6,\"height\":6},{\"id\":\"right\",\"position\":\"right\",\"x\":204.947998046875,\"y\":13.602432250976562,\"width\":6,\"height\":6},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":101.5364990234375,\"y\":29.09722900390625,\"width\":6,\"height\":6},{\"id\":\"left\",\"position\":\"left\",\"x\":-1.875,\"y\":13.602432250976562,\"width\":6,\"height\":6}]},\"computedPosition\":{\"x\":366.47736625514403,\"y\":-131.95916958404723,\"z\":0},\"id\":\"action-4\",\"position\":{\"x\":366.47736625514403,\"y\":-131.95916958404723},\"data\":{\"from_id\":\"2\",\"to_id\":\"4\"}},{\"type\":\"action\",\"dimensions\":{\"width\":87,\"height\":33},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":40.373291015625,\"y\":-1.875,\"width\":6,\"height\":6},{\"id\":\"right\",\"position\":\"right\",\"x\":82.62158203125,\"y\":13.602432250976562,\"width\":6,\"height\":6},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":40.373291015625,\"y\":29.09722900390625,\"width\":6,\"height\":6},{\"id\":\"left\",\"position\":\"left\",\"x\":-1.875,\"y\":13.602432250976562,\"width\":6,\"height\":6}]},\"computedPosition\":{\"x\":666.8909465020574,\"y\":-475.3765327610599,\"z\":0},\"id\":\"action-5\",\"position\":{\"x\":666.8909465020574,\"y\":-475.3765327610599},\"data\":{\"from_id\":\"4\",\"to_id\":\"5\"}},{\"type\":\"action\",\"dimensions\":{\"width\":64,\"height\":33},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":29.0537109375,\"y\":-1.875,\"width\":6,\"height\":6},{\"id\":\"right\",\"position\":\"right\",\"x\":60,\"y\":13.602432250976562,\"width\":6,\"height\":6},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":29.0537109375,\"y\":29.09722900390625,\"width\":6,\"height\":6},{\"id\":\"left\",\"position\":\"left\",\"x\":-1.875,\"y\":13.602432250976562,\"width\":6,\"height\":6}]},\"computedPosition\":{\"x\":839.0665551016846,\"y\":525.7673274538645,\"z\":0},\"id\":\"action-6\",\"position\":{\"x\":839.0665551016846,\"y\":525.7673274538645},\"data\":{\"from_id\":\"4\",\"to_id\":\"6\"}},{\"type\":\"action\",\"dimensions\":{\"width\":70,\"height\":33},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":31.848876953125,\"y\":-1.875,\"width\":6,\"height\":6},{\"id\":\"right\",\"position\":\"right\",\"x\":65.59033203125,\"y\":13.602432250976562,\"width\":6,\"height\":6},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":31.848876953125,\"y\":29.09722900390625,\"width\":6,\"height\":6},{\"id\":\"left\",\"position\":\"left\",\"x\":-1.875,\"y\":13.602432250976562,\"width\":6,\"height\":6}]},\"computedPosition\":{\"x\":727.424897119341,\"y\":6.832062018751344,\"z\":0},\"id\":\"action-7\",\"position\":{\"x\":727.424897119341,\"y\":6.832062018751344},\"data\":{\"from_id\":\"5\",\"to_id\":\"7\"}},{\"type\":\"action\",\"dimensions\":{\"width\":57,\"height\":33},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":25.3037109375,\"y\":-1.875,\"width\":6,\"height\":6},{\"id\":\"right\",\"position\":\"right\",\"x\":52.482666015625,\"y\":13.602432250976562,\"width\":6,\"height\":6},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":25.3037109375,\"y\":29.09722900390625,\"width\":6,\"height\":6},{\"id\":\"left\",\"position\":\"left\",\"x\":-1.875,\"y\":13.602432250976562,\"width\":6,\"height\":6}]},\"computedPosition\":{\"x\":879.6404834386244,\"y\":-478.29961652716463,\"z\":0},\"id\":\"action-8\",\"position\":{\"x\":879.6404834386244,\"y\":-478.29961652716463},\"data\":{\"from_id\":\"5\",\"to_id\":\"8\"}},{\"type\":\"action\",\"dimensions\":{\"width\":190,\"height\":33},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":92.126708984375,\"y\":-1.875,\"width\":6,\"height\":6},{\"id\":\"right\",\"position\":\"right\",\"x\":186.145751953125,\"y\":13.602432250976562,\"width\":6,\"height\":6},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":92.126708984375,\"y\":29.09722900390625,\"width\":6,\"height\":6},{\"id\":\"left\",\"position\":\"left\",\"x\":-1.875,\"y\":13.602432250976562,\"width\":6,\"height\":6}]},\"computedPosition\":{\"x\":866.8978794082207,\"y\":-117.841359770347,\"z\":0},\"id\":\"action-9\",\"position\":{\"x\":866.8978794082207,\"y\":-117.841359770347},\"data\":{\"from_id\":\"7\",\"to_id\":\"9\"}},{\"type\":\"action\",\"dimensions\":{\"width\":65,\"height\":33},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":29.5400390625,\"y\":-1.875,\"width\":6,\"height\":6},{\"id\":\"right\",\"position\":\"right\",\"x\":60.955078125,\"y\":13.602432250976562,\"width\":6,\"height\":6},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":29.5400390625,\"y\":29.09722900390625,\"width\":6,\"height\":6},{\"id\":\"left\",\"position\":\"left\",\"x\":-1.875,\"y\":13.602432250976562,\"width\":6,\"height\":6}]},\"computedPosition\":{\"x\":1111.5777262369797,\"y\":-379.66666666666674,\"z\":0},\"id\":\"action-10\",\"position\":{\"x\":1111.5777262369797,\"y\":-379.66666666666674},\"data\":{\"from_id\":\"9\",\"to_id\":\"10\"}},{\"type\":\"action\",\"dimensions\":{\"width\":69,\"height\":33},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":31.36279296875,\"y\":-1.875,\"width\":6,\"height\":6},{\"id\":\"right\",\"position\":\"right\",\"x\":64.6181640625,\"y\":13.602432250976562,\"width\":6,\"height\":6},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":31.36279296875,\"y\":29.09722900390625,\"width\":6,\"height\":6},{\"id\":\"left\",\"position\":\"left\",\"x\":-1.875,\"y\":13.602432250976562,\"width\":6,\"height\":6}]},\"computedPosition\":{\"x\":1243.333333333334,\"y\":151.66666666666663,\"z\":0},\"id\":\"action-11\",\"position\":{\"x\":1243.333333333334,\"y\":151.66666666666663},\"data\":{\"from_id\":\"9\",\"to_id\":\"11\"}},{\"type\":\"action\",\"dimensions\":{\"width\":75,\"height\":33},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":34.48779296875,\"y\":-1.875,\"width\":6,\"height\":6},{\"id\":\"right\",\"position\":\"right\",\"x\":70.8681640625,\"y\":13.602432250976562,\"width\":6,\"height\":6},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":34.48779296875,\"y\":29.09722900390625,\"width\":6,\"height\":6},{\"id\":\"left\",\"position\":\"left\",\"x\":-1.875,\"y\":13.602432250976562,\"width\":6,\"height\":6}]},\"computedPosition\":{\"x\":1454,\"y\":-529.3333333333333,\"z\":0},\"id\":\"action-12\",\"position\":{\"x\":1454,\"y\":-529.3333333333333},\"data\":{\"from_id\":\"10\",\"to_id\":\"12\"}},{\"type\":\"action\",\"dimensions\":{\"width\":64,\"height\":33},\"handleBounds\":{\"source\":[{\"id\":\"top\",\"position\":\"top\",\"x\":29.0537109375,\"y\":-1.875,\"width\":6,\"height\":6},{\"id\":\"right\",\"position\":\"right\",\"x\":60,\"y\":13.602432250976562,\"width\":6,\"height\":6},{\"id\":\"bottom\",\"position\":\"bottom\",\"x\":29.0537109375,\"y\":29.09722900390625,\"width\":6,\"height\":6},{\"id\":\"left\",\"position\":\"left\",\"x\":-1.875,\"y\":13.602432250976562,\"width\":6,\"height\":6}]},\"computedPosition\":{\"x\":1483.8958129882794,\"y\":-131.60457356770894,\"z\":0},\"id\":\"action-13\",\"position\":{\"x\":1483.8958129882794,\"y\":-131.60457356770894},\"data\":{\"from_id\":\"10\",\"to_id\":\"6\"}},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"1\",\"target\":\"action-1\",\"updatable\":true,\"id\":\"edge-1-action-1\",\"animated\":true,\"sourceX\":208.61888141396616,\"sourceY\":-398.31538334599253,\"targetX\":61.38271604938291,\"targetY\":-241.9045121934679},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"action-1\",\"target\":\"3\",\"updatable\":true,\"id\":\"edge-action-1-3\",\"animated\":true,\"sourceX\":255.4035900728204,\"sourceY\":-241.9045121934679,\"targetX\":52.86951085471355,\"targetY\":-132.97807186424978,\"markerEnd\":{\"type\":\"arrow\",\"width\":15,\"height\":15,\"strokeWidth\":1.5,\"color\":\"#687178\"}},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"3\",\"target\":\"action-2\",\"updatable\":true,\"id\":\"edge-3-action-2\",\"animated\":true,\"sourceX\":236.86609288596355,\"sourceY\":-132.97807186424978,\"targetX\":340.0498971193416,\"targetY\":-445.7592158062469},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"action-2\",\"target\":\"2\",\"updatable\":true,\"id\":\"edge-action-2-2\",\"animated\":true,\"sourceX\":422.2652291505916,\"sourceY\":-445.7592158062469,\"targetX\":362.16092031973335,\"targetY\":-347.3022710227181,\"markerEnd\":{\"type\":\"arrow\",\"width\":15,\"height\":15,\"strokeWidth\":1.5,\"color\":\"#687178\"}},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"3\",\"target\":\"action-3\",\"updatable\":true,\"id\":\"edge-3-action-3\",\"animated\":true,\"sourceX\":236.86609288596355,\"sourceY\":-132.97807186424978,\"targetX\":372.062697076994,\"targetY\":542.6120262302975},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"action-3\",\"target\":\"6\",\"updatable\":true,\"id\":\"edge-action-3-6\",\"animated\":true,\"sourceX\":439.937697076994,\"sourceY\":542.6120262302975,\"targetX\":1632.369131582754,\"targetY\":542.5462421684108,\"markerEnd\":{\"type\":\"arrow\",\"width\":15,\"height\":15,\"strokeWidth\":1.5,\"color\":\"#687178\"}},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"2\",\"target\":\"action-4\",\"updatable\":true,\"id\":\"edge-2-action-4\",\"animated\":true,\"sourceX\":500.98379629629585,\"sourceY\":-347.3022710227181,\"targetX\":364.60236625514403,\"targetY\":-115.35673733307067},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"action-4\",\"target\":\"4\",\"updatable\":true,\"id\":\"edge-action-4-4\",\"animated\":true,\"sourceX\":577.425364302019,\"sourceY\":-115.35673733307067,\"targetX\":391.4468064798748,\"targetY\":92.96071414398068,\"markerEnd\":{\"type\":\"arrow\",\"width\":15,\"height\":15,\"strokeWidth\":1.5,\"color\":\"#687178\"}},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"4\",\"target\":\"action-5\",\"updatable\":true,\"id\":\"edge-4-action-5\",\"animated\":true,\"sourceX\":575.4433885111248,\"sourceY\":92.96071414398068,\"targetX\":665.0159465020574,\"targetY\":-458.7741005100833},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"action-5\",\"target\":\"5\",\"updatable\":true,\"id\":\"edge-action-5-5\",\"animated\":true,\"sourceX\":755.5125285333074,\"sourceY\":-458.7741005100833,\"targetX\":661.1867756156757,\"targetY\":-328.5885314941406,\"markerEnd\":{\"type\":\"arrow\",\"width\":15,\"height\":15,\"strokeWidth\":1.5,\"color\":\"#687178\"}},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"4\",\"target\":\"action-6\",\"updatable\":true,\"id\":\"edge-4-action-6\",\"animated\":true,\"sourceX\":575.4433885111248,\"sourceY\":92.96071414398068,\"targetX\":837.1915551016846,\"targetY\":542.369759704841},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"action-6\",\"target\":\"6\",\"updatable\":true,\"id\":\"edge-action-6-6\",\"animated\":true,\"sourceX\":905.0665551016846,\"sourceY\":542.369759704841,\"targetX\":1632.369131582754,\"targetY\":542.5462421684108,\"markerEnd\":{\"type\":\"arrow\",\"width\":15,\"height\":15,\"strokeWidth\":1.5,\"color\":\"#687178\"}},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"5\",\"target\":\"action-7\",\"updatable\":true,\"id\":\"edge-5-action-7\",\"animated\":true,\"sourceX\":808.3083576469257,\"sourceY\":-328.5885314941406,\"targetX\":725.549897119341,\"targetY\":23.434494269727907},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"action-7\",\"target\":\"7\",\"updatable\":true,\"id\":\"edge-action-7-7\",\"animated\":true,\"sourceX\":799.015229150591,\"sourceY\":23.434494269727907,\"targetX\":830.07910165669,\"targetY\":145.50630153451937,\"markerEnd\":{\"type\":\"arrow\",\"width\":15,\"height\":15,\"strokeWidth\":1.5,\"color\":\"#687178\"}},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"5\",\"target\":\"action-8\",\"updatable\":true,\"id\":\"edge-5-action-8\",\"animated\":true,\"sourceX\":808.3083576469257,\"sourceY\":-328.5885314941406,\"targetX\":877.7654834386244,\"targetY\":-461.69718427618807},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"action-8\",\"target\":\"8\",\"updatable\":true,\"id\":\"edge-action-8-8\",\"animated\":true,\"sourceX\":938.1231494542494,\"sourceY\":-461.69718427618807,\"targetX\":1044.4478352864585,\"targetY\":-463.4010314941406,\"markerEnd\":{\"type\":\"arrow\",\"width\":15,\"height\":15,\"strokeWidth\":1.5,\"color\":\"#687178\"}},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"7\",\"target\":\"action-9\",\"updatable\":true,\"id\":\"edge-7-action-9\",\"animated\":true,\"sourceX\":968.190185641065,\"sourceY\":145.50630153451937,\"targetX\":865.0228794082207,\"targetY\":-101.23892751937043},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"action-9\",\"target\":\"9\",\"updatable\":true,\"id\":\"edge-action-9-9\",\"animated\":true,\"sourceX\":1059.0436313613457,\"sourceY\":-101.23892751937043,\"targetX\":1093.4060791015654,\"targetY\":-100.06769816080731,\"markerEnd\":{\"type\":\"arrow\",\"width\":15,\"height\":15,\"strokeWidth\":1.5,\"color\":\"#687178\"}},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"9\",\"target\":\"action-10\",\"updatable\":true,\"id\":\"edge-9-action-10\",\"animated\":true,\"sourceX\":1198.0794189453154,\"sourceY\":-100.06769816080731,\"targetX\":1109.7027262369797,\"targetY\":-363.0642344156902},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"action-10\",\"target\":\"10\",\"updatable\":true,\"id\":\"edge-action-10-10\",\"animated\":true,\"sourceX\":1178.5328043619797,\"sourceY\":-363.0642344156902,\"targetX\":1254.3646647135402,\"targetY\":-416.0676981608073,\"markerEnd\":{\"type\":\"arrow\",\"width\":15,\"height\":15,\"strokeWidth\":1.5,\"color\":\"#687178\"}},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"9\",\"target\":\"action-11\",\"updatable\":true,\"id\":\"edge-9-action-11\",\"animated\":true,\"sourceX\":1198.0794189453154,\"sourceY\":-100.06769816080731,\"targetX\":1241.458333333334,\"targetY\":168.2690989176432},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"action-11\",\"target\":\"11\",\"updatable\":true,\"id\":\"edge-action-11-11\",\"animated\":true,\"sourceX\":1313.951497395834,\"sourceY\":168.2690989176432,\"targetX\":1353.7814127604174,\"targetY\":162.93230183919275,\"markerEnd\":{\"type\":\"arrow\",\"width\":15,\"height\":15,\"strokeWidth\":1.5,\"color\":\"#687178\"}},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"10\",\"target\":\"action-12\",\"updatable\":true,\"id\":\"edge-10-action-12\",\"animated\":true,\"sourceX\":1387.6664225260402,\"sourceY\":-416.0676981608073,\"targetX\":1452.125,\"targetY\":-512.7309010823567},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"action-12\",\"target\":\"12\",\"updatable\":true,\"id\":\"edge-action-12-12\",\"animated\":true,\"sourceX\":1530.8681640625,\"sourceY\":-512.7309010823567,\"targetX\":1668.4436319986944,\"targetY\":-129.40103149414062,\"markerEnd\":{\"type\":\"arrow\",\"width\":15,\"height\":15,\"strokeWidth\":1.5,\"color\":\"#687178\"}},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"10\",\"target\":\"action-13\",\"updatable\":true,\"id\":\"edge-10-action-13\",\"animated\":true,\"sourceX\":1387.6664225260402,\"sourceY\":-416.0676981608073,\"targetX\":1482.0208129882794,\"targetY\":-115.00214131673238},{\"sourceHandle\":\"right\",\"targetHandle\":\"left\",\"type\":\"transition\",\"source\":\"action-13\",\"target\":\"6\",\"updatable\":true,\"id\":\"edge-action-13-6\",\"animated\":true,\"sourceX\":1549.8958129882794,\"sourceY\":-115.00214131673238,\"targetX\":1632.369131582754,\"targetY\":542.5462421684108,\"markerEnd\":{\"type\":\"arrow\",\"width\":15,\"height\":15,\"strokeWidth\":1.5,\"color\":\"#687178\"}}]",
+  "workflow_name": "Purchase request for drug and medical supplies workflow",
+  "workflow_state_field": "workflow_state"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Petty Cash Summary",
+  "is_active": 1,
+  "modified": "2024-02-09 09:32:55.822740",
+  "name": "Petty Cash Summary",
+  "override_status": 0,
+  "send_email_alert": 1,
+  "states": [
+   {
+    "allow_edit": "Branch Accountant",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Branch Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "pending Approval",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Branch Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Approved",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Finance Head",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Pending Authorization",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Finance Head",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Authorized",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Finance Head",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Rejected",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Send To Branch Manager",
+    "allow_self_approval": 1,
+    "allowed": "Branch Accountant",
+    "condition": null,
+    "next_state": "pending Approval",
+    "state": "Draft",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "Branch Manager",
+    "condition": null,
+    "next_state": "Approved",
+    "state": "pending Approval",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Branch Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "state": "pending Approval",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Send To Finance Head",
+    "allow_self_approval": 1,
+    "allowed": "Branch Manager",
+    "condition": null,
+    "next_state": "Pending Authorization",
+    "state": "Approved",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Authorize",
+    "allow_self_approval": 1,
+    "allowed": "Finance Head",
+    "condition": null,
+    "next_state": "Authorized",
+    "state": "Pending Authorization",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Finance Head",
+    "condition": null,
+    "next_state": "Rejected",
+    "state": "Pending Authorization",
+    "workflow_builder_id": null
+   }
+  ],
+  "workflow_data": null,
+  "workflow_name": "Petty Cash Summary",
+  "workflow_state_field": "workflow_state"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Stock Transfer Requisition Form",
+  "is_active": 1,
+  "modified": "2024-02-09 09:32:56.243530",
+  "name": "Stock Transfer Requisition workflow",
+  "override_status": 0,
+  "send_email_alert": 1,
+  "states": [
+   {
+    "allow_edit": "Branch Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Operation Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "pending Approval",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Operation Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Approved",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Operation Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Rejected",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Branch Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Pending Accept Transfer",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Branch Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Accepted",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Send To Operation Manager",
+    "allow_self_approval": 1,
+    "allowed": "Branch Manager",
+    "condition": null,
+    "next_state": "pending Approval",
+    "state": "Draft",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "Operation Manager",
+    "condition": null,
+    "next_state": "Approved",
+    "state": "pending Approval",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Operation Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "state": "pending Approval",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Send To Branch Manager",
+    "allow_self_approval": 1,
+    "allowed": "Operation Manager",
+    "condition": null,
+    "next_state": "Pending Accept Transfer",
+    "state": "Approved",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Accept",
+    "allow_self_approval": 1,
+    "allowed": "Branch Manager",
+    "condition": null,
+    "next_state": "Accepted",
+    "state": "Pending Accept Transfer",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Branch Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "state": "Pending Accept Transfer",
+    "workflow_builder_id": null
+   }
+  ],
+  "workflow_data": null,
+  "workflow_name": "Stock Transfer Requisition workflow",
+  "workflow_state_field": "workflow_state"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Over Time",
+  "is_active": 1,
+  "modified": "2024-02-09 09:32:56.575536",
+  "name": "Over Time Workflow",
+  "override_status": 0,
+  "send_email_alert": 1,
+  "states": [
+   {
+    "allow_edit": "Branch Accountant",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Branch Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "pending Approval",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Branch Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Approved",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Branch Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Rejected",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "HR Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Pending Authorization",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "HR Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Authorized",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Finance Head",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Checked",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Send To Branch Manager",
+    "allow_self_approval": 1,
+    "allowed": "Branch Accountant",
+    "condition": null,
+    "next_state": "pending Approval",
+    "state": "Draft",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "Branch Manager",
+    "condition": null,
+    "next_state": "Approved",
+    "state": "pending Approval",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Branch Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "state": "pending Approval",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Send To HR Manager",
+    "allow_self_approval": 1,
+    "allowed": "Branch Manager",
+    "condition": null,
+    "next_state": "Pending Authorization",
+    "state": "Approved",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Authorize",
+    "allow_self_approval": 1,
+    "allowed": "HR Manager",
+    "condition": null,
+    "next_state": "Authorized",
+    "state": "Pending Authorization",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "HR Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "state": "Pending Authorization",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Check",
+    "allow_self_approval": 1,
+    "allowed": "Finance Head",
+    "condition": null,
+    "next_state": "Checked",
+    "state": "Authorized",
+    "workflow_builder_id": null
+   }
+  ],
+  "workflow_data": null,
+  "workflow_name": "Over Time Workflow",
+  "workflow_state_field": "workflow_state"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Purchase Request for Non-medical items",
+  "is_active": 0,
+  "modified": "2024-02-09 09:32:56.900673",
+  "name": "Purchase Request for Non-medical items workflow",
+  "override_status": 0,
+  "send_email_alert": 1,
+  "states": [
+   {
+    "allow_edit": "Operation Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Operation Manager",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Sent",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Send",
+    "allow_self_approval": 1,
+    "allowed": "Operation Manager",
+    "condition": null,
+    "next_state": "Sent",
+    "state": "Draft",
+    "workflow_builder_id": null
+   }
+  ],
+  "workflow_data": null,
+  "workflow_name": "Purchase Request for Non-medical items workflow",
+  "workflow_state_field": "workflow_state"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Item purchase Requisition",
+  "is_active": 1,
+  "modified": "2024-04-12 12:32:36.642876",
+  "name": "Item purchase Requisition Workflow",
+  "override_status": 0,
+  "send_email_alert": 1,
+  "states": [
+   {
+    "allow_edit": "Branch Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Finance Head",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "HR Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Operation Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Operation Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Sent",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Operation Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Sent",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Operation Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Sent",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Operation Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Pending Supplier Acceptance",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Supplier",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Accepted",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Operation Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Approved",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Supplier",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Rejected",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "HQ Store Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Confirmed",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Send To Operation Manager",
+    "allow_self_approval": 1,
+    "allowed": "Branch Manager",
+    "condition": null,
+    "next_state": "Sent",
+    "state": "Draft",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Send To Operation Manager",
+    "allow_self_approval": 1,
+    "allowed": "Finance Head",
+    "condition": null,
+    "next_state": "Sent",
+    "state": "Draft",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Send To Operation Manager",
+    "allow_self_approval": 1,
+    "allowed": "HR Manager",
+    "condition": null,
+    "next_state": "Sent",
+    "state": "Draft",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Send To Supplier",
+    "allow_self_approval": 1,
+    "allowed": "Operation Manager",
+    "condition": null,
+    "next_state": "Pending Supplier Acceptance",
+    "state": "Sent",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Accept",
+    "allow_self_approval": 1,
+    "allowed": "Supplier",
+    "condition": null,
+    "next_state": "Accepted",
+    "state": "Pending Supplier Acceptance",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Supplier",
+    "condition": null,
+    "next_state": "Rejected",
+    "state": "Pending Supplier Acceptance",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "Operation Manager",
+    "condition": null,
+    "next_state": "Approved",
+    "state": "Accepted",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Operation Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "state": "Accepted",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Confirm and Add To  Warehouse",
+    "allow_self_approval": 1,
+    "allowed": "HQ Store Manager",
+    "condition": null,
+    "next_state": "Confirmed",
+    "state": "Approved",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "HQ Store Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "state": "Approved",
+    "workflow_builder_id": null
+   }
+  ],
+  "workflow_data": null,
+  "workflow_name": "Item purchase Requisition Workflow",
+  "workflow_state_field": "workflow_state"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Budget Request",
+  "is_active": 1,
+  "modified": "2024-02-09 09:32:57.694939",
+  "name": "Budget Request Workflow",
+  "override_status": 0,
+  "send_email_alert": 1,
+  "states": [
+   {
+    "allow_edit": "Branch Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Finance Head",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "HR Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Operation Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "pending Approval",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Operation Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Approved",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Head Quarter Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Pending Authorization",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Head Quarter Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Authorized",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Operation Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Rejected",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Send To Operation Manager",
+    "allow_self_approval": 1,
+    "allowed": "Branch Manager",
+    "condition": null,
+    "next_state": "pending Approval",
+    "state": "Draft",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Send To Operation Manager",
+    "allow_self_approval": 1,
+    "allowed": "Finance Head",
+    "condition": null,
+    "next_state": "pending Approval",
+    "state": "Draft",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Send To Operation Manager",
+    "allow_self_approval": 1,
+    "allowed": "HR Manager",
+    "condition": null,
+    "next_state": "pending Approval",
+    "state": "Draft",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "Operation Manager",
+    "condition": null,
+    "next_state": "Approved",
+    "state": "pending Approval",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Operation Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "state": "pending Approval",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Send To HQ Manager",
+    "allow_self_approval": 1,
+    "allowed": "Operation Manager",
+    "condition": null,
+    "next_state": "Pending Authorization",
+    "state": "Approved",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Authorize",
+    "allow_self_approval": 1,
+    "allowed": "Head Quarter Manager",
+    "condition": null,
+    "next_state": "Authorized",
+    "state": "Pending Authorization",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Head Quarter Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "state": "Pending Authorization",
+    "workflow_builder_id": null
+   }
+  ],
+  "workflow_data": null,
+  "workflow_name": "Budget Request Workflow",
+  "workflow_state_field": "workflow_state"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Loan management",
+  "is_active": 1,
+  "modified": "2024-02-09 09:32:58.062768",
+  "name": "Loan management workflow",
+  "override_status": 0,
+  "send_email_alert": 1,
+  "states": [
+   {
+    "allow_edit": "HR Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "HR Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Approved",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "HR Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Rejected",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "HR Manager",
+    "condition": null,
+    "next_state": "Approved",
+    "state": "Draft",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "HR Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "state": "Draft",
+    "workflow_builder_id": null
+   }
+  ],
+  "workflow_data": null,
+  "workflow_name": "Loan management workflow",
+  "workflow_state_field": "workflow_state"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Employee Transfer Request",
+  "is_active": 1,
+  "modified": "2024-03-26 10:19:14.191957",
+  "name": "Employee Transfer Request Workflow",
+  "override_status": 0,
+  "send_email_alert": 1,
+  "states": [
+   {
+    "allow_edit": "Branch Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "HR Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "pending Approval",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "HR Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Approved",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Head Quarter Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Pending Authorization",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Head Quarter Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Authorized",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Head Quarter Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Rejected",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Send To HR Manager",
+    "allow_self_approval": 1,
+    "allowed": "Branch Manager",
+    "condition": null,
+    "next_state": "pending Approval",
+    "state": "Draft",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "HR Manager",
+    "condition": null,
+    "next_state": "Approved",
+    "state": "pending Approval",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "HR Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "state": "pending Approval",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Send To HQ Manager",
+    "allow_self_approval": 1,
+    "allowed": "HR Manager",
+    "condition": null,
+    "next_state": "Pending Authorization",
+    "state": "Approved",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Authorize",
+    "allow_self_approval": 1,
+    "allowed": "Head Quarter Manager",
+    "condition": null,
+    "next_state": "Authorized",
+    "state": "Pending Authorization",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Head Quarter Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "state": "Pending Authorization",
+    "workflow_builder_id": null
+   }
+  ],
+  "workflow_data": null,
+  "workflow_name": "Employee Transfer Request Workflow",
+  "workflow_state_field": "workflow_state"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Good Receiving Voucher",
+  "is_active": 1,
+  "modified": "2024-02-09 09:32:58.697208",
+  "name": "Good Receiving Voucher Workflow",
+  "override_status": 0,
+  "send_email_alert": 1,
+  "states": [
+   {
+    "allow_edit": "Store Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Branch Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "pending Approval",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Branch Manager",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Approved",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Branch Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Rejected",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Send To Branch Manager",
+    "allow_self_approval": 1,
+    "allowed": "Store Manager",
+    "condition": null,
+    "next_state": "pending Approval",
+    "state": "Draft",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "Branch Manager",
+    "condition": null,
+    "next_state": "Approved",
+    "state": "pending Approval",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Branch Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "state": "pending Approval",
+    "workflow_builder_id": null
+   }
+  ],
+  "workflow_data": null,
+  "workflow_name": "Good Receiving Voucher Workflow",
+  "workflow_state_field": "workflow_state"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Daily Cash sales Summary",
+  "is_active": 1,
+  "modified": "2024-03-26 07:58:42.199639",
+  "name": "Daily Cash sales Summary",
+  "override_status": 0,
+  "send_email_alert": 1,
+  "states": [
+   {
+    "allow_edit": "Branch Accountant",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Branch Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "pending Approval",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Branch Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Approved",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Branch Accountant",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Rejected",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Finance Head",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Pending  Acceptance",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Finance Head",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Accepted",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Send To Branch Manager",
+    "allow_self_approval": 1,
+    "allowed": "Branch Accountant",
+    "condition": null,
+    "next_state": "pending Approval",
+    "state": "Draft",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "Branch Manager",
+    "condition": null,
+    "next_state": "Approved",
+    "state": "pending Approval",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Branch Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "state": "pending Approval",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Send To Finance Head",
+    "allow_self_approval": 1,
+    "allowed": "Branch Manager",
+    "condition": null,
+    "next_state": "Pending  Acceptance",
+    "state": "Approved",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Accept",
+    "allow_self_approval": 1,
+    "allowed": "Finance Head",
+    "condition": null,
+    "next_state": "Accepted",
+    "state": "Pending  Acceptance",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Finance Head",
+    "condition": null,
+    "next_state": "Rejected",
+    "state": "Pending  Acceptance",
+    "workflow_builder_id": null
+   }
+  ],
+  "workflow_data": null,
+  "workflow_name": "Daily Cash sales Summary",
+  "workflow_state_field": "workflow_state"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Petty Cash Payment  Voucher",
+  "is_active": 1,
+  "modified": "2024-03-26 08:28:38.909729",
+  "name": "Petty Cash Payment Voucher",
+  "override_status": 0,
+  "send_email_alert": 0,
+  "states": [
+   {
+    "allow_edit": "Branch Cashier",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Branch Accountant",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "pending Approval",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Branch Accountant",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Approved",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Branch Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Pending Authorization",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Branch Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Authorized",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Branch Accountant",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Rejected",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Branch Cashier",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Paid",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Send To Branch Accountant",
+    "allow_self_approval": 1,
+    "allowed": "Branch Cashier",
+    "condition": null,
+    "next_state": "pending Approval",
+    "state": "Draft",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "Branch Accountant",
+    "condition": null,
+    "next_state": "Approved",
+    "state": "pending Approval",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Branch Accountant",
+    "condition": null,
+    "next_state": "Rejected",
+    "state": "pending Approval",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Send To Branch Manager",
+    "allow_self_approval": 1,
+    "allowed": "Branch Accountant",
+    "condition": null,
+    "next_state": "Pending Authorization",
+    "state": "Approved",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Authorize",
+    "allow_self_approval": 1,
+    "allowed": "Branch Manager",
+    "condition": null,
+    "next_state": "Authorized",
+    "state": "Pending Authorization",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Branch Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "state": "Pending Authorization",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Pay",
+    "allow_self_approval": 1,
+    "allowed": "Branch Cashier",
+    "condition": null,
+    "next_state": "Paid",
+    "state": "Authorized",
+    "workflow_builder_id": null
+   }
+  ],
+  "workflow_data": null,
+  "workflow_name": "Petty Cash Payment Voucher",
+  "workflow_state_field": "workflow_state"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Action Plan",
+  "is_active": 1,
+  "modified": "2024-03-26 08:50:36.881189",
+  "name": "Action Plan",
+  "override_status": 0,
+  "send_email_alert": 1,
+  "states": [
+   {
+    "allow_edit": "Branch Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Plan & Budget Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "pending Approval",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Plan & Budget Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Approved",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Plan & Budget Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Rejected",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   }
+  ],
+  "transitions": [
+   {
+    "action": "send To plan & Budget Manager",
+    "allow_self_approval": 1,
+    "allowed": "Branch Manager",
+    "condition": null,
+    "next_state": "pending Approval",
+    "state": "Draft",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "Plan & Budget Manager",
+    "condition": null,
+    "next_state": "Approved",
+    "state": "pending Approval",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Plan & Budget Manager",
+    "condition": null,
+    "next_state": "Rejected",
+    "state": "pending Approval",
+    "workflow_builder_id": null
+   }
+  ],
+  "workflow_data": null,
+  "workflow_name": "Action Plan",
+  "workflow_state_field": "workflow_state"
+ }
+]

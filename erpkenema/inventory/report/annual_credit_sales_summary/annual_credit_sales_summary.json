@@ -1,0 +1,32 @@
+{
+ "add_total_row": 1,
+ "columns": [],
+ "creation": "2023-02-23 13:38:16.734765",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2023-02-23 13:38:16.734765",
+ "modified_by": "Administrator",
+ "module": "Inventory",
+ "name": "Annual Credit Sales Summary",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "",
+ "ref_doctype": "Sales Attachment",
+ "report_name": "Annual Credit Sales Summary",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Branch Cashier"
+  },
+  {
+   "role": "Dispensary"
+  }
+ ]
+}

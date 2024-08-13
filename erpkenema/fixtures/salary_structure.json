@@ -1,0 +1,2212 @@
+[
+ {
+  "amount": "10941",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "III",
+  "modified": "2024-02-09 11:56:46.194140",
+  "name": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2-III-ጣሪያ",
+  "name1": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2",
+  "scale": "ጣሪያ"
+ },
+ {
+  "amount": "10131",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "III",
+  "modified": "2024-02-09 11:56:46.230482",
+  "name": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2-III-9",
+  "name1": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2",
+  "scale": "9"
+ },
+ {
+  "amount": "9381",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "III",
+  "modified": "2024-02-09 11:56:46.249702",
+  "name": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2-III-8",
+  "name1": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2",
+  "scale": "8"
+ },
+ {
+  "amount": "8686",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "III",
+  "modified": "2024-02-09 11:56:46.262548",
+  "name": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2-III-7",
+  "name1": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2",
+  "scale": "7"
+ },
+ {
+  "amount": "8042",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "III",
+  "modified": "2024-02-09 11:56:46.277019",
+  "name": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2-III-6",
+  "name1": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2",
+  "scale": "6"
+ },
+ {
+  "amount": "7447",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "III",
+  "modified": "2024-02-09 11:56:46.291621",
+  "name": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2-III-5",
+  "name1": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2",
+  "scale": "5"
+ },
+ {
+  "amount": "6895",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "III",
+  "modified": "2024-02-09 11:56:46.309075",
+  "name": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2-III-4",
+  "name1": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2",
+  "scale": "4"
+ },
+ {
+  "amount": "6384",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "III",
+  "modified": "2024-02-09 11:56:46.323292",
+  "name": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2-III-3",
+  "name1": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2",
+  "scale": "3"
+ },
+ {
+  "amount": "5911",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "III",
+  "modified": "2024-02-09 11:56:46.340179",
+  "name": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2-III-2",
+  "name1": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2",
+  "scale": "2"
+ },
+ {
+  "amount": "5473",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "III",
+  "modified": "2024-02-09 11:56:46.354397",
+  "name": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2-III-1",
+  "name1": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2",
+  "scale": "1"
+ },
+ {
+  "amount": "5068",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "III",
+  "modified": "2024-02-09 11:56:46.368170",
+  "name": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2-III-መነሻ",
+  "name1": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2",
+  "scale": "መነሻ"
+ },
+ {
+  "amount": "9091",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "II",
+  "modified": "2024-02-09 11:56:46.382963",
+  "name": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2-II-ጣሪያ",
+  "name1": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2",
+  "scale": "ጣሪያ"
+ },
+ {
+  "amount": "8418",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "II",
+  "modified": "2024-02-09 11:56:46.396574",
+  "name": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2-II-9",
+  "name1": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2",
+  "scale": "9"
+ },
+ {
+  "amount": "7794",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "II",
+  "modified": "2024-02-09 11:56:46.412476",
+  "name": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2-II-8",
+  "name1": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2",
+  "scale": "8"
+ },
+ {
+  "amount": "7217",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "II",
+  "modified": "2024-02-09 11:56:46.426863",
+  "name": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2-II-7",
+  "name1": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2",
+  "scale": "7"
+ },
+ {
+  "amount": "6682",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "II",
+  "modified": "2024-02-09 11:56:46.440896",
+  "name": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2-II-6",
+  "name1": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2",
+  "scale": "6"
+ },
+ {
+  "amount": "6187",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "II",
+  "modified": "2024-02-09 11:56:46.456776",
+  "name": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2-II-5",
+  "name1": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2",
+  "scale": "5"
+ },
+ {
+  "amount": "5729",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "II",
+  "modified": "2024-02-09 11:56:46.469477",
+  "name": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2-II-4",
+  "name1": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2",
+  "scale": "4"
+ },
+ {
+  "amount": "5305",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "II",
+  "modified": "2024-02-09 11:56:46.484326",
+  "name": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2-II-3",
+  "name1": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2",
+  "scale": "3"
+ },
+ {
+  "amount": "4912",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "II",
+  "modified": "2024-02-09 11:56:46.499429",
+  "name": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2-II-2",
+  "name1": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2",
+  "scale": "2"
+ },
+ {
+  "amount": "4548",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "II",
+  "modified": "2024-02-09 11:56:46.513807",
+  "name": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2-II-1",
+  "name1": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2",
+  "scale": "1"
+ },
+ {
+  "amount": "4211",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "II",
+  "modified": "2024-02-09 11:56:46.529225",
+  "name": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2-II-መነሻ",
+  "name1": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2",
+  "scale": "መነሻ"
+ },
+ {
+  "amount": "7796",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "I",
+  "modified": "2024-02-09 11:56:46.543451",
+  "name": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2-I-ጣሪያ",
+  "name1": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2",
+  "scale": "ጣሪያ"
+ },
+ {
+  "amount": "7218",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "I",
+  "modified": "2024-02-09 11:56:46.556354",
+  "name": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2-I-9",
+  "name1": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2",
+  "scale": "9"
+ },
+ {
+  "amount": "6684",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "I",
+  "modified": "2024-02-09 11:56:46.572678",
+  "name": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2-I-8",
+  "name1": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2",
+  "scale": "8"
+ },
+ {
+  "amount": "6189",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "I",
+  "modified": "2024-02-09 11:56:46.600837",
+  "name": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2-I-7",
+  "name1": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2",
+  "scale": "7"
+ },
+ {
+  "amount": "5730",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "I",
+  "modified": "2024-02-09 11:56:46.624030",
+  "name": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2-I-6",
+  "name1": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2",
+  "scale": "6"
+ },
+ {
+  "amount": "5306",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "I",
+  "modified": "2024-02-09 11:56:46.647785",
+  "name": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2-I-5",
+  "name1": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2",
+  "scale": "5"
+ },
+ {
+  "amount": "4913",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "I",
+  "modified": "2024-02-09 11:56:46.667332",
+  "name": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2-I-4",
+  "name1": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2",
+  "scale": "4"
+ },
+ {
+  "amount": "4549",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "I",
+  "modified": "2024-02-09 11:56:46.687492",
+  "name": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2-I-3",
+  "name1": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2",
+  "scale": "3"
+ },
+ {
+  "amount": "4212",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "I",
+  "modified": "2024-02-09 11:56:46.709941",
+  "name": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2-I-2",
+  "name1": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2",
+  "scale": "2"
+ },
+ {
+  "amount": "3900",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "I",
+  "modified": "2024-02-09 11:56:46.732948",
+  "name": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2-I-1",
+  "name1": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2",
+  "scale": "1"
+ },
+ {
+  "amount": "3611",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "I",
+  "modified": "2024-02-09 11:56:46.750435",
+  "name": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2-I-መነሻ",
+  "name1": "የመለስተኛ የመድኃኒት ባለሙያዎች የደመወዝ ስኬል አማራጭ 2",
+  "scale": "መነሻ"
+ },
+ {
+  "amount": "20087",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "X",
+  "modified": "2024-02-09 11:56:46.772246",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-X-ጣሪያ",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "ጣሪያ"
+ },
+ {
+  "amount": "18390",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "X",
+  "modified": "2024-02-09 11:56:46.798626",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-X-9",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "9"
+ },
+ {
+  "amount": "16941",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "X",
+  "modified": "2024-02-09 11:56:46.818002",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-X-8",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "8"
+ },
+ {
+  "amount": "15682",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "X",
+  "modified": "2024-02-09 11:56:46.836499",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-X-7",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "7"
+ },
+ {
+  "amount": "14714",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "X",
+  "modified": "2024-02-09 11:56:46.858224",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-X-6",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "6"
+ },
+ {
+  "amount": "13924",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "X",
+  "modified": "2024-02-09 11:56:46.879273",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-X-5",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "5"
+ },
+ {
+  "amount": "13264",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "X",
+  "modified": "2024-02-09 11:56:46.900490",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-X-4",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "4"
+ },
+ {
+  "amount": "12643",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "X",
+  "modified": "2024-02-09 11:56:46.917757",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-X-3",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "3"
+ },
+ {
+  "amount": "12103",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "X",
+  "modified": "2024-02-09 11:56:46.939139",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-X-2",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "2"
+ },
+ {
+  "amount": "11602",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "X",
+  "modified": "2024-02-09 11:56:46.963780",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-X-1",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "1"
+ },
+ {
+  "amount": "11145",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "X",
+  "modified": "2024-02-09 11:56:46.984322",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-X-መነሻ",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "መነሻ"
+ },
+ {
+  "amount": "17253",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "IX",
+  "modified": "2024-02-09 11:56:47.005981",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-IX-ጣሪያ",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "ጣሪያ"
+ },
+ {
+  "amount": "15683",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "IX",
+  "modified": "2024-02-09 11:56:47.029790",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-IX-9",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "9"
+ },
+ {
+  "amount": "14366",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "IX",
+  "modified": "2024-02-09 11:56:47.049070",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-IX-8",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "8"
+ },
+ {
+  "amount": "13225",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "IX",
+  "modified": "2024-02-09 11:56:47.069831",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-IX-7",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "7"
+ },
+ {
+  "amount": "12389",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "IX",
+  "modified": "2024-02-09 11:56:47.093361",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-IX-6",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "6"
+ },
+ {
+  "amount": "11749",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "IX",
+  "modified": "2024-02-09 11:56:47.115733",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-IX-5",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "5"
+ },
+ {
+  "amount": "11155",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "IX",
+  "modified": "2024-02-09 11:56:47.135597",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-IX-4",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "4"
+ },
+ {
+  "amount": "10605",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "IX",
+  "modified": "2024-02-09 11:56:47.156249",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-IX-3",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "3"
+ },
+ {
+  "amount": "10101",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "IX",
+  "modified": "2024-02-09 11:56:47.178372",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-IX-2",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "2"
+ },
+ {
+  "amount": "9649",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "IX",
+  "modified": "2024-02-09 11:56:47.199443",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-IX-1",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "1"
+ },
+ {
+  "amount": "9238",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "IX",
+  "modified": "2024-02-09 11:56:47.220109",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-IX-መነሻ",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "መነሻ"
+ },
+ {
+  "amount": "14915",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VIII",
+  "modified": "2024-02-09 11:56:47.241440",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-VIII-ጣሪያ",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "ጣሪያ"
+ },
+ {
+  "amount": "13475",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VIII",
+  "modified": "2024-02-09 11:56:47.263911",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-VIII-9",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "9"
+ },
+ {
+  "amount": "12267",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VIII",
+  "modified": "2024-02-09 11:56:47.283837",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-VIII-8",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "8"
+ },
+ {
+  "amount": "11256",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VIII",
+  "modified": "2024-02-09 11:56:47.305777",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-VIII-7",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "7"
+ },
+ {
+  "amount": "10478",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VIII",
+  "modified": "2024-02-09 11:56:47.325110",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-VIII-6",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "6"
+ },
+ {
+  "amount": "9898",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VIII",
+  "modified": "2024-02-09 11:56:47.349094",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-VIII-5",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "5"
+ },
+ {
+  "amount": "9341",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VIII",
+  "modified": "2024-02-09 11:56:47.364583",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-VIII-4",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "4"
+ },
+ {
+  "amount": "8832",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VIII",
+  "modified": "2024-02-09 11:56:47.381644",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-VIII-3",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "3"
+ },
+ {
+  "amount": "8371",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VIII",
+  "modified": "2024-02-09 11:56:47.397525",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-VIII-2",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "2"
+ },
+ {
+  "amount": "7967",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VIII",
+  "modified": "2024-02-09 11:56:47.414015",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-VIII-1",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "1"
+ },
+ {
+  "amount": "7607",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VIII",
+  "modified": "2024-02-09 11:56:47.431108",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-VIII-መነሻ",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "መነሻ"
+ },
+ {
+  "amount": "12813",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VII",
+  "modified": "2024-02-09 11:56:47.447484",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-VII-ጣሪያ",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "ጣሪያ"
+ },
+ {
+  "amount": "11493",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VII",
+  "modified": "2024-02-09 11:56:47.462918",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-VII-9",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "9"
+ },
+ {
+  "amount": "10401",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VII",
+  "modified": "2024-02-09 11:56:47.477039",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-VII-8",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "8"
+ },
+ {
+  "amount": "9480",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VII",
+  "modified": "2024-02-09 11:56:47.489210",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-VII-7",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "7"
+ },
+ {
+  "amount": "8790",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VII",
+  "modified": "2024-02-09 11:56:47.503436",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-VII-6",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "6"
+ },
+ {
+  "amount": "8206",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VII",
+  "modified": "2024-02-09 11:56:47.518231",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-VII-5",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "5"
+ },
+ {
+  "amount": "7695",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VII",
+  "modified": "2024-02-09 11:56:47.532589",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-VII-4",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "4"
+ },
+ {
+  "amount": "7230",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VII",
+  "modified": "2024-02-09 11:56:47.547480",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-VII-3",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "3"
+ },
+ {
+  "amount": "6811",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VII",
+  "modified": "2024-02-09 11:56:47.562610",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-VII-2",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "2"
+ },
+ {
+  "amount": "6450",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VII",
+  "modified": "2024-02-09 11:56:47.575995",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-VII-1",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "1"
+ },
+ {
+  "amount": "6130",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VII",
+  "modified": "2024-02-09 11:56:47.596951",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-VII-መነሻ",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "መነሻ"
+ },
+ {
+  "amount": "11673",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VI",
+  "modified": "2024-02-09 11:56:47.617029",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-VI-ጣሪያ",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "ጣሪያ"
+ },
+ {
+  "amount": "10467",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VI",
+  "modified": "2024-02-09 11:56:47.633976",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-VI-9",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "9"
+ },
+ {
+  "amount": "9484",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VI",
+  "modified": "2024-02-09 11:56:47.648271",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-VI-8",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "8"
+ },
+ {
+  "amount": "8655",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VI",
+  "modified": "2024-02-09 11:56:47.663381",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-VI-7",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "7"
+ },
+ {
+  "amount": "8051",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VI",
+  "modified": "2024-02-09 11:56:47.678344",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-VI-6",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "6"
+ },
+ {
+  "amount": "7535",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VI",
+  "modified": "2024-02-09 11:56:47.691943",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-VI-5",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "5"
+ },
+ {
+  "amount": "7061",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VI",
+  "modified": "2024-02-09 11:56:47.709055",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-VI-4",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "4"
+ },
+ {
+  "amount": "6633",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VI",
+  "modified": "2024-02-09 11:56:47.721588",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-VI-3",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "3"
+ },
+ {
+  "amount": "6250",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VI",
+  "modified": "2024-02-09 11:56:47.735765",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-VI-2",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "2"
+ },
+ {
+  "amount": "5911",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VI",
+  "modified": "2024-02-09 11:56:47.750433",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-VI-1",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "1"
+ },
+ {
+  "amount": "5614",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VI",
+  "modified": "2024-02-09 11:56:47.766916",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-VI-መነሻ",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "መነሻ"
+ },
+ {
+  "amount": "9753",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "V",
+  "modified": "2024-02-09 11:56:47.780566",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-V-ጣሪያ",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "ጣሪያ"
+ },
+ {
+  "amount": "8658",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "V",
+  "modified": "2024-02-09 11:56:47.794500",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-V-9",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "9"
+ },
+ {
+  "amount": "7781",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "V",
+  "modified": "2024-02-09 11:56:47.810990",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-V-8",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "8"
+ },
+ {
+  "amount": "7046",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "V",
+  "modified": "2024-02-09 11:56:47.824730",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-V-7",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "7"
+ },
+ {
+  "amount": "6520",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "V",
+  "modified": "2024-02-09 11:56:47.839862",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-V-6",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "6"
+ },
+ {
+  "amount": "6041",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "V",
+  "modified": "2024-02-09 11:56:47.863709",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-V-5",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "5"
+ },
+ {
+  "amount": "5610",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "V",
+  "modified": "2024-02-09 11:56:47.892728",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-V-4",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "4"
+ },
+ {
+  "amount": "5219",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "V",
+  "modified": "2024-02-09 11:56:47.911889",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-V-3",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "3"
+ },
+ {
+  "amount": "4878",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "V",
+  "modified": "2024-02-09 11:56:47.930188",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-V-2",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "2"
+ },
+ {
+  "amount": "4560",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "V",
+  "modified": "2024-02-09 11:56:47.947277",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-V-1",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "1"
+ },
+ {
+  "amount": "4282",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "V",
+  "modified": "2024-02-09 11:56:47.960978",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-V-መነሻ",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "መነሻ"
+ },
+ {
+  "amount": "8750",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "IV",
+  "modified": "2024-02-09 11:56:47.974809",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-IV-ጣሪያ",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "ጣሪያ"
+ },
+ {
+  "amount": "7768",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "IV",
+  "modified": "2024-02-09 11:56:47.988602",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-IV-9",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "9"
+ },
+ {
+  "amount": "7004",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "IV",
+  "modified": "2024-02-09 11:56:48.011416",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-IV-8",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "8"
+ },
+ {
+  "amount": "6350",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "IV",
+  "modified": "2024-02-09 11:56:48.027323",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-IV-7",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "7"
+ },
+ {
+  "amount": "5882",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "IV",
+  "modified": "2024-02-09 11:56:48.045544",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-IV-6",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "6"
+ },
+ {
+  "amount": "5449",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "IV",
+  "modified": "2024-02-09 11:56:48.061875",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-IV-5",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "5"
+ },
+ {
+  "amount": "5067",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "IV",
+  "modified": "2024-02-09 11:56:48.078086",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-IV-4",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "4"
+ },
+ {
+  "amount": "4714",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "IV",
+  "modified": "2024-02-09 11:56:48.097689",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-IV-3",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "3"
+ },
+ {
+  "amount": "4391",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "IV",
+  "modified": "2024-02-09 11:56:48.113533",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-IV-2",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "2"
+ },
+ {
+  "amount": "4099",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "IV",
+  "modified": "2024-02-09 11:56:48.130684",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-IV-1",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "1"
+ },
+ {
+  "amount": "3847",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "IV",
+  "modified": "2024-02-09 11:56:48.144398",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-IV-መነሻ",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "መነሻ"
+ },
+ {
+  "amount": "7802",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "III",
+  "modified": "2024-02-09 11:56:48.158664",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-III-ጣሪያ",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "ጣሪያ"
+ },
+ {
+  "amount": "6945",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "III",
+  "modified": "2024-02-09 11:56:48.174691",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-III-9",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "9"
+ },
+ {
+  "amount": "6268",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "III",
+  "modified": "2024-02-09 11:56:48.188016",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-III-8",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "8"
+ },
+ {
+  "amount": "5697",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "III",
+  "modified": "2024-02-09 11:56:48.203988",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-III-7",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "7"
+ },
+ {
+  "amount": "5253",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "III",
+  "modified": "2024-02-09 11:56:48.217775",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-III-6",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "6"
+ },
+ {
+  "amount": "4868",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "III",
+  "modified": "2024-02-09 11:56:48.234186",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-III-5",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "5"
+ },
+ {
+  "amount": "4520",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "III",
+  "modified": "2024-02-09 11:56:48.250488",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-III-4",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "4"
+ },
+ {
+  "amount": "4193",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "III",
+  "modified": "2024-02-09 11:56:48.264688",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-III-3",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "3"
+ },
+ {
+  "amount": "3898",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "III",
+  "modified": "2024-02-09 11:56:48.279632",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-III-2",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "2"
+ },
+ {
+  "amount": "3638",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "III",
+  "modified": "2024-02-09 11:56:48.293851",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-III-1",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "1"
+ },
+ {
+  "amount": "3404",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "III",
+  "modified": "2024-02-09 11:56:48.305812",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-III-መነሻ",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "መነሻ"
+ },
+ {
+  "amount": "6948",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "II",
+  "modified": "2024-02-09 11:56:48.323773",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-II-ጣሪያ",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "ጣሪያ"
+ },
+ {
+  "amount": "6247",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "II",
+  "modified": "2024-02-09 11:56:48.339169",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-II-9",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "9"
+ },
+ {
+  "amount": "5653",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "II",
+  "modified": "2024-02-09 11:56:48.357816",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-II-8",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "8"
+ },
+ {
+  "amount": "5166",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "II",
+  "modified": "2024-02-09 11:56:48.379106",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-II-7",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "7"
+ },
+ {
+  "amount": "4755",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "II",
+  "modified": "2024-02-09 11:56:48.398791",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-II-6",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "6"
+ },
+ {
+  "amount": "4406",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "II",
+  "modified": "2024-02-09 11:56:48.416132",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-II-5",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "5"
+ },
+ {
+  "amount": "4085",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "II",
+  "modified": "2024-02-09 11:56:48.436808",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-II-4",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "4"
+ },
+ {
+  "amount": "3789",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "II",
+  "modified": "2024-02-09 11:56:48.457787",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-II-3",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "3"
+ },
+ {
+  "amount": "3521",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "II",
+  "modified": "2024-02-09 11:56:48.475264",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-II-2",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "2"
+ },
+ {
+  "amount": "3276",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "II",
+  "modified": "2024-02-09 11:56:48.500552",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-II-1",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "1"
+ },
+ {
+  "amount": "3058",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "II",
+  "modified": "2024-02-09 11:56:48.520725",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-II-መነሻ",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "መነሻ"
+ },
+ {
+  "amount": "5967",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "I",
+  "modified": "2024-02-09 11:56:48.543150",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-I-ጣሪያ",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "ጣሪያ"
+ },
+ {
+  "amount": "5413",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "I",
+  "modified": "2024-02-09 11:56:48.565119",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-I-9",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "9"
+ },
+ {
+  "amount": "4889",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "I",
+  "modified": "2024-02-09 11:56:48.585644",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-I-8",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "8"
+ },
+ {
+  "amount": "4456",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "I",
+  "modified": "2024-02-09 11:56:48.609747",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-I-7",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "7"
+ },
+ {
+  "amount": "4066",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "I",
+  "modified": "2024-02-09 11:56:48.630018",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-I-6",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "6"
+ },
+ {
+  "amount": "3741",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "I",
+  "modified": "2024-02-09 11:56:48.648487",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-I-5",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "5"
+ },
+ {
+  "amount": "3445",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "I",
+  "modified": "2024-02-09 11:56:48.669152",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-I-4",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "4"
+ },
+ {
+  "amount": "3184",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "I",
+  "modified": "2024-02-09 11:56:48.689141",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-I-3",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "3"
+ },
+ {
+  "amount": "2938",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "I",
+  "modified": "2024-02-09 11:56:48.711244",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-I-2",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "2"
+ },
+ {
+  "amount": "2724",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "I",
+  "modified": "2024-02-09 11:56:48.730706",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-I-1",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "1"
+ },
+ {
+  "amount": "2541",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "I",
+  "modified": "2024-02-09 11:56:48.749388",
+  "name": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል-I-መነሻ",
+  "name1": "አማራጭ (2 ) የድጋፍ ሰጪ የደመወዝ ስኬል",
+  "scale": "መነሻ"
+ },
+ {
+  "amount": "27486",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VII",
+  "modified": "2024-02-09 11:56:48.769871",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-VII-ጣሪያ",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "ጣሪያ"
+ },
+ {
+  "amount": "26227",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VII",
+  "modified": "2024-02-09 11:56:48.792494",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-VII-9",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "9"
+ },
+ {
+  "amount": "25026",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VII",
+  "modified": "2024-02-09 11:56:48.813770",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-VII-8",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "8"
+ },
+ {
+  "amount": "23880",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VII",
+  "modified": "2024-02-09 11:56:48.836036",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-VII-7",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "7"
+ },
+ {
+  "amount": "22786",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VII",
+  "modified": "2024-02-09 11:56:48.859254",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-VII-6",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "6"
+ },
+ {
+  "amount": "21743",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VII",
+  "modified": "2024-02-09 11:56:48.884001",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-VII-5",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "5"
+ },
+ {
+  "amount": "20747",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VII",
+  "modified": "2024-02-09 11:56:48.908725",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-VII-4",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "4"
+ },
+ {
+  "amount": "19796",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VII",
+  "modified": "2024-02-09 11:56:48.928002",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-VII-3",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "3"
+ },
+ {
+  "amount": "18890",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VII",
+  "modified": "2024-02-09 11:56:48.949422",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-VII-2",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "2"
+ },
+ {
+  "amount": "18025",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VII",
+  "modified": "2024-02-09 11:56:48.971245",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-VII-1",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "1"
+ },
+ {
+  "amount": "17199",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VII",
+  "modified": "2024-02-09 11:56:48.989035",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-VII-መነሻ",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "መነሻ"
+ },
+ {
+  "amount": "24463",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VI",
+  "modified": "2024-02-09 11:56:49.008898",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-VI-ጣሪያ",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "ጣሪያ"
+ },
+ {
+  "amount": "23342",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VI",
+  "modified": "2024-02-09 11:56:49.028797",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-VI-9",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "9"
+ },
+ {
+  "amount": "22273",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VI",
+  "modified": "2024-02-09 11:56:49.052832",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-VI-8",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "8"
+ },
+ {
+  "amount": "21253",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VI",
+  "modified": "2024-02-09 11:56:49.070045",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-VI-7",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "7"
+ },
+ {
+  "amount": "20280",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VI",
+  "modified": "2024-02-09 11:56:49.092487",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-VI-6",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "6"
+ },
+ {
+  "amount": "19351",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VI",
+  "modified": "2024-02-09 11:56:49.111045",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-VI-5",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "5"
+ },
+ {
+  "amount": "18464",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VI",
+  "modified": "2024-02-09 11:56:49.126104",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-VI-4",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "4"
+ },
+ {
+  "amount": "17619",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VI",
+  "modified": "2024-02-09 11:56:49.141667",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-VI-3",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "3"
+ },
+ {
+  "amount": "16812",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VI",
+  "modified": "2024-02-09 11:56:49.156668",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-VI-2",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "2"
+ },
+ {
+  "amount": "16042",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VI",
+  "modified": "2024-02-09 11:56:49.176583",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-VI-1",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "1"
+ },
+ {
+  "amount": "15307",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "VI",
+  "modified": "2024-02-09 11:56:49.195208",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-VI-መነሻ",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "መነሻ"
+ },
+ {
+  "amount": "21771",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "V",
+  "modified": "2024-02-09 11:56:49.209487",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-V-ጣሪያ",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "ጣሪያ"
+ },
+ {
+  "amount": "20774",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "V",
+  "modified": "2024-02-09 11:56:49.223578",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-V-9",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "9"
+ },
+ {
+  "amount": "19823",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "V",
+  "modified": "2024-02-09 11:56:49.238636",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-V-8",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "8"
+ },
+ {
+  "amount": "18915",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "V",
+  "modified": "2024-02-09 11:56:49.252702",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-V-7",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "7"
+ },
+ {
+  "amount": "18048",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "V",
+  "modified": "2024-02-09 11:56:49.268927",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-V-6",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "6"
+ },
+ {
+  "amount": "17222",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "V",
+  "modified": "2024-02-09 11:56:49.291788",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-V-5",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "5"
+ },
+ {
+  "amount": "16433",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "V",
+  "modified": "2024-02-09 11:56:49.319748",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-V-4",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "4"
+ },
+ {
+  "amount": "15680",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "V",
+  "modified": "2024-02-09 11:56:49.353228",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-V-3",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "3"
+ },
+ {
+  "amount": "14962",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "V",
+  "modified": "2024-02-09 11:56:49.370767",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-V-2",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "2"
+ },
+ {
+  "amount": "14277",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "V",
+  "modified": "2024-02-09 11:56:49.385663",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-V-1",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "1"
+ },
+ {
+  "amount": "13623",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "V",
+  "modified": "2024-02-09 11:56:49.400224",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-V-መነሻ",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "መነሻ"
+ },
+ {
+  "amount": "19376",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "IV",
+  "modified": "2024-02-09 11:56:49.415663",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-IV-ጣሪያ",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "ጣሪያ"
+ },
+ {
+  "amount": "18488",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "IV",
+  "modified": "2024-02-09 11:56:49.435013",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-IV-9",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "9"
+ },
+ {
+  "amount": "17642",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "IV",
+  "modified": "2024-02-09 11:56:49.449238",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-IV-8",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "8"
+ },
+ {
+  "amount": "16834",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "IV",
+  "modified": "2024-02-09 11:56:49.463541",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-IV-7",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "7"
+ },
+ {
+  "amount": "16063",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "IV",
+  "modified": "2024-02-09 11:56:49.476815",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-IV-6",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "6"
+ },
+ {
+  "amount": "15327",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "IV",
+  "modified": "2024-02-09 11:56:49.490927",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-IV-5",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "5"
+ },
+ {
+  "amount": "14625",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "IV",
+  "modified": "2024-02-09 11:56:49.505715",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-IV-4",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "4"
+ },
+ {
+  "amount": "13316",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "IV",
+  "modified": "2024-02-09 11:56:49.519691",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-IV-2",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "2"
+ },
+ {
+  "amount": "12706",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "IV",
+  "modified": "2024-02-09 11:56:49.535402",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-IV-1",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "1"
+ },
+ {
+  "amount": "12124",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "IV",
+  "modified": "2024-02-09 11:56:49.549952",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-IV-መነሻ",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "መነሻ"
+ },
+ {
+  "amount": "16611",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "III",
+  "modified": "2024-02-09 11:56:49.566476",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-III-ጣሪያ",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "ጣሪያ"
+ },
+ {
+  "amount": "15850",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "III",
+  "modified": "2024-02-09 11:56:49.580482",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-III-9",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "9"
+ },
+ {
+  "amount": "15124",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "III",
+  "modified": "2024-02-09 11:56:49.611944",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-III-8",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "8"
+ },
+ {
+  "amount": "14432",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "III",
+  "modified": "2024-02-09 11:56:49.637427",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-III-7",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "7"
+ },
+ {
+  "amount": "13771",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "III",
+  "modified": "2024-02-09 11:56:49.673259",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-III-6",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "6"
+ },
+ {
+  "amount": "13140",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "III",
+  "modified": "2024-02-09 11:56:49.705091",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-III-5",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "5"
+ },
+ {
+  "amount": "12538",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "III",
+  "modified": "2024-02-09 11:56:49.732426",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-III-4",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "4"
+ },
+ {
+  "amount": "11964",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "III",
+  "modified": "2024-02-09 11:56:49.748610",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-III-3",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "3"
+ },
+ {
+  "amount": "11416",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "III",
+  "modified": "2024-02-09 11:56:49.763392",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-III-2",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "2"
+ },
+ {
+  "amount": "10893",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "III",
+  "modified": "2024-02-09 11:56:49.778014",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-III-1",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "1"
+ },
+ {
+  "amount": "10394",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "III",
+  "modified": "2024-02-09 11:56:49.793108",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-III-መነሻ",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "መነሻ"
+ },
+ {
+  "amount": "13728",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "II",
+  "modified": "2024-02-09 11:56:49.807786",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-II-ጣሪያ",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "ጣሪያ"
+ },
+ {
+  "amount": "13099",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "II",
+  "modified": "2024-02-09 11:56:49.820854",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-II-9",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "9"
+ },
+ {
+  "amount": "12499",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "II",
+  "modified": "2024-02-09 11:56:49.835800",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-II-8",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "8"
+ },
+ {
+  "amount": "11927",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "II",
+  "modified": "2024-02-09 11:56:49.852061",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-II-7",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "7"
+ },
+ {
+  "amount": "11380",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "II",
+  "modified": "2024-02-09 11:56:49.867679",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-II-6",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "6"
+ },
+ {
+  "amount": "10859",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "II",
+  "modified": "2024-02-09 11:56:49.882148",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-II-5",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "5"
+ },
+ {
+  "amount": "10362",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "II",
+  "modified": "2024-02-09 11:56:49.896748",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-II-4",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "4"
+ },
+ {
+  "amount": "9887",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "II",
+  "modified": "2024-02-09 11:56:49.914312",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-II-3",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "3"
+ },
+ {
+  "amount": "9434",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "II",
+  "modified": "2024-02-09 11:56:49.927980",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-II-2",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "2"
+ },
+ {
+  "amount": "9002",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "II",
+  "modified": "2024-02-09 11:56:49.942507",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-II-1",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "1"
+ },
+ {
+  "amount": "8590",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "II",
+  "modified": "2024-02-09 11:56:49.959694",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-II-መነሻ",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "መነሻ"
+ },
+ {
+  "amount": "11347",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "I",
+  "modified": "2024-02-09 11:56:49.973580",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-I-ጣሪያ",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "ጣሪያ"
+ },
+ {
+  "amount": "10827",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "I",
+  "modified": "2024-02-09 11:56:49.987494",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-I-9",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "9"
+ },
+ {
+  "amount": "10331",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "I",
+  "modified": "2024-02-09 11:56:50.001825",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-I-8",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "8"
+ },
+ {
+  "amount": "9858",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "I",
+  "modified": "2024-02-09 11:56:50.016297",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-I-7",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "7"
+ },
+ {
+  "amount": "9406",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "I",
+  "modified": "2024-02-09 11:56:50.030665",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-I-6",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "6"
+ },
+ {
+  "amount": "8976",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "I",
+  "modified": "2024-02-09 11:56:50.045272",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-I-5",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "5"
+ },
+ {
+  "amount": "8565",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "I",
+  "modified": "2024-02-09 11:56:50.060077",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-I-4",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "4"
+ },
+ {
+  "amount": "8172",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "I",
+  "modified": "2024-02-09 11:56:50.077631",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-I-3",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "3"
+ },
+ {
+  "amount": "13955",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "IV",
+  "modified": "2024-02-09 11:56:50.094144",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-IV-3",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "3"
+ },
+ {
+  "amount": "7798",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "I",
+  "modified": "2024-02-09 11:56:50.115665",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-I-2",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "2"
+ },
+ {
+  "amount": "7441",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "I",
+  "modified": "2024-02-09 11:56:50.134636",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-I-1",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "1"
+ },
+ {
+  "amount": "7100",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "I",
+  "modified": "2024-02-09 11:56:50.154089",
+  "name": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል-I-መነሻ",
+  "name1": "የከፍተኛ የመድኃኒት ባለሙያዎችና አመራሮች አማራጭ ሁለት የደመዎዝ ስኬል",
+  "scale": "መነሻ"
+ },
+ {
+  "amount": "10000",
+  "docstatus": 0,
+  "doctype": "Salary Structure",
+  "level": "I",
+  "modified": "2024-03-28 11:06:33.585855",
+  "name": "Test-I-መነሻ",
+  "name1": "Test",
+  "scale": "መነሻ"
+ }
+]

@@ -1,0 +1,81 @@
+{
+ "actions": [],
+ "autoname": "hash",
+ "creation": "2023-01-24 16:38:56.288966",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "description",
+  "unit",
+  "item_code",
+  "purchase_type",
+  "column_break_10",
+  "stock_qty",
+  "adjusted_quantity"
+ ],
+ "fields": [
+  {
+   "fieldname": "description",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Description",
+   "options": "Inventory Items",
+   "search_index": 1
+  },
+  {
+   "fetch_from": "item_code.unit",
+   "fieldname": "unit",
+   "fieldtype": "Link",
+   "label": "Unit",
+   "options": "UOM"
+  },
+  {
+   "fetch_from": "search_item.item_code",
+   "fetch_if_empty": 1,
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Inventory Area Store"
+  },
+  {
+   "fetch_from": "item_code.purchase_type",
+   "fieldname": "purchase_type",
+   "fieldtype": "Data",
+   "label": "Purchase Type"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "item_code.quantity",
+   "fieldname": "stock_qty",
+   "fieldtype": "Int",
+   "label": "Stock Quantity",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "adjusted_quantity",
+   "fieldtype": "Int",
+   "label": "Adjusted Quantity",
+   "precision": "2"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-15 14:34:56.966665",
+ "modified_by": "Administrator",
+ "module": "Inventory",
+ "name": "Stock_Adjustment_Child",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

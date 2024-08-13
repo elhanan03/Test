@@ -1,0 +1,142 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "UOM",
+  "modified": "2024-07-24 11:49:37.866842",
+  "name": "test",
+  "unit_of_meas": "test"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "UOM",
+  "modified": "2024-07-24 11:53:43.558153",
+  "name": "Ampoule",
+  "unit_of_meas": "Ampoule"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "UOM",
+  "modified": "2024-07-24 11:53:43.620330",
+  "name": "Bag",
+  "unit_of_meas": "Bag"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "UOM",
+  "modified": "2024-07-24 11:53:43.654648",
+  "name": "Bk",
+  "unit_of_meas": "Bk"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "UOM",
+  "modified": "2024-07-24 11:53:43.697356",
+  "name": "Bottle",
+  "unit_of_meas": "Bottle"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "UOM",
+  "modified": "2024-07-24 11:53:43.742084",
+  "name": "Box",
+  "unit_of_meas": "Box"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "UOM",
+  "modified": "2024-07-24 11:53:43.792322",
+  "name": "Disc",
+  "unit_of_meas": "Disc"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "UOM",
+  "modified": "2024-07-24 11:53:43.868087",
+  "name": "Dozen",
+  "unit_of_meas": "Dozen"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "UOM",
+  "modified": "2024-07-24 11:53:43.946124",
+  "name": "Drop",
+  "unit_of_meas": "Drop"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "UOM",
+  "modified": "2024-07-24 11:53:44.021145",
+  "name": "Jar",
+  "unit_of_meas": "Jar"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "UOM",
+  "modified": "2024-07-24 11:53:44.121694",
+  "name": "Pair",
+  "unit_of_meas": "Pair"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "UOM",
+  "modified": "2024-07-24 11:53:44.209670",
+  "name": "Pcs",
+  "unit_of_meas": "Pcs"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "UOM",
+  "modified": "2024-07-24 11:53:44.286813",
+  "name": "PK",
+  "unit_of_meas": "PK"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "UOM",
+  "modified": "2024-07-24 11:53:44.338800",
+  "name": "Roll",
+  "unit_of_meas": "Roll"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "UOM",
+  "modified": "2024-07-24 11:53:44.397596",
+  "name": "Sachet",
+  "unit_of_meas": "Sachet"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "UOM",
+  "modified": "2024-07-24 11:53:44.449853",
+  "name": "Strip",
+  "unit_of_meas": "Strip"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "UOM",
+  "modified": "2024-07-24 11:53:44.511928",
+  "name": "Tablet",
+  "unit_of_meas": "Tablet"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "UOM",
+  "modified": "2024-07-24 11:53:44.573931",
+  "name": "Tin",
+  "unit_of_meas": "Tin"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "UOM",
+  "modified": "2024-07-24 11:53:44.649175",
+  "name": "Tube",
+  "unit_of_meas": "Tube"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "UOM",
+  "modified": "2024-07-24 11:53:44.713576",
+  "name": "Vial",
+  "unit_of_meas": "Vial"
+ }
+]

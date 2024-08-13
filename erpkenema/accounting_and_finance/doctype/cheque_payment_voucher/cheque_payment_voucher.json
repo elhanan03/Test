@@ -1,0 +1,470 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:CPV-{YYYY}-{####}",
+ "creation": "2022-12-16 15:59:56.462587",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "column_break_2",
+  "payment_type",
+  "borrower",
+  "requested_by",
+  "payee1",
+  "payable_amount",
+  "payment_period_section",
+  "payee",
+  "from_date",
+  "to_date",
+  "column_break_5",
+  "kenema_branches",
+  "fs_number",
+  "amount_in_words",
+  "column_break_14",
+  "grand_total",
+  "total_vatable",
+  "section_break_13",
+  "column_break_18",
+  "tax_withhold",
+  "vat_withhold",
+  "payable_total",
+  "section_break_11",
+  "accounting_entries",
+  "section_break_18",
+  "column_break_21",
+  "cheque_number",
+  "column_break_26",
+  "total_debit",
+  "total_credit",
+  "difference",
+  "section_break_28",
+  "hq_accountant",
+  "hq_accountant_email",
+  "hr_manager",
+  "hr_manager_email",
+  "deputy_manager",
+  "deputy_manager_email",
+  "audited_by_name",
+  "audited_by_email",
+  "finance_head",
+  "finance_head_email",
+  "column_break_20",
+  "hq_manager",
+  "hq_manager_email",
+  "finance_head1",
+  "finance_head_email1",
+  "received_by_name",
+  "received_by_email",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "depends_on": "eval: doc.payment_type=='Payment For Supplier'",
+   "fieldname": "payment_period_section",
+   "fieldtype": "Section Break",
+   "label": "Payment Period"
+  },
+  {
+   "fieldname": "accounting_entries",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Accounting Entries",
+   "options": "Account Entry",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.payment_type=='Payment For Supplier';",
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total",
+   "non_negative": 1,
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cheque_number",
+   "fieldtype": "Data",
+   "label": "Cheque Number"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.payment_type=='Payment For Supplier';",
+   "fieldname": "tax_withhold",
+   "fieldtype": "Currency",
+   "label": "Tax Withhold",
+   "non_negative": 1,
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amount_in_words",
+   "fieldtype": "Data",
+   "label": "Amount In Words",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.payment_type=='Payment For Supplier';",
+   "fetch_from": "audited_by.full_name",
+   "fieldname": "audited_by_name",
+   "fieldtype": "Data",
+   "label": "Audited By "
+  },
+  {
+   "depends_on": "eval:doc.payment_type=='Payment For Supplier';",
+   "fetch_from": "payee.supplier_name",
+   "fieldname": "received_by_name",
+   "fieldtype": "Data",
+   "label": "Received By",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.payment_type=='Payment For Supplier';",
+   "fetch_from": "audited_by_name.auditor",
+   "fieldname": "audited_by_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Audited By Email",
+   "print_hide": 1
+  },
+  {
+   "depends_on": "eval:doc.payment_type=='Payment For Supplier';",
+   "fetch_from": "payee.supplier",
+   "fieldname": "received_by_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Received By Email",
+   "print_hide": 1
+  },
+  {
+   "fetch_from": "borrower.amount_in_figure",
+   "fieldname": "payable_total",
+   "fieldtype": "Currency",
+   "label": "Payable Total",
+   "non_negative": 1,
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_debit",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Total Debit",
+   "non_negative": 1,
+   "print_hide": 1
+  },
+  {
+   "fieldname": "total_credit",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Total Credit",
+   "non_negative": 1,
+   "print_hide": 1
+  },
+  {
+   "fieldname": "section_break_28",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.payment_type=='Payment For Supplier';",
+   "fieldname": "difference",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Difference",
+   "non_negative": 1,
+   "print_hide": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payment_type",
+   "fieldtype": "Select",
+   "label": "Payment Type",
+   "options": "\nPayment For Loan\nPayment For Supplier\nPayment For Other Reason"
+  },
+  {
+   "depends_on": "eval:doc.payment_type=='Payment For Loan';",
+   "fieldname": "borrower",
+   "fieldtype": "Link",
+   "label": "Borrower",
+   "options": "Payment Request"
+  },
+  {
+   "depends_on": "eval:doc.payment_type=='Payment For Loan';",
+   "fetch_from": "borrower.requested_by",
+   "fieldname": "requested_by",
+   "fieldtype": "Data",
+   "label": "Requested By"
+  },
+  {
+   "depends_on": "eval:doc.payment_type=='Payment For Supplier';",
+   "fetch_from": "prepared_by.full_name",
+   "fieldname": "hq_accountant",
+   "fieldtype": "Data",
+   "label": "HQ Accountant"
+  },
+  {
+   "depends_on": "eval:doc.payment_type=='Payment For Supplier';",
+   "fetch_from": "prepared_by_name.accountant",
+   "fieldname": "hq_accountant_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "HQ Accountant Email",
+   "print_hide": 1
+  },
+  {
+   "depends_on": "eval:doc.payment_type=='Payment For Loan';",
+   "fieldname": "hr_manager",
+   "fieldtype": "Data",
+   "label": "HR Manager"
+  },
+  {
+   "depends_on": "eval:doc.payment_type=='Payment For Loan';",
+   "fetch_from": "prepared_by.name1",
+   "fieldname": "hr_manager_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "HR Manager Email",
+   "print_hide": 1
+  },
+  {
+   "depends_on": "eval:doc.payment_type=='Payment For Loan';",
+   "fieldname": "deputy_manager",
+   "fieldtype": "Data",
+   "label": "Deputy Manager"
+  },
+  {
+   "depends_on": "eval:doc.payment_type=='Payment For Loan';",
+   "fetch_from": "approved__by.name1",
+   "fieldname": "deputy_manager_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Deputy Manager Email",
+   "print_hide": 1
+  },
+  {
+   "fetch_from": "checked_by.full_name",
+   "fieldname": "finance_head",
+   "fieldtype": "Data",
+   "label": "Finance Head"
+  },
+  {
+   "fetch_from": "checked_by_name.finance",
+   "fieldname": "finance_head_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Finance Head Email",
+   "print_hide": 1
+  },
+  {
+   "fetch_from": "authorized_by.full_name",
+   "fieldname": "hq_manager",
+   "fieldtype": "Data",
+   "label": "HQ Manager"
+  },
+  {
+   "fetch_from": "authorized_by_name.name1",
+   "fieldname": "hq_manager_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "HQ Manager Email",
+   "print_hide": 1
+  },
+  {
+   "depends_on": "eval:doc.payment_type=='Payment For Supplier';",
+   "fetch_from": "checked_by.full_name",
+   "fieldname": "finance_head1",
+   "fieldtype": "Data",
+   "label": "Finance Head1"
+  },
+  {
+   "depends_on": "eval:doc.payment_type=='Payment For Supplier';",
+   "fetch_from": "approved_by_name.finance",
+   "fieldname": "finance_head_email1",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Finance Head Email1",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Cheque Payment Voucher",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval: doc.payment_type=='Payment For Supplier'",
+   "fieldname": "payee",
+   "fieldtype": "Link",
+   "label": "Payee",
+   "options": "Supplier_Lead"
+  },
+  {
+   "depends_on": "eval:doc.payment_type=='Payment For Supplier';",
+   "fieldname": "vat_withhold",
+   "fieldtype": "Currency",
+   "label": "Vat Withhold",
+   "non_negative": 1,
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval: doc.payment_type=='Payment For Supplier'",
+   "fieldname": "kenema_branches",
+   "fieldtype": "Table MultiSelect",
+   "label": "Kenema Branches",
+   "options": "Kenema_Branches_Child"
+  },
+  {
+   "depends_on": "eval: doc.payment_type=='Payment For Supplier'",
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "depends_on": "eval: doc.payment_type=='Payment For Supplier'",
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "depends_on": "eval: doc.payment_type=='Payment For Supplier'",
+   "fieldname": "fs_number",
+   "fieldtype": "Table MultiSelect",
+   "label": "FS Number",
+   "options": "Credit_Payment_Child"
+  },
+  {
+   "depends_on": "eval: doc.payment_type=='Payment For Supplier'",
+   "fieldname": "total_vatable",
+   "fieldtype": "Currency",
+   "label": "Total Vatable",
+   "non_negative": 1,
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval: doc.payment_type=='Payment For Other Reason'",
+   "fieldname": "payee1",
+   "fieldtype": "Data",
+   "label": "Payee"
+  },
+  {
+   "depends_on": "eval: doc.payment_type=='Payment For Other Reason'",
+   "fieldname": "payable_amount",
+   "fieldtype": "Currency",
+   "label": "Payable Amount",
+   "non_negative": 1,
+   "precision": "2"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-03-25 11:49:48.290420",
+ "modified_by": "Administrator",
+ "module": "Accounting and Finance",
+ "name": "Cheque Payment Voucher",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Head Quarter Accountant",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Finance Head",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

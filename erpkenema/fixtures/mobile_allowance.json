@@ -1,0 +1,50 @@
+[
+ {
+  "amount": 300.0,
+  "docstatus": 0,
+  "doctype": "Mobile Allowance",
+  "modified": "2024-07-15 09:27:39.431354",
+  "name": "General Manager",
+  "role": "General Manager"
+ },
+ {
+  "amount": 300.0,
+  "docstatus": 0,
+  "doctype": "Mobile Allowance",
+  "modified": "2024-07-15 09:27:39.446986",
+  "name": "Deputy Manager",
+  "role": "Deputy Manager"
+ },
+ {
+  "amount": 300.0,
+  "docstatus": 0,
+  "doctype": "Mobile Allowance",
+  "modified": "2024-07-15 09:27:39.456496",
+  "name": "Head of Finance Department",
+  "role": "Head of Finance Department"
+ },
+ {
+  "amount": 300.0,
+  "docstatus": 0,
+  "doctype": "Mobile Allowance",
+  "modified": "2024-07-15 09:27:39.464271",
+  "name": "Branch manager",
+  "role": "Branch manager"
+ },
+ {
+  "amount": 200.0,
+  "docstatus": 0,
+  "doctype": "Mobile Allowance",
+  "modified": "2024-07-15 09:27:39.471626",
+  "name": "Store Manager",
+  "role": "Store Manager"
+ },
+ {
+  "amount": 300.0,
+  "docstatus": 0,
+  "doctype": "Mobile Allowance",
+  "modified": "2024-07-15 09:35:42.370825",
+  "name": "Head Quarter Manager",
+  "role": "Head Quarter Manager"
+ }
+]

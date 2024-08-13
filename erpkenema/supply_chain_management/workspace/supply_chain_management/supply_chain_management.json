@@ -1,0 +1,91 @@
+{
+ "charts": [],
+ "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Supply Chain Management</span>\",\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Supplier\",\"col\":3}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Supplier\",\"col\":4}}]",
+ "creation": "2023-01-26 20:40:15.810416",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "onboarding",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Supply Chain Management",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Supplier",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Supplier",
+   "link_count": 0,
+   "link_to": "Supplier_Lead",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Available Drugs and Medical Supplies",
+   "link_count": 0,
+   "link_to": "Available Drugs and Medical Supplies",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  }
+ ],
+ "modified": "2024-03-27 10:17:40.908983",
+ "modified_by": "Administrator",
+ "module": "Supply Chain Management",
+ "name": "Supply Chain Management",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Supplier"
+  },
+  {
+   "role": "Finance Head"
+  },
+  {
+   "role": "HQ Store Manager"
+  },
+  {
+   "role": "Operation Manager"
+  },
+  {
+   "role": "Branch manager"
+  },
+  {
+   "role": "Branch Accountant"
+  },
+  {
+   "role": "Head Quarter Accountant"
+  },
+  {
+   "role": "Supplier"
+  }
+ ],
+ "sequence_id": 10.0,
+ "shortcuts": [
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "format": "() ",
+   "label": "Supplier",
+   "link_to": "Supplier_Lead",
+   "type": "DocType"
+  }
+ ],
+ "title": "Supply Chain Management"
+}

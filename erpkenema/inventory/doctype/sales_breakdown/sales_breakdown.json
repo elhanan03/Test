@@ -1,0 +1,95 @@
+{
+ "actions": [],
+ "autoname": "hash",
+ "creation": "2022-08-30 12:08:38.176592",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "cashier",
+  "dispensary_list",
+  "amount_list",
+  "sales_ticket_number",
+  "amount_in_birr",
+  "vat",
+  "column_break_5",
+  "cash_over",
+  "cash_short",
+  "amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "sales_ticket_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sales Ticket Number",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amount_in_birr",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount In Birr",
+   "read_only": 1
+  },
+  {
+   "fieldname": "vat",
+   "fieldtype": "Float",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "VAT",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "cash_over",
+   "fieldtype": "Check",
+   "label": "Cash Over"
+  },
+  {
+   "default": "0",
+   "fieldname": "cash_short",
+   "fieldtype": "Check",
+   "label": "Cash Short"
+  },
+  {
+   "depends_on": "eval: doc.cash_over==1 || doc.cash_short==1",
+   "fieldname": "amount",
+   "fieldtype": "Float",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cashier",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name of Cashier"
+  },
+  {
+   "fieldname": "dispensary_list",
+   "fieldtype": "Data",
+   "label": "Dispensary List"
+  },
+  {
+   "fieldname": "amount_list",
+   "fieldtype": "Data",
+   "label": "Amount List"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-02-21 16:12:14.609371",
+ "modified_by": "Administrator",
+ "module": "Inventory",
+ "name": "Sales Breakdown",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

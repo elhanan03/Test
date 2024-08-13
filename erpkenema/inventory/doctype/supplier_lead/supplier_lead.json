@@ -1,0 +1,187 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:supplier_name",
+ "creation": "2022-08-09 12:45:33.145421",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "supplier",
+  "supplier_name",
+  "supplier_group",
+  "supplier_type",
+  "phone_number",
+  "column_break_6",
+  "bank_account_no",
+  "tin",
+  "agreement_policy",
+  "documents",
+  "website",
+  "column_break_8",
+  "country",
+  "stateregion",
+  "city",
+  "sub_city",
+  "woreda",
+  "kebele"
+ ],
+ "fields": [
+  {
+   "fieldname": "agreement_policy",
+   "fieldtype": "Attach",
+   "label": "Agreement policy"
+  },
+  {
+   "fetch_from": "supplier.full_name",
+   "fieldname": "supplier_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Supplier Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "supplier_group",
+   "fieldtype": "Select",
+   "label": "Supplier Group",
+   "options": "\nMedicine\nCosmetics\nOther Assets\nNon Fixed Assets\nOthers"
+  },
+  {
+   "fieldname": "supplier_type",
+   "fieldtype": "Select",
+   "label": "Supplier Type",
+   "options": "\nCompany\nIndividual"
+  },
+  {
+   "fetch_from": "supplier_name.phone",
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "address.country",
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "fetch_from": "address.region",
+   "fieldname": "stateregion",
+   "fieldtype": "Data",
+   "label": "State/Region"
+  },
+  {
+   "fetch_from": "address.city",
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fetch_from": "address.sub_city",
+   "fieldname": "sub_city",
+   "fieldtype": "Data",
+   "label": "Sub City",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "address.woreda",
+   "fieldname": "woreda",
+   "fieldtype": "Data",
+   "label": "Woreda",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "address.kebele",
+   "fieldname": "kebele",
+   "fieldtype": "Data",
+   "label": "Kebele"
+  },
+  {
+   "fieldname": "documents",
+   "fieldtype": "Attach",
+   "label": "Documents"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "User",
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bank_account_no",
+   "fieldtype": "Data",
+   "label": "Bank Account No"
+  },
+  {
+   "fieldname": "tin",
+   "fieldtype": "Data",
+   "label": "TIN Number"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-05-31 12:34:25.428251",
+ "modified_by": "Administrator",
+ "module": "Inventory",
+ "name": "Supplier_Lead",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Branch manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Store Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Supplier",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "supplier_name"
+}

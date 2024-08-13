@@ -1,0 +1,124 @@
+{
+ "charts": [
+  {
+   "chart_name": "Payroll",
+   "label": "Payroll"
+  }
+ ],
+ "content": "[{\"id\":\"eYqNFA9Z7p\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Payroll</span>\",\"col\":12}},{\"id\":\"OCdLHhr_J5\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Salary Slip\",\"col\":3}},{\"id\":\"nSFhk2L-b2\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Salary Structure\",\"col\":3}},{\"id\":\"Hdf97kHMTS\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Payroll Report\",\"col\":3}},{\"id\":\"5E_396mKMk\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"PiKgljE3cT\",\"type\":\"card\",\"data\":{\"card_name\":\"Salaty Payout\",\"col\":3}},{\"id\":\"En5-UhGja9\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Payroll\",\"col\":12}}]",
+ "creation": "2024-06-05 10:45:48.246851",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "hide_custom": 0,
+ "icon": "expenses",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Payroll",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Salaty Payout",
+   "link_count": 5,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Salary Component",
+   "link_count": 0,
+   "link_to": "Salary Component",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Salary Structure",
+   "link_count": 0,
+   "link_to": "Salary Structure",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Monthly Salary Structure",
+   "link_count": 0,
+   "link_to": "Monthly Salary Structure",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Salary Structure Assignment",
+   "link_count": 0,
+   "link_to": "Salary Structure Assignment",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Salary Slip",
+   "link_count": 0,
+   "link_to": "Salary Slip",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2024-06-18 09:39:18.489656",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Payroll",
+ "number_cards": [],
+ "parent_page": "HR",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "HR Manager"
+  },
+  {
+   "role": "HR User"
+  },
+  {
+   "role": "Head Quarter Accountant"
+  }
+ ],
+ "sequence_id": 7.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Payroll Report",
+   "link_to": "Payroll Report",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Salary Slip",
+   "link_to": "Salary Slip",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Salary Structure",
+   "link_to": "Salary Structure",
+   "type": "DocType"
+  }
+ ],
+ "title": "Payroll"
+}

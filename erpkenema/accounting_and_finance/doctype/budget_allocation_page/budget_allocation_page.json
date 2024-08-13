@@ -1,0 +1,156 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:Alloc-Budg-{name1}-{refno}",
+ "creation": "2022-12-30 14:46:32.342636",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "allocated_budget_section",
+  "allocation_type",
+  "name1",
+  "amount",
+  "left_balance",
+  "column_break_5",
+  "division",
+  "head_office",
+  "branch",
+  "remark",
+  "allocated_by",
+  "refno"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Amount"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Data",
+   "label": "Remark"
+  },
+  {
+   "depends_on": "eval:doc.division=='Branch';",
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Branch",
+   "options": "Kenema Branches"
+  },
+  {
+   "fieldname": "allocated_budget_section",
+   "fieldtype": "Section Break",
+   "label": "Allocated Budget"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "left_balance",
+   "fieldtype": "Float",
+   "label": "Left Balance",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "allocated_by",
+   "fieldtype": "Link",
+   "label": "Allocated By ",
+   "options": "Finance"
+  },
+  {
+   "fieldname": "allocation_type",
+   "fieldtype": "Select",
+   "label": "Allocation Type",
+   "options": "Petty Cash\nOther"
+  },
+  {
+   "fieldname": "division",
+   "fieldtype": "Select",
+   "label": "Division",
+   "options": "\nHead Office\nBranch"
+  },
+  {
+   "default": "Head Office",
+   "depends_on": "eval:doc.division=='Head Office';",
+   "fieldname": "head_office",
+   "fieldtype": "Data",
+   "label": "Head Office"
+  },
+  {
+   "fieldname": "refno",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "RefNo"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-24 09:04:00.755108",
+ "modified_by": "Administrator",
+ "module": "Accounting and Finance",
+ "name": "Budget Allocation Page",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Finance Head",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Branch Accountant",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Branch Cashier",
+   "select": 1,
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

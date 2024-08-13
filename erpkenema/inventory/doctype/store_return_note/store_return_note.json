@@ -1,0 +1,214 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{STN}-{MM}-{YYYY}-{refno}",
+ "creation": "2022-08-30 11:21:02.522450",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "branch_number",
+  "from_doc",
+  "return_type",
+  "column_break_2",
+  "no",
+  "refno",
+  "date",
+  "section_break_4",
+  "damaged_or_expired_items",
+  "damaged_or_expired_items_from_inventory",
+  "other_items",
+  "section_break_6",
+  "total",
+  "section_break_8",
+  "reason_for_return",
+  "column_break_10",
+  "remarks",
+  "section_break_11",
+  "prepared_by",
+  "prepared_by_email",
+  "column_break_12",
+  "approved_by",
+  "approved_by_email",
+  "received_by",
+  "received_by_email",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "no",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Number"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval: doc.from_doc == 'Sales Area Store' && doc.return_type != 'Other'",
+   "fieldname": "damaged_or_expired_items",
+   "fieldtype": "Table",
+   "label": "Items list",
+   "options": "Damaged or Expired Items"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Float",
+   "label": "Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "reason_for_return",
+   "fieldtype": "Small Text",
+   "label": "Reason for Return"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "prepared_by",
+   "fieldtype": "Data",
+   "label": "Prepared by"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Data",
+   "label": "Approved by",
+   "read_only": 1
+  },
+  {
+   "fieldname": "received_by",
+   "fieldtype": "Data",
+   "label": "Received by",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Store Return Note",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "return_type",
+   "fieldtype": "Select",
+   "label": "Return Type",
+   "options": "\nDamaged\nExpired\nOther"
+  },
+  {
+   "depends_on": "eval: doc.from_doc == 'Inventory Area Store' && doc.return_type != 'Other'",
+   "fieldname": "damaged_or_expired_items_from_inventory",
+   "fieldtype": "Table",
+   "label": "Items List",
+   "options": "Damaged or Expired Items from Inventory"
+  },
+  {
+   "fieldname": "from_doc",
+   "fieldtype": "Select",
+   "label": "From",
+   "options": "\nSales Area Store\nInventory Area Store"
+  },
+  {
+   "fieldname": "branch_number",
+   "fieldtype": "Link",
+   "label": "Branch Number",
+   "options": "Kenema Branches",
+   "read_only": 1
+  },
+  {
+   "fieldname": "prepared_by_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Prepared by email"
+  },
+  {
+   "fieldname": "approved_by_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Approved by email"
+  },
+  {
+   "fieldname": "received_by_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Received by email"
+  },
+  {
+   "fieldname": "refno",
+   "fieldtype": "Int",
+   "label": "Ref. No",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval: doc.from_doc == 'Sales Area Store' && doc.return_type == 'Other'",
+   "fieldname": "other_items",
+   "fieldtype": "Table",
+   "label": "Other Items List",
+   "options": "Other Returned Items"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-03-25 18:10:28.653834",
+ "modified_by": "Administrator",
+ "module": "Inventory",
+ "name": "Store Return Note",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

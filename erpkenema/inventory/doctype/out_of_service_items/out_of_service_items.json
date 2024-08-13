@@ -1,0 +1,192 @@
+{
+ "actions": [],
+ "autoname": "format:{OSI}-{MM}-{YYYY}-{refno}",
+ "creation": "2023-01-09 15:38:13.326764",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "type",
+  "branch_number",
+  "supplier",
+  "column_break_3",
+  "refno",
+  "exp_date",
+  "damaged_date",
+  "purchase_type",
+  "section_break_5",
+  "item_code",
+  "batch_number",
+  "pharmacological_category",
+  "description",
+  "unit",
+  "column_break_12",
+  "brand",
+  "manufacturer",
+  "country",
+  "quantity",
+  "unit_cost",
+  "total_cost"
+ ],
+ "fields": [
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Type",
+   "options": "\nDamaged Item\nExpired Item"
+  },
+  {
+   "fieldname": "branch_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Branch Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Data",
+   "label": "Supplier"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break",
+   "label": " "
+  },
+  {
+   "fieldname": "purchase_type",
+   "fieldtype": "Data",
+   "label": "Purchase Type"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break",
+   "label": "ITEM"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Data",
+   "label": "Item Code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "batch_number",
+   "fieldtype": "Data",
+   "label": "Batch Number"
+  },
+  {
+   "fieldname": "pharmacological_category",
+   "fieldtype": "Data",
+   "label": "Pharmacological Category"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "unit",
+   "fieldtype": "Data",
+   "label": "Unit"
+  },
+  {
+   "depends_on": "eval: doc.type == 'Expired Item'",
+   "fieldname": "exp_date",
+   "fieldtype": "Date",
+   "label": "Expiry Date",
+   "mandatory_depends_on": "eval: doc.type == 'Expired Item'",
+   "search_index": 1
+  },
+  {
+   "fieldname": "brand",
+   "fieldtype": "Data",
+   "label": "Brand"
+  },
+  {
+   "fieldname": "manufacturer",
+   "fieldtype": "Data",
+   "label": "Manufacturer"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Country"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "label": "Quantity",
+   "non_negative": 1
+  },
+  {
+   "depends_on": "eval: doc.type == 'Damaged Item'",
+   "fieldname": "damaged_date",
+   "fieldtype": "Date",
+   "label": "Damaged Date",
+   "mandatory_depends_on": "eval: doc.type == 'Damaged Item'"
+  },
+  {
+   "fieldname": "unit_cost",
+   "fieldtype": "Float",
+   "label": "Unit Cost"
+  },
+  {
+   "fieldname": "total_cost",
+   "fieldtype": "Float",
+   "label": "Total Cost"
+  },
+  {
+   "fieldname": "refno",
+   "fieldtype": "Int",
+   "label": "Ref. No",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-02-28 15:32:50.097367",
+ "modified_by": "Administrator",
+ "module": "Inventory",
+ "name": "Out of service items",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Branch manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "item_code",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

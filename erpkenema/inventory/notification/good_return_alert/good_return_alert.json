@@ -1,0 +1,37 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "creation": "2023-01-30 11:59:18.766610",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Good Return Note",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Add your message here",
+ "modified": "2023-01-30 11:59:18.766610",
+ "modified_by": "Administrator",
+ "module": "Inventory",
+ "name": "Good Return Alert",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "condition": "doc.workflow_state==\"pending Approval\"",
+   "receiver_by_document_field": "approved_by_email"
+  },
+  {
+   "condition": "doc.workflow_state==\"Approved\"",
+   "receiver_by_document_field": "supplier_email"
+  },
+  {
+   "condition": "doc.workflow_state==\"Accepted\"",
+   "receiver_by_document_field": "approved_by_email"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Good Return Alert",
+ "value_changed": "workflow_state"
+}

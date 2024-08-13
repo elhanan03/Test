@@ -1,0 +1,202 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:CRV-{YYYY}-{requisition_section}",
+ "creation": "2022-12-17 13:35:04.550866",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "requisition_section",
+  "column_break_3",
+  "date",
+  "section_break_2",
+  "from_date",
+  "to_date",
+  "column_break_2",
+  "payer",
+  "subcitypayer",
+  "woredapayer",
+  "house_numberpayer",
+  "tin_numberpayer",
+  "section_break_14",
+  "amount_in_figure",
+  "amount_in_words",
+  "purpose_of_payment",
+  "column_break_19",
+  "mode_of_payment",
+  "cheque_number",
+  "transfer_id",
+  "other_payment_mode"
+ ],
+ "fields": [
+  {
+   "fetch_from": "invoice_number.to",
+   "fieldname": "payer",
+   "fieldtype": "Link",
+   "label": "Payer",
+   "options": "Organization"
+  },
+  {
+   "fetch_from": "payer.address",
+   "fieldname": "subcitypayer",
+   "fieldtype": "Data",
+   "label": "Subcity(Payer)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "woredapayer",
+   "fieldtype": "Data",
+   "label": "Woreda(Payer)",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "payer.house_number",
+   "fieldname": "house_numberpayer",
+   "fieldtype": "Data",
+   "label": "House Number(Payer)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "purpose_of_payment",
+   "fieldtype": "Data",
+   "label": "Purpose Of Payment"
+  },
+  {
+   "fetch_from": "invoice_number.total_inc_vat",
+   "fieldname": "amount_in_figure",
+   "fieldtype": "Currency",
+   "label": "Amount In Figure",
+   "options": "account.currency",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amount_in_words",
+   "fieldtype": "Data",
+   "label": "Amount In Words",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mode_of_payment",
+   "fieldtype": "Select",
+   "label": "Mode of payment",
+   "options": "\nCash\nCheque\nTransfer\nOther"
+  },
+  {
+   "depends_on": "eval:doc.mode_of_payment=='Cheque';",
+   "fieldname": "cheque_number",
+   "fieldtype": "Data",
+   "label": "Cheque Number"
+  },
+  {
+   "depends_on": "eval:doc.mode_of_payment=='Transfer';",
+   "fieldname": "transfer_id",
+   "fieldtype": "Data",
+   "label": "Transfer Id"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tin_numberpayer",
+   "fieldtype": "Data",
+   "label": "Tin Number(Payer)",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.mode_of_payment=='Other';",
+   "fieldname": "other_payment_mode",
+   "fieldtype": "Data",
+   "label": "Other Payment Mode"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "requisition_section",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Ref No",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-02-21 12:42:11.143304",
+ "modified_by": "Administrator",
+ "module": "Accounting and Finance",
+ "name": "Cash Receipt Voucher",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Branch Accountant",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Finance Head",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

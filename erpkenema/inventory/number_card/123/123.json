@@ -1,0 +1,22 @@
+{
+ "creation": "2023-04-07 12:06:31.697659",
+ "docstatus": 0,
+ "doctype": "Number Card",
+ "filters_json": "{\"from_date\":\"2022-12-08\",\"to_date\":\"2023-04-07\"}",
+ "function": "Count",
+ "idx": 0,
+ "is_public": 0,
+ "is_standard": 1,
+ "label": "123",
+ "modified": "2023-04-07 12:06:31.715492",
+ "modified_by": "systemadministrator@kenema.com",
+ "module": "Inventory",
+ "name": "123",
+ "owner": "systemadministrator@kenema.com",
+ "report_field": "total_inc_vat",
+ "report_function": "Sum",
+ "report_name": "Credit sales Report",
+ "show_percentage_stats": 1,
+ "stats_time_interval": "Daily",
+ "type": "Report"
+}

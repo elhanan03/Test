@@ -1,0 +1,72 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:store_manager",
+ "creation": "2022-08-09 12:24:23.291176",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "store_manager",
+  "full_name",
+  "branch",
+  "status"
+ ],
+ "fields": [
+  {
+   "fetch_from": "name1.branch",
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch ",
+   "options": "Kenema Branches",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nInactive"
+  },
+  {
+   "fieldname": "store_manager",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Store manager",
+   "options": "User",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fetch_from": "store_manager.full_name",
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-12-19 09:46:48.328151",
+ "modified_by": "Administrator",
+ "module": "Inventory",
+ "name": "Store Manager",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

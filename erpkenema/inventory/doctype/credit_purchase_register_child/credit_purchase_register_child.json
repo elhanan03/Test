@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2022-12-13 11:25:22.250685",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "supplier_name",
+  "purchase_invoice_number",
+  "supplier_tin_number",
+  "cash_register_number",
+  "fs_date",
+  "column_break_5",
+  "date",
+  "grv_no",
+  "debit",
+  "credit"
+ ],
+ "fields": [
+  {
+   "fieldname": "supplier_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name of Suppliers"
+  },
+  {
+   "fieldname": "purchase_invoice_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "FS Number",
+   "read_only": 1
+  },
+  {
+   "fieldname": "supplier_tin_number",
+   "fieldtype": "Data",
+   "label": "TIN Number"
+  },
+  {
+   "fieldname": "cash_register_number",
+   "fieldtype": "Data",
+   "label": "Cash Register Number"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fs_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "FS Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "GRV Date"
+  },
+  {
+   "fieldname": "grv_no",
+   "fieldtype": "Data",
+   "label": "GRV Number"
+  },
+  {
+   "fieldname": "debit",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Purchase (Debit)"
+  },
+  {
+   "fieldname": "credit",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Trade Creditor (credit)"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-02-09 14:38:34.346328",
+ "modified_by": "Administrator",
+ "module": "Inventory",
+ "name": "Credit Purchase Register Child",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [],
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

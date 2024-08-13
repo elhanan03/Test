@@ -1,0 +1,197 @@
+{
+ "actions": [],
+ "autoname": "format:EMP-ONB-REQ-{branch}-{refno}",
+ "creation": "2022-11-30 13:15:04.798459",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "refno",
+  "column_break_3",
+  "branch",
+  "list_of_jobs_section",
+  "list_of_jobs",
+  "section_break_17",
+  "description",
+  "section_break_11",
+  "requested_by",
+  "requested_by_email",
+  "column_break_12",
+  "process_by",
+  "process_by_email",
+  "column_break_16",
+  "approved_by",
+  "approved_by_email",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "list_of_jobs_section",
+   "fieldtype": "Section Break",
+   "label": "List Of Jobs"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "refno",
+   "fieldtype": "Int",
+   "label": "Ref.No.",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Kenema Branches"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "requested_by",
+   "fieldtype": "Data",
+   "label": "Requested By."
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Data",
+   "label": "Approved By."
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Employee Onboard Request Form",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "requested_by_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Requested By Email",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "process_by",
+   "fieldtype": "Data",
+   "label": "Process By"
+  },
+  {
+   "fetch_from": "process_by.name1",
+   "fieldname": "process_by_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Process By Email",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "approved_by.name1",
+   "fieldname": "approved_by_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Approved By Email",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "list_of_jobs",
+   "fieldtype": "Table",
+   "label": "List Of Jobs",
+   "options": "List Of Jobs",
+   "permlevel": 1
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-04-04 10:55:03.471559",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Employee Onboard Request Form",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Branch manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Head Quarter Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

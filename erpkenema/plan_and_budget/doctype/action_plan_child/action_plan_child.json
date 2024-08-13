@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "autoname": "hash",
+ "creation": "2022-10-14 15:20:54.901470",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "description",
+  "column_break_3",
+  "plan",
+  "section_break_4",
+  "column_break_6",
+  "measurement",
+  "remark"
+ ],
+ "fields": [
+  {
+   "fieldname": "measurement",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Measurement"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Small Text",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Description",
+   "options": "\nCash Sales\nCredit Sale\nCash Purchase\nCredit Purchase\nPurchase Return\nPurchase Discount\nTransfer In\nConsignment In\nBonus\nStock Damaged\nStock Expired\nTransfer Out\nConsignment Out\nGross Margin\nOperating Expense\nOperating Income\nOther Income\nTotal Income\nCustomer Served( Cash )\nCustomer Served( Credit )\nPharmaceuticals Sold At Cost( Insulin )\nPharmaceuticals Sold At Cost( Pts Served)\nCompounding( On Cash)\nCompounding( On Credit)\nCompounding Fee (On Cash)\nCompounding( On Cash/ Pts Served)\nCompounding( On Credit/ Pts Served)\nCompounding Fee [Labor](On Credit)\nCompounding Fee [Labor](On Cash)\nSales Of Spectacles On Cash\nSales Of Spectacles (On Cash/Pts Served)\nSales Of Spectacles ( On Credit/Pts Served)\nSales Of Packing Materials\nIncome From Body Weight\nPetty Cash Disbursement\nCash Sales Handling ( Cash Collected )\nCash Sales Handling ( Cash Short )\nCash Sales Handling ( Cash Over )\nStock Range ( Drugs )\nStock Range ( Medical Supplies )\nCash Sales\nCredit Sale\nCash Purchase\nCredit Purchase\nPurchase Return\nPurchase Discount\nTransfer In\nConsignment In\nBonus\nStock Damaged\nStock Expired\nTransfer Out\nConsignment Out\nGross Margin\nOperating Expense\nOperating Income\nOther Income\nTotal Income\nCustomer Served( Cash )\nCustomer Served( Credit )\nPharmaceuticals Sold At Cost( Insulin )\nPharmaceuticals Sold At Cost( Pts Served)\nCompounding( On Cash)\nCompounding( On Credit)\nCompounding Fee (On Cash)\nCompounding( On Cash/ Pts Served)\nCompounding( On Credit/ Pts Served)\nCompounding Fee [Labor](On Credit)\nCompounding Fee [Labor](On Cash)\nSales Of Spectacles (On Cash/Pts Served)\nSales Of Spectacles ( On Credit/Pts Served)\nSales Of Packing Materials\nIncome From Body Weight\nPetty Cash Disbursement\nCash Sales Handling ( Cash Collected )\nCash Sales Handling ( Cash Short )\nCash Sales Handling ( Cash Over )\nStock Range ( Drugs )\nStock Range ( Medical Supplies )"
+  },
+  {
+   "fieldname": "plan",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Plan"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-01-04 14:39:49.433110",
+ "modified_by": "Administrator",
+ "module": "Plan and Budget",
+ "name": "Action plan child",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

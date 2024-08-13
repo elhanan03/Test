@@ -1,0 +1,31 @@
+{
+ "cards": [
+  {
+   "card": "Loan"
+  },
+  {
+   "card": "Leave Application"
+  },
+  {
+   "card": "New Hired Employee"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "Petty Cash",
+   "width": "Half"
+  }
+ ],
+ "creation": "2023-02-01 12:07:45.408675",
+ "dashboard_name": "Hr Dashboard",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 1,
+ "is_standard": 1,
+ "modified": "2023-02-01 12:13:45.700825",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Hr Dashboard",
+ "owner": "Administrator"
+}

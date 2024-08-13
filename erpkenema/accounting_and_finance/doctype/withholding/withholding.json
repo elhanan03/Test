@@ -1,0 +1,66 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{Withhold}-{from}-{DD}-{MM}-{YYYY}",
+ "creation": "2023-02-09 15:57:16.991706",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "from",
+  "tax_wilthhold",
+  "vat_withhold",
+  "remark"
+ ],
+ "fields": [
+  {
+   "fieldname": "from",
+   "fieldtype": "Data",
+   "label": "From "
+  },
+  {
+   "fieldname": "tax_wilthhold",
+   "fieldtype": "Float",
+   "label": "Tax Wilthhold",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "vat_withhold",
+   "fieldtype": "Float",
+   "label": "Vat Withhold",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Data",
+   "label": "Remark"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-02-09 16:00:20.445593",
+ "modified_by": "Administrator",
+ "module": "Accounting and Finance",
+ "name": "Withholding",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

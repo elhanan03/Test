@@ -1,0 +1,279 @@
+{
+ "actions": [],
+ "autoname": "format:{STM}-{MM}-{YYYY}-{refno}",
+ "creation": "2022-07-24 14:33:20.972562",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "requisition_number",
+  "column_break_3",
+  "refno",
+  "to_branch",
+  "from_branch",
+  "section_break_7",
+  "stm",
+  "column_break_10",
+  "total",
+  "section_break_10",
+  "reason_for_the_transfer",
+  "section_break_12",
+  "issued_by",
+  "issued_by_email",
+  "column_break_13",
+  "approved_by",
+  "approved_by_email",
+  "column_break_18",
+  "authorized_by",
+  "authorized_by_email",
+  "column_break_11",
+  "accepted_by",
+  "accepted_by_email",
+  "column_break_22",
+  "received_by",
+  "received_by_email",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "requisition_number",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Requisition Number.",
+   "options": "Stock Transfer Requisition Form"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "stm",
+   "fieldtype": "Table",
+   "label": "Items to be transferred",
+   "options": "STM",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "reason_for_the_transfer",
+   "fieldtype": "Small Text",
+   "label": "Reason For The transfer"
+  },
+  {
+   "fieldname": "issued_by",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Issued By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "authorized_by",
+   "fieldtype": "Data",
+   "label": "Authorized By",
+   "read_only": 1,
+   "read_only_depends_on": "requisition_number"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Stock Transfer Memo",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total",
+   "non_negative": 1,
+   "read_only_depends_on": "requisition_number"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "requisition_number.from_branch",
+   "fieldname": "from_branch",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "From Branch",
+   "options": "Kenema Branches",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "to_branch",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": " To Branch",
+   "options": "Kenema Branches",
+   "read_only_depends_on": "requisition_number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "authorized_by_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Authorized By Email",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "issued_by_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Issued By Email",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Data",
+   "label": "Approved By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "approved_by_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Approved By Email",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "accepted_by",
+   "fieldtype": "Data",
+   "label": "Accepted By",
+   "read_only": 1,
+   "read_only_depends_on": "requisition_number"
+  },
+  {
+   "fieldname": "accepted_by_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Accepted By Email",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "received_by",
+   "fieldtype": "Data",
+   "label": "Received By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "received_by_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Received By Email",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "refno",
+   "fieldtype": "Int",
+   "label": "Req. No",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-03-25 17:41:26.360742",
+ "modified_by": "Administrator",
+ "module": "Inventory",
+ "name": "Stock Transfer Memo",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "cancel": 1,
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Operation Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Branch manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Store Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

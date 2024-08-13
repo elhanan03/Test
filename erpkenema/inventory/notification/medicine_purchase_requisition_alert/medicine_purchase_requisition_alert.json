@@ -1,0 +1,53 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "creation": "2023-02-21 13:29:15.535711",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Purchase request for drug and medical supplies",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Add your message here",
+ "modified": "2023-03-16 12:12:58.739480",
+ "modified_by": "Administrator",
+ "module": "Inventory",
+ "name": "Medicine Purchase Requisition Alert",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "condition": "doc.workflow_state==\"pending Approval\"",
+   "receiver_by_document_field": "approved_by_email"
+  },
+  {
+   "condition": "doc.workflow_state==\"Pending Authorization\"",
+   "receiver_by_document_field": "authorized_by_email"
+  },
+  {
+   "condition": "doc.workflow_state==\"Authorized\"",
+   "receiver_by_document_field": "supplier_email"
+  },
+  {
+   "condition": "doc.workflow_state==\"Sent\"",
+   "receiver_by_document_field": "approved_by_email"
+  },
+  {
+   "condition": "doc.workflow_state==\"Sent\"",
+   "receiver_by_document_field": "authorized_by_email"
+  },
+  {
+   "condition": "doc.workflow_state==\"Approved\"",
+   "receiver_by_document_field": "requested_by_email"
+  },
+  {
+   "condition": "doc.workflow_state==\"Cancelled\"",
+   "receiver_by_document_field": "supplier_email"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Medicine Purchase Requisition Alert",
+ "value_changed": "workflow_state"
+}

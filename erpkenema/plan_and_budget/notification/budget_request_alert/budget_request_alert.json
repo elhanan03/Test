@@ -1,0 +1,45 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "creation": "2023-02-03 16:58:04.668396",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Budget Request",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Budget Request",
+ "modified": "2023-02-03 16:58:30.427524",
+ "modified_by": "Administrator",
+ "module": "Plan and Budget",
+ "name": "Budget Request Alert",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "condition": "doc.workflow_state==\"pending Approval\"",
+   "receiver_by_document_field": "operation_manager_email"
+  },
+  {
+   "condition": "doc.workflow_state==\"Pending Authorization\"",
+   "receiver_by_document_field": "hq_manager_email"
+  },
+  {
+   "condition": "doc.workflow_state==\"Authorized\"",
+   "receiver_by_document_field": "branch_manager_email"
+  },
+  {
+   "condition": "doc.workflow_state==\"Authorized\"",
+   "receiver_by_document_field": "finance_head_email"
+  },
+  {
+   "condition": "doc.workflow_state==\"Authorized\"",
+   "receiver_by_document_field": "hr_manager_email"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Budget Request",
+ "value_changed": "workflow_state"
+}

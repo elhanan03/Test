@@ -1,0 +1,392 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:EMP-ONB-{full_name}-{refno}",
+ "creation": "2022-10-04 09:16:44.089180",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "job_applicant",
+  "job_offer",
+  "column_break_4",
+  "employee_detail_section",
+  "first_name",
+  "middle_name",
+  "last_name",
+  "full_name",
+  "email",
+  "phone",
+  "gender",
+  "column_break_10",
+  "birth_date",
+  "refno",
+  "date_of_joining",
+  "branch",
+  "department",
+  "designation",
+  "column_break_14",
+  "salary_scale_name",
+  "level",
+  "scale",
+  "basic_salary",
+  "bank_account_number",
+  "tin_number",
+  "column_break_20",
+  "regionstate",
+  "sub_city__zone",
+  "woreda",
+  "current_location",
+  "house_no",
+  "section_break_17",
+  "qualification",
+  "section_break_32",
+  "process_by",
+  "process_by_email",
+  "column_break_21",
+  "approved_by",
+  "approved_by_email",
+  "column_break_40",
+  "finance_head",
+  "finance_head_email",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "job_applicant",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Job Applicant",
+   "options": "Job Applicant"
+  },
+  {
+   "fieldname": "job_offer",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Job Offer",
+   "options": "Job Offer"
+  },
+  {
+   "fieldname": "employee_detail_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "job_applicant.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fetch_from": "job_applicant.position",
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Position",
+   "options": "Designation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date_of_joining",
+   "fieldtype": "Date",
+   "label": "Date Of Joining",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "job_applicant.first_name",
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "job_applicant.middle_name",
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle Name"
+  },
+  {
+   "fetch_from": "job_applicant.last_name",
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "job_applicant.email_address",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "process_by",
+   "fieldtype": "Data",
+   "label": "Process By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Data",
+   "label": "Approved By",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "job_applicant.branch",
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Kenema Branches",
+   "reqd": 1
+  },
+  {
+   "default": "+251-",
+   "fetch_from": "job_applicant.phone_number",
+   "fieldname": "phone",
+   "fieldtype": "Phone",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "refno",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Ref No",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "process_by_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Process By Email",
+   "print_hide": 1
+  },
+  {
+   "fetch_from": "approved_by.name1",
+   "fieldname": "approved_by_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Approved By Email",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Employee Onboarding",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "job_applicant.gender",
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "\nMale\nFemale"
+  },
+  {
+   "fetch_from": "job_applicant.birth_date",
+   "fieldname": "birth_date",
+   "fieldtype": "Date",
+   "label": "Birth Date"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "job_applicant.woreda",
+   "fieldname": "woreda",
+   "fieldtype": "Data",
+   "label": "woreda"
+  },
+  {
+   "fetch_from": "job_applicant.house_number",
+   "fieldname": "house_no",
+   "fieldtype": "Data",
+   "label": "House No"
+  },
+  {
+   "fetch_from": "job_applicant.regionstate",
+   "fieldname": "regionstate",
+   "fieldtype": "Data",
+   "label": "Region/State"
+  },
+  {
+   "fetch_from": "job_applicant.subcityzone",
+   "fieldname": "sub_city__zone",
+   "fieldtype": "Data",
+   "label": "Sub City / Zone"
+  },
+  {
+   "fetch_from": "job_applicant.salary_scale_name",
+   "fieldname": "salary_scale_name",
+   "fieldtype": "Link",
+   "label": "Salary Scale Name",
+   "options": "Salary Scale Name"
+  },
+  {
+   "fetch_from": "job_applicant.level",
+   "fieldname": "level",
+   "fieldtype": "Link",
+   "label": "Level",
+   "options": "Level"
+  },
+  {
+   "fetch_from": "job_applicant.scale",
+   "fieldname": "scale",
+   "fieldtype": "Link",
+   "label": "Scale",
+   "options": "Scale"
+  },
+  {
+   "fetch_from": "job_applicant.basic_salary",
+   "fieldname": "basic_salary",
+   "fieldtype": "Currency",
+   "label": "Basic Salary",
+   "options": "account.currency",
+   "precision": "2"
+  },
+  {
+   "fieldname": "qualification",
+   "fieldtype": "Table",
+   "label": "Qualification",
+   "options": "Onboarding Qualification"
+  },
+  {
+   "fieldname": "section_break_32",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "bank_account_number",
+   "fieldtype": "Data",
+   "label": "Bank Account Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tin_number",
+   "fieldtype": "Data",
+   "label": "TIN Number"
+  },
+  {
+   "fieldname": "column_break_40",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "finance_head",
+   "fieldtype": "Data",
+   "label": "Finance Head"
+  },
+  {
+   "fieldname": "finance_head_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Finance Head Email",
+   "print_hide": 1
+  },
+  {
+   "fetch_from": "job_applicant.current_location",
+   "fieldname": "current_location",
+   "fieldtype": "Data",
+   "label": "Current Location"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-07-11 09:54:53.348929",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Employee Onboarding",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Head Quarter Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Branch manager",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Finance Head",
+   "select": 1,
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

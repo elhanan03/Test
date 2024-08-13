@@ -1,0 +1,37 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "creation": "2023-02-02 10:51:32.157238",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Purchase Request for Non-medical items",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Purchase Request for Non-medical items",
+ "modified": "2023-02-02 10:58:02.478823",
+ "modified_by": "Administrator",
+ "module": "Other Inventory",
+ "name": "Purchase Request for Non-medical items Alert",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "condition": "doc.workflow_state==\"Sent\"",
+   "receiver_by_role": "Branch manager"
+  },
+  {
+   "condition": "doc.workflow_state==\"Sent\"",
+   "receiver_by_role": "Finance Head"
+  },
+  {
+   "condition": "doc.workflow_state==\"Sent\"",
+   "receiver_by_role": "HR Manager"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Purchase Request for Non-medical items",
+ "value_changed": "workflow_state"
+}

@@ -1,0 +1,27 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "creation": "2022-10-17 09:43:42.991000",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Action Plan",
+ "enabled": 1,
+ "event": "Submit",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Add your message here",
+ "modified": "2022-10-17 09:43:42.991000",
+ "modified_by": "Administrator",
+ "module": "Plan and Budget",
+ "name": "Action Plan Alert",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_role": "Plan & Budget Manager"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Action Plan Alert"
+}

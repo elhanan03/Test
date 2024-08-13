@@ -1,0 +1,49 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "creation": "2022-12-19 11:33:37.562545",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Cheque Payment Voucher",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Add your message here",
+ "modified": "2023-02-08 11:54:00.759683",
+ "modified_by": "Administrator",
+ "module": "Accounting and Finance",
+ "name": "Cheque Payment Voucher",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "condition": "doc.workflow_state==\"Pending Check\"",
+   "receiver_by_document_field": "finance_head_email"
+  },
+  {
+   "condition": "doc.workflow_state==\"Pending Audit\"",
+   "receiver_by_document_field": "audited_by_email"
+  },
+  {
+   "condition": "doc.workflow_state==\"pending Approval\"",
+   "receiver_by_document_field": "deputy_manager_email"
+  },
+  {
+   "condition": "doc.workflow_state==\"Pending Authorization\"",
+   "receiver_by_document_field": "hq_manager_email"
+  },
+  {
+   "condition": "doc.workflow_state==\"Authorized\"",
+   "receiver_by_document_field": "finance_head_email1"
+  },
+  {
+   "condition": "doc.workflow_state==\"Approved\"",
+   "receiver_by_document_field": "received_by_email"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Cheque Payment Voucher Alert",
+ "value_changed": "workflow_state"
+}

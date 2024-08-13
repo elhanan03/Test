@@ -1,0 +1,27 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "creation": "2023-01-28 14:21:06.124218",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Daily Cash sales Summary",
+ "enabled": 1,
+ "event": "New",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Add your message here",
+ "modified": "2023-01-28 14:21:06.124218",
+ "modified_by": "Administrator",
+ "module": "Accounting and Finance",
+ "name": "Daily sales Summary",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_role": "Branch manager"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Daily Sales Summary"
+}

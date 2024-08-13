@@ -1,0 +1,165 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"QJ_xT0W4Ya\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">CRM</span>\",\"col\":12}},{\"id\":\"5tq-eNYtMm\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Credit Customer Information\",\"col\":4}},{\"id\":\"PNU8i6d4eD\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Cash Customer Information\",\"col\":4}},{\"id\":\"FyN4M4aqr7\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"List Organization\",\"col\":4}},{\"id\":\"Av09T1Ry2W\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Credit sales Report\",\"col\":4}},{\"id\":\"SUuDsImgdM\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"-W6jBUngNt\",\"type\":\"card\",\"data\":{\"card_name\":\"Customer\",\"col\":4}},{\"id\":\"N7rdHWomcd\",\"type\":\"card\",\"data\":{\"card_name\":\"Sales\",\"col\":4}}]",
+ "creation": "2023-01-26 20:37:26.312723",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "share-people",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "CRM",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Customer",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Customer ",
+   "link_count": 0,
+   "link_to": "Customer Information",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Organization",
+   "link_count": 0,
+   "link_to": "Organization",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Sales",
+   "link_count": 4,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Cash Sales ",
+   "link_count": 0,
+   "link_to": "Cash Sales Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Credit Purchase",
+   "link_count": 0,
+   "link_to": "Credit Purchase Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Credit Purchase Register",
+   "link_count": 0,
+   "link_to": "Credit Purchase Register",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Credit Purchase Summary",
+   "link_count": 0,
+   "link_to": "Credit Purchase Summary",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2024-02-29 09:26:03.657278",
+ "modified_by": "Administrator",
+ "module": "Customer Information",
+ "name": "CRM",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Customer Manager"
+  },
+  {
+   "role": "Dispensary"
+  },
+  {
+   "role": "Branch Cashier"
+  },
+  {
+   "role": "Head Quarter Manager"
+  },
+  {
+   "role": "Branch manager"
+  },
+  {
+   "role": "Branch Accountant"
+  },
+  {
+   "role": "Finance Head"
+  },
+  {
+   "role": "Head Quarter Accountant"
+  },
+  {
+   "role": "Deputy Manager"
+  }
+ ],
+ "sequence_id": 8.0,
+ "shortcuts": [
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "Credit Customer Information",
+   "link_to": "Customer Information",
+   "stats_filter": "{\"customer_type\":[\"=\",\"Credit Customer\"]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Cash Customer Information",
+   "link_to": "Customer Information",
+   "stats_filter": "{\"customer_type\":[\"=\",\"Cash Customer\"]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "List Organization",
+   "link_to": "Organization",
+   "stats_filter": "{\"name\":[\"=\",null]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Credit sales Report",
+   "link_to": "Credit sales Report",
+   "type": "Report"
+  }
+ ],
+ "title": "CRM"
+}

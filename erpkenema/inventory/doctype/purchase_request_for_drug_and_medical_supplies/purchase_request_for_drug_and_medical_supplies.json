@@ -1,0 +1,254 @@
+{
+ "actions": [],
+ "autoname": "format:{PR}-{requisition_section}",
+ "creation": "2022-07-21 10:20:42.890559",
+ "description": "\n",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "branch",
+  "supplier",
+  "supplier_email",
+  "tin_number",
+  "column_break_3",
+  "requisition_section",
+  "date",
+  "order_status",
+  "section_break_3",
+  "mpr",
+  "section_break_6",
+  "requested_by",
+  "requested_by_email",
+  "approved_by",
+  "approved_by_email",
+  "column_break_6",
+  "authorized_by",
+  "authorized_by_email",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Branch",
+   "options": "Kenema Branches",
+   "permlevel": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Supplier",
+   "options": "Supplier_Lead",
+   "permlevel": 2
+  },
+  {
+   "fetch_from": "supplier.supplier",
+   "fieldname": "supplier_email",
+   "fieldtype": "Data",
+   "label": "Supplier Email",
+   "permlevel": 2,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "requisition_section",
+   "fieldtype": "Int",
+   "in_standard_filter": 1,
+   "label": "Requisition Section",
+   "permlevel": 1,
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "permlevel": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "mpr",
+   "fieldtype": "Table",
+   "label": "Items to be purchased",
+   "options": "MPR_Child_Table",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "\n",
+   "fieldname": "requested_by",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Requested By",
+   "permlevel": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "requested_by_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Requested By Email"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Data",
+   "in_preview": 1,
+   "label": "Approved By",
+   "permlevel": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "approved_by_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Approved By Email"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "authorized_by",
+   "fieldtype": "Data",
+   "label": "Authorized By ",
+   "permlevel": 2,
+   "read_only": 1
+  },
+  {
+   "fieldname": "authorized_by_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Authorized By Email"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Purchase request for drug and medical supplies",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "order_status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Order Status",
+   "options": "Started\nFinished"
+  },
+  {
+   "fetch_from": "supplier.tin",
+   "fieldname": "tin_number",
+   "fieldtype": "Data",
+   "label": "Tin Number",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-07-10 15:33:15.065122",
+ "modified_by": "Administrator",
+ "module": "Inventory",
+ "name": "Purchase request for drug and medical supplies",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Store Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Branch manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "cancel": 1,
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Operation Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "cancel": 1,
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Supplier",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Supply Chain Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

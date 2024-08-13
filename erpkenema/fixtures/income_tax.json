@@ -1,0 +1,72 @@
+[
+ {
+  "deduction": 0.0,
+  "docstatus": 0,
+  "doctype": "Income Tax",
+  "frombs": 0,
+  "modified": "2024-02-09 12:04:04.831934",
+  "name": "IT-(from-600)",
+  "rate": 0.0,
+  "tobs": 600
+ },
+ {
+  "deduction": 60.0,
+  "docstatus": 0,
+  "doctype": "Income Tax",
+  "frombs": 601,
+  "modified": "2024-02-09 12:04:04.870513",
+  "name": "IT-(601-1650)",
+  "rate": 0.1,
+  "tobs": 1650
+ },
+ {
+  "deduction": 142.5,
+  "docstatus": 0,
+  "doctype": "Income Tax",
+  "frombs": 1651,
+  "modified": "2024-02-09 12:04:04.908448",
+  "name": "IT-(1651-3200)",
+  "rate": 0.15,
+  "tobs": 3200
+ },
+ {
+  "deduction": 302.5,
+  "docstatus": 0,
+  "doctype": "Income Tax",
+  "frombs": 3201,
+  "modified": "2024-02-09 12:04:04.942108",
+  "name": "IT-(3201-5250)",
+  "rate": 0.2,
+  "tobs": 5250
+ },
+ {
+  "deduction": 565.0,
+  "docstatus": 0,
+  "doctype": "Income Tax",
+  "frombs": 5251,
+  "modified": "2024-02-09 12:04:04.958545",
+  "name": "IT-(5251-7800)",
+  "rate": 0.25,
+  "tobs": 7800
+ },
+ {
+  "deduction": 955.0,
+  "docstatus": 0,
+  "doctype": "Income Tax",
+  "frombs": 7801,
+  "modified": "2024-02-09 12:04:04.972828",
+  "name": "IT-(7801-10900)",
+  "rate": 0.3,
+  "tobs": 10900
+ },
+ {
+  "deduction": 1500.0,
+  "docstatus": 0,
+  "doctype": "Income Tax",
+  "frombs": 10901,
+  "modified": "2024-02-09 12:04:04.986250",
+  "name": "IT-(10901-1000000)",
+  "rate": 0.35,
+  "tobs": 1000000
+ }
+]

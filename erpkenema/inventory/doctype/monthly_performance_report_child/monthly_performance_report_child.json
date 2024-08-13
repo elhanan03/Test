@@ -1,0 +1,48 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-01-04 14:50:45.762165",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "description",
+  "plan",
+  "performance"
+ ],
+ "fields": [
+  {
+   "fieldname": "description",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Description",
+   "options": "\nCash Sales\nCredit Sale\nCash Purchase\nCredit Purchase\nPurchase Return\nPurchase Discount\nTransfer In\nConsignment In\nBonus\nStock Damaged\nStock Expired\nTransfer Out\nConsignment Out\nGross Margin\nOperating Expense\nOperating Income\nOther Income\nTotal Income\nCustomer Served( Cash )\nCustomer Served( Credit )\nPharmaceuticals Sold At Cost( Insulin )\nPharmaceuticals Sold At Cost( Pts Served)\nCompounding( On Cash)\nCompounding( On Credit)\nCompounding Fee (On Cash)\nCompounding( On Cash/ Pts Served)\nCompounding( On Credit/ Pts Served)\nCompounding Fee [Labor](On Credit)\nCompounding Fee [Labor](On Cash)\nSales Of Spectacles On Cash\nSales Of Spectacles (On Cash/Pts Served)\nSales Of Spectacles ( On Credit/Pts Served)\nSales Of Packing Materials\nIncome From Body Weight\nPetty Cash Disbursement\nCash Sales Handling ( Cash Collected )\nCash Sales Handling ( Cash Short )\nCash Sales Handling ( Cash Over )\nStock Range ( Drugs )\nStock Range ( Medical Supplies )\nCash Sales\nCredit Sale\nCash Purchase\nCredit Purchase\nPurchase Return\nPurchase Discount\nTransfer In\nConsignment In\nBonus\nStock Damaged\nStock Expired\nTransfer Out\nConsignment Out\nGross Margin\nOperating Expense\nOperating Income\nOther Income\nTotal Income\nCustomer Served( Cash )\nCustomer Served( Credit )\nPharmaceuticals Sold At Cost( Insulin )\nPharmaceuticals Sold At Cost( Pts Served)\nCompounding( On Cash)\nCompounding( On Credit)\nCompounding Fee (On Cash)\nCompounding( On Cash/ Pts Served)\nCompounding( On Credit/ Pts Served)\nCompounding Fee [Labor](On Credit)\nCompounding Fee [Labor](On Cash)\nSales Of Spectacles (On Cash/Pts Served)\nSales Of Spectacles ( On Credit/Pts Served)\nSales Of Packing Materials\nIncome From Body Weight\nPetty Cash Disbursement\nCash Sales Handling ( Cash Collected )\nCash Sales Handling ( Cash Short )\nCash Sales Handling ( Cash Over )\nStock Range ( Drugs )\nStock Range ( Medical Supplies )"
+  },
+  {
+   "fieldname": "plan",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Plan"
+  },
+  {
+   "default": "0",
+   "fieldname": "performance",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Performance",
+   "non_negative": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-04-09 09:44:02.466180",
+ "modified_by": "Administrator",
+ "module": "Inventory",
+ "name": "Monthly_Performance_Report_Child",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

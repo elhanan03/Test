@@ -1,0 +1,27 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "creation": "2022-10-17 09:42:51.380562",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Budget Request Form",
+ "enabled": 1,
+ "event": "Submit",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Budget Request Form ",
+ "modified": "2022-10-17 09:42:51.380562",
+ "modified_by": "Administrator",
+ "module": "Plan and Budget",
+ "name": "Budget Request Form Alert",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_role": "Plan & Budget Manager"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Budget Request Form"
+}

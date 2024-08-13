@@ -1,0 +1,203 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:SIV-{srequisition}",
+ "creation": "2022-07-21 11:19:11.590238",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "branch_number",
+  "column_break_3",
+  "date",
+  "srequisition",
+  "section_break_6",
+  "siv",
+  "section_break_8",
+  "requested_by",
+  "requested_by_email",
+  "approved_by",
+  "approved_by_email",
+  "column_break_13",
+  "issued_by",
+  "issued_by_email",
+  "confirmed_by",
+  "confirmed_by_email",
+  "computed_by",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "srequisition",
+   "fieldtype": "Int",
+   "in_standard_filter": 1,
+   "label": "Requisition Section",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "siv",
+   "fieldtype": "Table",
+   "label": "SIV",
+   "options": "SIV",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "requested_by",
+   "fieldtype": "Data",
+   "label": "Requested by",
+   "read_only": 1
+  },
+  {
+   "fieldname": "issued_by",
+   "fieldtype": "Data",
+   "label": "Issued by",
+   "read_only": 1
+  },
+  {
+   "fieldname": "computed_by",
+   "fieldtype": "Data",
+   "label": "Computed by",
+   "permlevel": 2
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Store Issue Voucher",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "requested_by.branch",
+   "fieldname": "branch_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Pharmacy/Drug Shop No.",
+   "read_only": 1
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Data",
+   "label": "Approved by",
+   "read_only": 1
+  },
+  {
+   "fieldname": "approved_by_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Approved by email",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "issued_by_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Issued by email",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "requested_by_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Requested by email",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "confirmed_by",
+   "fieldtype": "Link",
+   "label": "Confirmed by",
+   "options": "Dispensary"
+  },
+  {
+   "fetch_from": "confirmed_by.dispensary",
+   "fieldname": "confirmed_by_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Confirmed by email",
+   "print_hide": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-07-10 16:05:24.036061",
+ "modified_by": "Administrator",
+ "module": "Inventory",
+ "name": "Store Issue Voucher",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Store Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Dispensary",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "ASC",
+ "states": []
+}

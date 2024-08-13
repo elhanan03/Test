@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include erpkenema *.css
+recursive-include erpkenema *.csv
+recursive-include erpkenema *.html
+recursive-include erpkenema *.ico
+recursive-include erpkenema *.js
+recursive-include erpkenema *.json
+recursive-include erpkenema *.md
+recursive-include erpkenema *.png
+recursive-include erpkenema *.py
+recursive-include erpkenema *.svg
+recursive-include erpkenema *.txt
+recursive-exclude erpkenema *.pyc

@@ -1,0 +1,211 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{Monthly}-{Perf}-{refno}",
+ "creation": "2023-01-04 13:25:09.956005",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "from_date",
+  "to_date",
+  "column_break_3",
+  "refno",
+  "action_plan",
+  "drug_store_number",
+  "section_break_6",
+  "performance_list",
+  "section_break_7",
+  "total_sales",
+  "total_purchase",
+  "column_break_9",
+  "net_purchase",
+  "stock_available_for_sale",
+  "ending_stock",
+  "section_break_13",
+  "prepared_by",
+  "prepared_by_email",
+  "approved_by",
+  "approved_by_email",
+  "column_break_18",
+  "authorized_by",
+  "authorized_by_email",
+  "checked_by",
+  "checked_by_email",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "performance_list",
+   "fieldtype": "Table",
+   "label": "Performance List",
+   "options": "Monthly_Performance_Report_Child"
+  },
+  {
+   "fieldname": "drug_store_number",
+   "fieldtype": "Link",
+   "label": "Drug Store Number",
+   "options": "Kenema Branches",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_sales",
+   "fieldtype": "Float",
+   "label": "Total Sales",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_purchase",
+   "fieldtype": "Float",
+   "label": "Total Purchase",
+   "read_only": 1
+  },
+  {
+   "fieldname": "net_purchase",
+   "fieldtype": "Float",
+   "label": "Net Purchase",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stock_available_for_sale",
+   "fieldtype": "Float",
+   "label": "Stock Available for Sale",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ending_stock",
+   "fieldtype": "Float",
+   "label": "Ending Stock",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "prepared_by",
+   "fieldtype": "Data",
+   "label": "Prepared By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "prepared_by_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Prepared By Email"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Data",
+   "label": "Checked By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "checked_by_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Checked By Email"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Data",
+   "label": "Approved By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "approved_by_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Approved By Email"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "authorized_by",
+   "fieldtype": "Data",
+   "label": "Authorized By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "authorized_by_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Authorized By Email"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Monthly Performance Report",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "refno",
+   "fieldtype": "Int",
+   "label": "REF.NO",
+   "read_only": 1
+  },
+  {
+   "fieldname": "action_plan",
+   "fieldtype": "Link",
+   "label": "Get From Action Plan",
+   "options": "Action Plan"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-02-24 10:56:36.346164",
+ "modified_by": "Administrator",
+ "module": "Inventory",
+ "name": "Monthly Performance Report",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,36 @@
+{
+ "add_total_row": 1,
+ "columns": [],
+ "creation": "2022-10-07 12:27:18.311270",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2023-01-10 16:04:44.521860",
+ "modified_by": "Administrator",
+ "module": "Inventory",
+ "name": "Credit sales Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "",
+ "ref_doctype": "Sales Attachment",
+ "report_name": "Credit sales Report",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "Branch Cashier"
+  },
+  {
+   "role": "Dispensary"
+  },
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Branch manager"
+  }
+ ]
+}

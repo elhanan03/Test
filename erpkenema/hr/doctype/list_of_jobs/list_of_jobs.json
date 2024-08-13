@@ -1,0 +1,116 @@
+{
+ "actions": [],
+ "creation": "2022-11-30 13:28:08.767758",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "department",
+  "position",
+  "qualification",
+  "education_type",
+  "column_break_5",
+  "experience",
+  "quantity",
+  "remark",
+  "column_break_8",
+  "salary_scale_name",
+  "level",
+  "scale",
+  "basic_salary"
+ ],
+ "fields": [
+  {
+   "fieldname": "position",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Position",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "education_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Education Type",
+   "options": "Education Type"
+  },
+  {
+   "fieldname": "qualification",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Qualification",
+   "options": "\nPhD\nMSc\nMA\nMBA\nBSc\nBA\nLevel IV\nLevel III\nLevel II\nLevel I\n10-12\n8-10"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "experience",
+   "fieldtype": "Data",
+   "label": "Experience"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "level",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Level",
+   "options": "Level",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Data",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "salary_scale_name",
+   "fieldtype": "Link",
+   "label": "Salary Scale Name",
+   "options": "Salary Scale Name",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "scale",
+   "fieldtype": "Link",
+   "label": "Scale",
+   "options": "Scale",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "basic_salary",
+   "fieldtype": "Currency",
+   "label": "Basic Salary",
+   "options": "account.currency",
+   "permlevel": 1
+  },
+  {
+   "fetch_from": "position.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-11 09:11:15.617101",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "List Of Jobs",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

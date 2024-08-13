@@ -1,0 +1,112 @@
+[
+ {
+  "department": "Pharmacy Technology",
+  "description": null,
+  "designation": "Store",
+  "docstatus": 0,
+  "doctype": "Designation",
+  "modified": "2024-07-19 10:03:13.055309",
+  "name": "Store",
+  "skill": null,
+  "skill_description": null
+ },
+ {
+  "department": "Pharmacy Technology",
+  "description": null,
+  "designation": "Pharmacist",
+  "docstatus": 0,
+  "doctype": "Designation",
+  "modified": "2024-07-19 10:06:15.856158",
+  "name": "Pharmacist",
+  "skill": null,
+  "skill_description": null
+ },
+ {
+  "department": "HR",
+  "description": null,
+  "designation": "Cleaner",
+  "docstatus": 0,
+  "doctype": "Designation",
+  "modified": "2024-07-19 10:05:33.788342",
+  "name": "Cleaner",
+  "skill": null,
+  "skill_description": null
+ },
+ {
+  "department": "Pharmacy Technology",
+  "description": null,
+  "designation": "Druggist",
+  "docstatus": 0,
+  "doctype": "Designation",
+  "modified": "2024-07-19 10:05:41.069150",
+  "name": "Druggist",
+  "skill": null,
+  "skill_description": null
+ },
+ {
+  "department": "Pharmacy Technology",
+  "description": null,
+  "designation": "Cashier",
+  "docstatus": 0,
+  "doctype": "Designation",
+  "modified": "2024-07-19 10:05:51.548876",
+  "name": "Cashier",
+  "skill": null,
+  "skill_description": null
+ },
+ {
+  "department": "Pharmacy Technology",
+  "description": null,
+  "designation": "Store manager",
+  "docstatus": 0,
+  "doctype": "Designation",
+  "modified": "2024-07-19 10:06:34.168813",
+  "name": "Store manager",
+  "skill": null,
+  "skill_description": null
+ },
+ {
+  "department": "HR",
+  "description": null,
+  "designation": "HR Manager",
+  "docstatus": 0,
+  "doctype": "Designation",
+  "modified": "2024-03-19 14:46:59.865170",
+  "name": "HR Manager",
+  "skill": null,
+  "skill_description": null
+ },
+ {
+  "department": "Accounting",
+  "description": null,
+  "designation": "Accountant",
+  "docstatus": 0,
+  "doctype": "Designation",
+  "modified": "2024-07-19 10:05:24.408677",
+  "name": "Accountant",
+  "skill": null,
+  "skill_description": null
+ },
+ {
+  "department": "Pharmacy Technology",
+  "description": null,
+  "designation": "Senior Pharmacist",
+  "docstatus": 0,
+  "doctype": "Designation",
+  "modified": "2024-07-19 10:06:23.854459",
+  "name": "Senior Pharmacist",
+  "skill": null,
+  "skill_description": null
+ },
+ {
+  "department": "Pharmacy Technology",
+  "description": null,
+  "designation": "dispenser",
+  "docstatus": 0,
+  "doctype": "Designation",
+  "modified": "2024-07-19 10:06:02.701608",
+  "name": "dispenser",
+  "skill": null,
+  "skill_description": null
+ }
+]

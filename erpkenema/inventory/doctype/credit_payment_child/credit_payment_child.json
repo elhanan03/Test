@@ -1,0 +1,31 @@
+{
+ "actions": [],
+ "creation": "2023-03-14 16:42:56.667102",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "fs_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "fs_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "FS No.",
+   "options": "Credit Payment"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-03-14 16:44:29.232465",
+ "modified_by": "Administrator",
+ "module": "Inventory",
+ "name": "Credit_Payment_Child",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

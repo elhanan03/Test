@@ -1,0 +1,121 @@
+{
+ "actions": [],
+ "autoname": "format:{branch_name}-{branch_number} ",
+ "creation": "2022-07-05 11:53:47.585190",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "branch_number",
+  "branch_name",
+  "address",
+  "subcity",
+  "woreda",
+  "house_number",
+  "tin_number",
+  "email",
+  "phone_number"
+ ],
+ "fields": [
+  {
+   "fieldname": "branch_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Branch Name",
+   "reqd": 1,
+   "translatable": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email"
+  },
+  {
+   "default": "+251-",
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "in_list_view": 1,
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Link",
+   "label": "Address",
+   "options": "Address-Kpe",
+   "reqd": 1
+  },
+  {
+   "fieldname": "branch_number",
+   "fieldtype": "Int",
+   "label": "Branch Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tin_number",
+   "fieldtype": "Int",
+   "label": "Tin Number"
+  },
+  {
+   "fetch_from": "address.sub_city",
+   "fieldname": "subcity",
+   "fieldtype": "Data",
+   "label": "Subcity",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "address.woreda",
+   "fieldname": "woreda",
+   "fieldtype": "Data",
+   "label": "Woreda",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "address.house_number",
+   "fieldname": "house_number",
+   "fieldtype": "Data",
+   "label": "House Number",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-02-28 15:50:48.440179",
+ "modified_by": "Administrator",
+ "module": "Inventory",
+ "name": "Kenema Branches",
+ "name_case": "Title Case",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

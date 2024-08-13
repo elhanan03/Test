@@ -1,0 +1,72 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Level",
+  "level": "X",
+  "modified": "2024-02-09 11:56:04.743724",
+  "name": "X"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Level",
+  "level": "IX",
+  "modified": "2024-02-09 11:56:04.775739",
+  "name": "IX"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Level",
+  "level": "VIII",
+  "modified": "2024-02-09 11:56:04.795157",
+  "name": "VIII"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Level",
+  "level": "VII",
+  "modified": "2024-02-09 11:56:04.811248",
+  "name": "VII"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Level",
+  "level": "V",
+  "modified": "2024-02-09 11:56:04.837995",
+  "name": "V"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Level",
+  "level": "IV",
+  "modified": "2024-02-09 11:56:04.852542",
+  "name": "IV"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Level",
+  "level": "II",
+  "modified": "2024-02-09 11:56:04.881606",
+  "name": "II"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Level",
+  "level": "VI",
+  "modified": "2024-02-09 11:56:04.824520",
+  "name": "VI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Level",
+  "level": "III",
+  "modified": "2024-02-09 11:56:04.867673",
+  "name": "III"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Level",
+  "level": "I",
+  "modified": "2024-02-09 11:56:04.895401",
+  "name": "I"
+ }
+]

@@ -1,0 +1,169 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{PCR}-{requisition_section}",
+ "creation": "2023-01-30 11:16:07.360169",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "requisition_section",
+  "branch",
+  "column_break_3",
+  "from_date",
+  "to_date",
+  "section_break_6",
+  "list_of_paid",
+  "section_break_8",
+  "prepared_by",
+  "prepared_by_email",
+  "column_break_11",
+  "approved_by",
+  "approved_by_email",
+  "column_break_14",
+  "authorized_by",
+  "authorized_by_email"
+ ],
+ "fields": [
+  {
+   "fieldname": "branch",
+   "fieldtype": "Data",
+   "label": "Branch"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To date"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "list_of_paid",
+   "fieldtype": "Table",
+   "label": "List of paid ",
+   "options": "Petty Cash Child"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "prepared_by",
+   "fieldtype": "Data",
+   "label": "Branch Accountant"
+  },
+  {
+   "fieldname": "prepared_by_email",
+   "fieldtype": "Data",
+   "label": "Prepared By Email"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approved_by_email",
+   "fieldtype": "Data",
+   "label": "Approved By Email"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "authorized_by",
+   "fieldtype": "Link",
+   "label": "Finance Head",
+   "options": "Finance"
+  },
+  {
+   "fetch_from": "authorized_by.finance",
+   "fieldname": "authorized_by_email",
+   "fieldtype": "Data",
+   "label": "Authorized By Email"
+  },
+  {
+   "fieldname": "requisition_section",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Ref No",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Data",
+   "label": "Branch Manager"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-01-30 12:35:12.927871",
+ "modified_by": "Administrator",
+ "module": "Accounting and Finance",
+ "name": "Petty Cash Summary",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Branch Accountant",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Branch manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Finance Head",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

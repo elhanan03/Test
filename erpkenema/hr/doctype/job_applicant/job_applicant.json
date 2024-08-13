@@ -1,0 +1,337 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:JOB-APP-{full_name}-{YYYY}-{refno}",
+ "creation": "2022-10-04 08:34:21.215915",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "status",
+  "section_break_2",
+  "job_opening",
+  "column_break_14",
+  "date",
+  "section_break_3",
+  "first_name",
+  "middle_name",
+  "last_name",
+  "full_name",
+  "column_break_5",
+  "phone_number",
+  "optional_phone_number",
+  "email_address",
+  "gender",
+  "birth_date",
+  "column_break_16",
+  "regionstate",
+  "subcityzone",
+  "woreda",
+  "current_location",
+  "house_number",
+  "refno",
+  "section_break_9",
+  "qualification",
+  "section_break_19",
+  "resume",
+  "column_break_19",
+  "cover_letter",
+  "section_break_23",
+  "department",
+  "position",
+  "salary_scale_name",
+  "level",
+  "scale",
+  "branch",
+  "basic_salary"
+ ],
+ "fields": [
+  {
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email Address",
+   "options": "Email"
+  },
+  {
+   "default": "+251-",
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "label": "Phone Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "job_opening",
+   "fieldtype": "Link",
+   "label": "Job Opening",
+   "options": "Job Opening",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Open\nAccepted\nReplied\nHold\nRejected",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "cover_letter",
+   "fieldtype": "Small Text",
+   "label": "Cover Letter"
+  },
+  {
+   "fieldname": "resume",
+   "fieldtype": "Attach",
+   "label": "Resume",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break",
+   "label": "Qualification, Resume and Cover Letter",
+   "options": "fa fa-rss"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "refno",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Ref NO",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "\nMale\nFemale",
+   "reqd": 1
+  },
+  {
+   "fieldname": "birth_date",
+   "fieldtype": "Date",
+   "label": "Birth Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "qualification",
+   "fieldtype": "Table",
+   "label": "Qualification",
+   "options": "Educational Qualification",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_19",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_23",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "job_opening.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "department",
+   "print_hide": 1
+  },
+  {
+   "fetch_from": "job_opening.position",
+   "fieldname": "position",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Position",
+   "print_hide": 1
+  },
+  {
+   "fetch_from": "job_opening.salary_scale_name",
+   "fieldname": "salary_scale_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "salary Scale Name",
+   "print_hide": 1
+  },
+  {
+   "fetch_from": "job_opening.level",
+   "fieldname": "level",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Level",
+   "print_hide": 1
+  },
+  {
+   "fetch_from": "job_opening.scale",
+   "fieldname": "scale",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Scale",
+   "print_hide": 1
+  },
+  {
+   "fetch_from": "job_opening.branch",
+   "fieldname": "branch",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "branch",
+   "print_hide": 1
+  },
+  {
+   "fetch_from": "job_opening.basic_salary",
+   "fieldname": "basic_salary",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Basic Salary",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "regionstate",
+   "fieldtype": "Data",
+   "label": "Region/State",
+   "reqd": 1
+  },
+  {
+   "fieldname": "subcityzone",
+   "fieldtype": "Data",
+   "label": "Subcity/Zone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "woreda",
+   "fieldtype": "Data",
+   "label": "Woreda",
+   "reqd": 1
+  },
+  {
+   "fieldname": "house_number",
+   "fieldtype": "Data",
+   "label": "House Number"
+  },
+  {
+   "fieldname": "current_location",
+   "fieldtype": "Data",
+   "label": "Current Location"
+  },
+  {
+   "fieldname": "optional_phone_number",
+   "fieldtype": "Phone",
+   "label": "Optional Phone Number"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-17 11:22:08.746336",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Job Applicant",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Guest",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

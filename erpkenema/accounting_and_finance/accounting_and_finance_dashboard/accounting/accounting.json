@@ -1,0 +1,31 @@
+{
+ "cards": [
+  {
+   "card": "Cash Purchase"
+  },
+  {
+   "card": "Credit Purchase"
+  },
+  {
+   "card": "Average of Total_inc_vat"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "GRV",
+   "width": "Half"
+  }
+ ],
+ "creation": "2023-01-27 21:51:31.321349",
+ "dashboard_name": "Accounting",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2023-04-07 12:06:17.987486",
+ "modified_by": "yonatan@12.com",
+ "module": "Accounting and Finance",
+ "name": "Accounting",
+ "owner": "Administrator"
+}

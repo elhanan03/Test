@@ -1,0 +1,202 @@
+{
+ "actions": [],
+ "autoname": "hash",
+ "creation": "2022-07-05 12:19:27.499145",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "description",
+  "unit",
+  "item_code",
+  "batch_number",
+  "pharmacological_category",
+  "brand",
+  "exp_date",
+  "stock_quantity",
+  "quantity",
+  "column_break_6",
+  "unit_purchase_cost",
+  "total_purchase_cost",
+  "profit",
+  "uspbv",
+  "vat",
+  "unit_selling_price",
+  "total_selling_price",
+  "retail_price",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "description",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Description ",
+   "options": "Inventory Items",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "description.uom",
+   "fetch_if_empty": 1,
+   "fieldname": "unit",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Unit",
+   "options": "UOM",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "retail_price",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Retail Price",
+   "non_negative": 1,
+   "print_hide": 1
+  },
+  {
+   "fetch_from": "item_code.exp_date",
+   "fieldname": "exp_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Expiry Date",
+   "read_only_depends_on": "item_code",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "item_code.remark",
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Quantity",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "description.item_code",
+   "fetch_if_empty": 1,
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Item Code",
+   "options": "Inventory Area Store",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fetch_from": "item_code.unit_purchase_cost",
+   "fieldname": "unit_purchase_cost",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Unit Purchase Cost",
+   "non_negative": 1,
+   "read_only_depends_on": "item_code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_purchase_cost",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Purchase Cost",
+   "non_negative": 1,
+   "read_only_depends_on": "item_code",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "item_code.unit_selling_price",
+   "fieldname": "unit_selling_price",
+   "fieldtype": "Currency",
+   "label": "Unit Selling Price",
+   "non_negative": 1,
+   "read_only": 1,
+   "read_only_depends_on": "item_code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_selling_price",
+   "fieldtype": "Currency",
+   "label": "Total Selling Price",
+   "non_negative": 1,
+   "read_only_depends_on": "item_code",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "item_code.batch_number",
+   "fieldname": "batch_number",
+   "fieldtype": "Data",
+   "label": "Batch Number",
+   "read_only_depends_on": "item_code"
+  },
+  {
+   "fetch_from": "item_code.pharmacological_category",
+   "fieldname": "pharmacological_category",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Pharmacological Category",
+   "read_only_depends_on": "item_code"
+  },
+  {
+   "fetch_from": "item_code.profit",
+   "fieldname": "profit",
+   "fieldtype": "Data",
+   "label": "Profit",
+   "read_only_depends_on": "item_code"
+  },
+  {
+   "fetch_from": "item_code.vat",
+   "fieldname": "vat",
+   "fieldtype": "Data",
+   "label": "VAT",
+   "read_only": 1,
+   "read_only_depends_on": "item_code"
+  },
+  {
+   "fetch_from": "item_code.quantity",
+   "fieldname": "stock_quantity",
+   "fieldtype": "Data",
+   "label": "Stock Quantity",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "item_code.uspbv",
+   "fieldname": "uspbv",
+   "fieldtype": "Currency",
+   "label": "Unit Selling Price Before VAT",
+   "non_negative": 1,
+   "precision": "2",
+   "read_only": 1,
+   "read_only_depends_on": "item_code"
+  },
+  {
+   "fetch_from": "description.brand",
+   "fieldname": "brand",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Brand"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-15 14:30:51.030825",
+ "modified_by": "Administrator",
+ "module": "Inventory",
+ "name": "STM",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

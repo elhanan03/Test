@@ -1,0 +1,38 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "creation": "2023-01-31 16:09:34.503600",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Employee Onboarding",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "New Employee Onboard",
+ "modified": "2023-03-16 09:40:38.548699",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Employee Onboarding",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "condition": "doc.workflow_state==\"Pending Authorization\"",
+   "receiver_by_document_field": "approved_by_email"
+  },
+  {
+   "condition": "doc.workflow_state==\"Authorized\"",
+   "receiver_by_document_field": "finance_head_email",
+   "receiver_by_role": ""
+  },
+  {
+   "condition": "doc.workflow_state==\"Confirmed\"",
+   "receiver_by_document_field": "process_by_email"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Employee Onboarding",
+ "value_changed": "workflow_state"
+}

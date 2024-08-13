@@ -1,0 +1,263 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "question-sign",
+  "modified": "2024-02-08 19:03:24.068979",
+  "name": "Pending",
+  "style": "",
+  "workflow_state_name": "Pending"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-02-09 09:29:27.477085",
+  "name": "pending Approvel",
+  "style": "",
+  "workflow_state_name": "pending Approvel"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-02-09 09:29:27.562987",
+  "name": "Unchecked",
+  "style": "",
+  "workflow_state_name": "Unchecked"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-02-09 09:29:27.649756",
+  "name": "Pay",
+  "style": "",
+  "workflow_state_name": "Pay"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-03-26 07:50:51.622506",
+  "name": "Pending Acceptance",
+  "style": "",
+  "workflow_state_name": "Pending Acceptance"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-02-09 09:29:27.454501",
+  "name": "Pending payment",
+  "style": "",
+  "workflow_state_name": "Pending payment"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-02-09 09:29:27.413699",
+  "name": "Unpaid",
+  "style": "",
+  "workflow_state_name": "Unpaid"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-02-09 09:29:27.671787",
+  "name": "Pending Accept Transfer",
+  "style": "",
+  "workflow_state_name": "Pending Accept Transfer"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-02-09 09:29:27.496331",
+  "name": "Pending Supplier Acceptance",
+  "style": "",
+  "workflow_state_name": "Pending Supplier Acceptance"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-02-09 09:29:27.602708",
+  "name": "Audited",
+  "style": "",
+  "workflow_state_name": "Audited"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-02-09 09:29:27.434252",
+  "name": "Paid",
+  "style": "",
+  "workflow_state_name": "Paid"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-02-09 09:29:27.582112",
+  "name": "Pending Audit",
+  "style": "",
+  "workflow_state_name": "Pending Audit"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-02-09 09:29:27.626148",
+  "name": "Pending Check",
+  "style": "",
+  "workflow_state_name": "Pending Check"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-02-09 09:29:27.370592",
+  "name": "denied",
+  "style": "",
+  "workflow_state_name": "denied"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-04-04 09:51:11.049310",
+  "name": "Cancelled",
+  "style": "Danger",
+  "workflow_state_name": "Cancelled"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-02-09 09:29:27.163501",
+  "name": "Pending  Acceptance",
+  "style": "",
+  "workflow_state_name": "Pending  Acceptance"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "remove",
+  "modified": "2024-02-08 19:03:24.077683",
+  "name": "Rejected",
+  "style": "Danger",
+  "workflow_state_name": "Rejected"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-04-04 09:50:54.488683",
+  "name": "Confirmed",
+  "style": "Success",
+  "workflow_state_name": "Confirmed"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-02-09 09:29:27.329747",
+  "name": "Issued",
+  "style": "",
+  "workflow_state_name": "Issued"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-02-09 09:29:27.518385",
+  "name": "Received",
+  "style": "",
+  "workflow_state_name": "Received"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-02-09 09:29:27.287347",
+  "name": "Sent",
+  "style": "",
+  "workflow_state_name": "Sent"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-02-09 09:29:27.542967",
+  "name": "Checked",
+  "style": "",
+  "workflow_state_name": "Checked"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-02-09 09:29:27.310022",
+  "name": "Pending Authorization",
+  "style": "",
+  "workflow_state_name": "Pending Authorization"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-04-04 09:56:37.817179",
+  "name": "Accepted",
+  "style": "Warning",
+  "workflow_state_name": "Accepted"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-02-09 09:29:27.218013",
+  "name": "Pending issue",
+  "style": "",
+  "workflow_state_name": "Pending issue"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-04-04 09:53:31.773429",
+  "name": "Authorized",
+  "style": "Info",
+  "workflow_state_name": "Authorized"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "ok-sign",
+  "modified": "2024-02-08 19:03:24.073630",
+  "name": "Approved",
+  "style": "Success",
+  "workflow_state_name": "Approved"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-02-09 09:29:27.393449",
+  "name": "pending Approval",
+  "style": "",
+  "workflow_state_name": "pending Approval"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-04-04 09:56:23.025597",
+  "name": "Draft",
+  "style": "",
+  "workflow_state_name": "Draft"
+ }
+]

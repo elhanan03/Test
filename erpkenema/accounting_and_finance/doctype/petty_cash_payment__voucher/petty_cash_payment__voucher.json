@@ -1,0 +1,306 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{PCPV}-{YYYY}-{requisition_section}",
+ "creation": "2022-12-20 14:38:07.866927",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "allocated_budget",
+  "requisition_section",
+  "column_break_3",
+  "payee",
+  "amount_on_allocated_budget",
+  "payable_amounts_in_figure",
+  "amount_in_words",
+  "purpose",
+  "section_break_6",
+  "accounts",
+  "section_break_8",
+  "column_break_11",
+  "column_break_10",
+  "total_debit",
+  "total_credit",
+  "difference",
+  "section_break_13",
+  "received_by",
+  "column_break_7",
+  "prepared_by",
+  "prepared_by_email",
+  "column_break_9",
+  "approved_by",
+  "approved_by_email",
+  "column_break_18",
+  "authorized_by",
+  "authorized_by_email",
+  "branch"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "payee",
+   "fieldtype": "Data",
+   "label": "Payee"
+  },
+  {
+   "fieldname": "amount_in_words",
+   "fieldtype": "Data",
+   "label": "Amount In Words",
+   "read_only": 1
+  },
+  {
+   "fieldname": "received_by",
+   "fieldtype": "Data",
+   "label": "Received By"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "prepared_by",
+   "fieldtype": "Data",
+   "label": "Prepared By"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Data",
+   "label": "Approved By"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "authorized_by",
+   "fieldtype": "Data",
+   "label": "Authorized By"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_debit",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Total Debit",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_credit",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Total Credit",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "accounts",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Accounting Entry",
+   "options": "Account Entry",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "purpose",
+   "fieldtype": "Data",
+   "label": "Purpose"
+  },
+  {
+   "fieldname": "difference",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Difference",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "allocated_budget.branch",
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Kenema Branches",
+   "read_only": 1
+  },
+  {
+   "fieldname": "allocated_budget",
+   "fieldtype": "Link",
+   "label": "Allocated Budget",
+   "options": "Budget Allocation Page"
+  },
+  {
+   "fetch_from": "allocated_budget.left_balance",
+   "fieldname": "amount_on_allocated_budget",
+   "fieldtype": "Float",
+   "label": "Amount On Allocated Budget",
+   "read_only": 1
+  },
+  {
+   "fieldname": "payable_amounts_in_figure",
+   "fieldtype": "Float",
+   "label": "Payable Amounts In Figure",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "requisition_section",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Requisition Section"
+  },
+  {
+   "fieldname": "prepared_by_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Prepared By Email",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "approved_by_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Approved By Email",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "authorized_by_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Authorized By Email",
+   "print_hide": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-25 13:47:36.883626",
+ "modified_by": "Administrator",
+ "module": "Accounting and Finance",
+ "name": "Petty Cash Payment  Voucher",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Branch Cashier",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Branch Accountant",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Branch manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HQ Cashier",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Head Quarter Accountant",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Finance Head",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

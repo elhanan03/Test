@@ -1,0 +1,34 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Working Time Name",
+  "modified": "2024-06-05 09:37:20.401843",
+  "name": "Holiday",
+  "name1": "Holiday",
+  "rate": 2.5
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Working Time Name",
+  "modified": "2024-06-05 09:37:20.434952",
+  "name": "Weekend",
+  "name1": "Weekend",
+  "rate": 2.0
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Working Time Name",
+  "modified": "2024-06-05 09:37:20.448599",
+  "name": "10 pm - 6 am",
+  "name1": "10 pm - 6 am",
+  "rate": 1.75
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Working Time Name",
+  "modified": "2024-06-05 09:37:20.466823",
+  "name": "6 am - 10 pm",
+  "name1": "6 am - 10 pm",
+  "rate": 1.5
+ }
+]

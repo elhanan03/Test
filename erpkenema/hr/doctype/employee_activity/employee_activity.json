@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:activity_name",
+ "creation": "2022-10-04 09:03:44.676315",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "activity_name",
+  "user",
+  "role",
+  "begin_ondays",
+  "durationdays",
+  "task_weight",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "activity_name",
+   "fieldtype": "Data",
+   "label": "Activity Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User"
+  },
+  {
+   "fieldname": "role",
+   "fieldtype": "Link",
+   "label": "Role",
+   "options": "Role"
+  },
+  {
+   "fieldname": "begin_ondays",
+   "fieldtype": "Date",
+   "label": "Begin On(days)"
+  },
+  {
+   "fieldname": "durationdays",
+   "fieldtype": "Float",
+   "label": "Duration(days)"
+  },
+  {
+   "fieldname": "task_weight",
+   "fieldtype": "Data",
+   "label": "Task Weight"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-10-04 09:04:30.809689",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Employee Activity",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

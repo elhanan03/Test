@@ -1,0 +1,121 @@
+{
+ "charts": [
+  {
+   "chart_name": "Credit Purchase",
+   "label": "Credit Purchase"
+  },
+  {
+   "chart_name": "Cash Purchase",
+   "label": "Cash Purchase"
+  },
+  {
+   "chart_name": "Drug Purchase",
+   "label": "Drug Purchase"
+  },
+  {
+   "chart_name": "GRV",
+   "label": "GRV"
+  },
+  {
+   "chart_name": "Petty Cash",
+   "label": "Petty Cash"
+  },
+  {
+   "chart_name": "SIV",
+   "label": "SIV"
+  },
+  {
+   "chart_name": "Expiration Approached",
+   "label": "Expiration Approached"
+  },
+  {
+   "chart_name": "Credit Sales",
+   "label": "Credit Sales"
+  },
+  {
+   "chart_name": "Cash Sales",
+   "label": "Cash Sales"
+  },
+  {
+   "chart_name": "Consignment In",
+   "label": "Consignment In"
+  }
+ ],
+ "content": "[{\"id\":\"SZ_7PoG5OO\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Dashboards</span>\",\"col\":12}},{\"id\":\"ew80N8rCey\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"GRV Dashboard\",\"col\":3}},{\"id\":\"DU22JSswZ8\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Inventory Dashboard\",\"col\":3}},{\"id\":\"iqEXlApLv3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sales Dashboard\",\"col\":3}},{\"id\":\"yWIe2ZAw2x\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Payroll Dashboard\",\"col\":3}},{\"id\":\"ViIDZ5zLqE\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"HR Dashboard\",\"col\":3}},{\"id\":\"I86SOg9qmT\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"q1mKTh3-lT\",\"type\":\"chart\",\"data\":{\"chart_name\":\"GRV\",\"col\":6}},{\"id\":\"fOPUilI9ly\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Cash Purchase\",\"col\":6}},{\"id\":\"xj8N77u_0y\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Credit Purchase\",\"col\":6}},{\"id\":\"sHFs3B7vJX\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Drug Purchase\",\"col\":6}},{\"id\":\"JCkX-833ra\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Petty Cash\",\"col\":6}},{\"id\":\"5bZLxBMYH9\",\"type\":\"chart\",\"data\":{\"chart_name\":\"SIV\",\"col\":6}},{\"id\":\"UiVPpOhEvj\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Expiration Approached\",\"col\":6}},{\"id\":\"EeFVUiAvpE\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Credit Sales\",\"col\":6}},{\"id\":\"M9fOs11AhV\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Cash Sales\",\"col\":6}},{\"id\":\"zGnNpPcu6U\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Consignment In\",\"col\":6}}]",
+ "creation": "2023-02-01 10:47:39.881151",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "dashboard-list",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Dashboards",
+ "links": [],
+ "modified": "2024-03-25 21:52:34.582691",
+ "modified_by": "Administrator",
+ "module": "Inventory",
+ "name": "Dashboards",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Branch manager"
+  },
+  {
+   "role": "Dispensary"
+  },
+  {
+   "role": "Store Manager"
+  },
+  {
+   "role": "Branch Cashier"
+  },
+  {
+   "role": "Operation Manager"
+  }
+ ],
+ "sequence_id": 2.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Inventory Dashboard",
+   "link_to": "Inventory Dashboard",
+   "type": "Dashboard"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "GRV Dashboard",
+   "link_to": "GRV dashboard",
+   "type": "Dashboard"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Payroll Dashboard",
+   "link_to": "Payroll",
+   "type": "Dashboard"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "HR Dashboard",
+   "link_to": "Hr Dashboard",
+   "type": "Dashboard"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Sales Dashboard",
+   "link_to": "Sales",
+   "type": "Dashboard"
+  }
+ ],
+ "title": "Dashboards"
+}

@@ -1,0 +1,160 @@
+{
+ "actions": [],
+ "autoname": "hash",
+ "creation": "2022-07-21 09:47:14.398012",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "description",
+  "item_code",
+  "unit",
+  "pharmacological_category",
+  "image",
+  "column_break_10",
+  "batch_number",
+  "country",
+  "manufacturer",
+  "brand",
+  "requested_qty",
+  "column_break_7",
+  "supplied_qty",
+  "unit_purchase_cost",
+  "total_purchase_cost",
+  "exp_date",
+  "remark"
+ ],
+ "fields": [
+  {
+   "fieldname": "description",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Description",
+   "options": "Inventory Items",
+   "permlevel": 1
+  },
+  {
+   "fetch_from": "description.uom",
+   "fieldname": "unit",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "UOM",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Data",
+   "label": "Remark",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "requested_qty",
+   "fieldtype": "Float",
+   "label": "Requested Qty",
+   "non_negative": 1,
+   "permlevel": 5,
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "description.item_code",
+   "fieldname": "item_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "permlevel": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "batch_number",
+   "fieldtype": "Link",
+   "label": "Batch Number",
+   "options": "Batch Number",
+   "permlevel": 4
+  },
+  {
+   "fetch_from": "description.pharmacological_category",
+   "fetch_if_empty": 1,
+   "fieldname": "pharmacological_category",
+   "fieldtype": "Data",
+   "label": "Pharmacological Category",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "supplied_qty",
+   "fieldtype": "Float",
+   "label": "Supplied Qty",
+   "non_negative": 1,
+   "permlevel": 4,
+   "precision": "2"
+  },
+  {
+   "fieldname": "unit_purchase_cost",
+   "fieldtype": "Currency",
+   "label": "Unit Purchase Cost",
+   "non_negative": 1,
+   "permlevel": 4,
+   "precision": "2"
+  },
+  {
+   "fieldname": "total_purchase_cost",
+   "fieldtype": "Currency",
+   "label": "Total Purchase Cost",
+   "non_negative": 1,
+   "permlevel": 4,
+   "precision": "2"
+  },
+  {
+   "fieldname": "exp_date",
+   "fieldtype": "Date",
+   "label": "Expiry Date",
+   "permlevel": 4
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country",
+   "permlevel": 4
+  },
+  {
+   "fieldname": "manufacturer",
+   "fieldtype": "Data",
+   "label": "Manufacturer",
+   "permlevel": 4
+  },
+  {
+   "fieldname": "brand",
+   "fieldtype": "Data",
+   "label": "Brand",
+   "permlevel": 4
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-07-16 18:49:58.219861",
+ "modified_by": "Administrator",
+ "module": "Inventory",
+ "name": "MPR_Child_Table",
+ "naming_rule": "Random",
+ "nsm_parent_field": "parent_quantity",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

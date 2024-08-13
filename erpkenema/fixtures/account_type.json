@@ -1,0 +1,164 @@
+[
+ {
+  "account_type": "Expenses",
+  "amended_from": null,
+  "docstatus": 0,
+  "doctype": "Account Type",
+  "modified": "2024-02-09 11:43:04.361318",
+  "name": "Expenses",
+  "root_type": ""
+ },
+ {
+  "account_type": "Cost of Sales",
+  "amended_from": null,
+  "docstatus": 0,
+  "doctype": "Account Type",
+  "modified": "2024-02-09 11:43:04.372344",
+  "name": "Cost of Sales",
+  "root_type": ""
+ },
+ {
+  "account_type": "Income",
+  "amended_from": null,
+  "docstatus": 0,
+  "doctype": "Account Type",
+  "modified": "2024-02-09 11:43:04.388245",
+  "name": "Income",
+  "root_type": ""
+ },
+ {
+  "account_type": "Equity-gets closed",
+  "amended_from": null,
+  "docstatus": 0,
+  "doctype": "Account Type",
+  "modified": "2024-02-09 11:43:04.401872",
+  "name": "Equity-gets closed",
+  "root_type": ""
+ },
+ {
+  "account_type": "Equity-Retained Earnings",
+  "amended_from": null,
+  "docstatus": 0,
+  "doctype": "Account Type",
+  "modified": "2024-02-09 11:43:04.419362",
+  "name": "Equity-Retained Earnings",
+  "root_type": ""
+ },
+ {
+  "account_type": "Equity-doesn't close",
+  "amended_from": null,
+  "docstatus": 0,
+  "doctype": "Account Type",
+  "modified": "2024-02-09 11:43:04.433383",
+  "name": "Equity-doesn't close",
+  "root_type": ""
+ },
+ {
+  "account_type": "Long Term Liabilities",
+  "amended_from": null,
+  "docstatus": 0,
+  "doctype": "Account Type",
+  "modified": "2024-02-09 11:43:04.448105",
+  "name": "Long Term Liabilities",
+  "root_type": ""
+ },
+ {
+  "account_type": "Other Current Liabilities",
+  "amended_from": null,
+  "docstatus": 0,
+  "doctype": "Account Type",
+  "modified": "2024-02-09 11:43:04.466471",
+  "name": "Other Current Liabilities",
+  "root_type": ""
+ },
+ {
+  "account_type": "Accounts Payable",
+  "amended_from": null,
+  "docstatus": 0,
+  "doctype": "Account Type",
+  "modified": "2024-02-09 11:43:04.485113",
+  "name": "Accounts Payable",
+  "root_type": ""
+ },
+ {
+  "account_type": "Other Assets",
+  "amended_from": null,
+  "docstatus": 0,
+  "doctype": "Account Type",
+  "modified": "2024-02-09 11:43:04.502391",
+  "name": "Other Assets",
+  "root_type": ""
+ },
+ {
+  "account_type": "Accumulated Depreciation",
+  "amended_from": null,
+  "docstatus": 0,
+  "doctype": "Account Type",
+  "modified": "2024-02-09 11:43:04.525367",
+  "name": "Accumulated Depreciation",
+  "root_type": ""
+ },
+ {
+  "account_type": "Fixed Assets",
+  "amended_from": null,
+  "docstatus": 0,
+  "doctype": "Account Type",
+  "modified": "2024-02-09 11:43:04.547147",
+  "name": "Fixed Assets",
+  "root_type": ""
+ },
+ {
+  "account_type": "Inventory",
+  "amended_from": null,
+  "docstatus": 0,
+  "doctype": "Account Type",
+  "modified": "2024-02-09 11:43:04.567491",
+  "name": "Inventory",
+  "root_type": ""
+ },
+ {
+  "account_type": "Accounts Receivable",
+  "amended_from": null,
+  "docstatus": 0,
+  "doctype": "Account Type",
+  "modified": "2024-02-09 11:43:04.585397",
+  "name": "Accounts Receivable",
+  "root_type": ""
+ },
+ {
+  "account_type": "Other Current Assets",
+  "amended_from": null,
+  "docstatus": 0,
+  "doctype": "Account Type",
+  "modified": "2024-02-09 11:43:04.605441",
+  "name": "Other Current Assets",
+  "root_type": ""
+ },
+ {
+  "account_type": "Test",
+  "amended_from": null,
+  "docstatus": 0,
+  "doctype": "Account Type",
+  "modified": "2024-02-09 11:43:04.647514",
+  "name": "Test",
+  "root_type": "Asset"
+ },
+ {
+  "account_type": "Expense",
+  "amended_from": null,
+  "docstatus": 0,
+  "doctype": "Account Type",
+  "modified": "2024-02-09 11:43:04.317854",
+  "name": "Expense",
+  "root_type": "Expense"
+ },
+ {
+  "account_type": "Cash",
+  "amended_from": null,
+  "docstatus": 0,
+  "doctype": "Account Type",
+  "modified": "2024-02-09 11:43:04.624085",
+  "name": "Cash",
+  "root_type": "Asset"
+ }
+]

@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "format:{house_number}, {woreda}, {sub_city}, {city}",
+ "creation": "2022-08-09 09:59:25.500722",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "country",
+  "city",
+  "sub_city",
+  "woreda",
+  "kebele",
+  "house_number",
+  "postal_codezip_code"
+ ],
+ "fields": [
+  {
+   "default": "Ethiopia",
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "City",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sub_city",
+   "fieldtype": "Data",
+   "label": "Subcity",
+   "reqd": 1
+  },
+  {
+   "fieldname": "woreda",
+   "fieldtype": "Data",
+   "label": "Woreda",
+   "reqd": 1
+  },
+  {
+   "fieldname": "kebele",
+   "fieldtype": "Data",
+   "label": "Kebele"
+  },
+  {
+   "fieldname": "house_number",
+   "fieldtype": "Data",
+   "label": "House Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "postal_codezip_code",
+   "fieldtype": "Int",
+   "label": "Postal Code/Zip Code"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-21 15:36:26.272043",
+ "modified_by": "Administrator",
+ "module": "Inventory",
+ "name": "Address-Kpe",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

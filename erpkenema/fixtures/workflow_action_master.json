@@ -1,0 +1,254 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-02-08 19:03:24.143001",
+  "name": "Review",
+  "workflow_action_name": "Review"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-02-09 09:30:18.327682",
+  "name": "Send to Head of Finance",
+  "workflow_action_name": "Send to Head of Finance"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-02-09 09:30:18.470897",
+  "name": "Send To Store Manager",
+  "workflow_action_name": "Send To Store Manager"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-02-09 09:30:18.494201",
+  "name": "Issue",
+  "workflow_action_name": "Issue"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-02-09 09:30:18.631900",
+  "name": "Send to cashier",
+  "workflow_action_name": "Send to cashier"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-02-09 09:30:18.678108",
+  "name": "Send To Sales Manager",
+  "workflow_action_name": "Send To Sales Manager"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-02-09 09:30:18.698945",
+  "name": "Send To Supplier",
+  "workflow_action_name": "Send To Supplier"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-02-09 09:30:18.808556",
+  "name": "Checked",
+  "workflow_action_name": "Checked"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-02-09 09:30:18.882569",
+  "name": "Pending Payment",
+  "workflow_action_name": "Pending Payment"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-02-09 09:30:18.903469",
+  "name": "Send To Branch Accountant",
+  "workflow_action_name": "Send To Branch Accountant"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-02-09 09:30:18.927212",
+  "name": "Pay",
+  "workflow_action_name": "Pay"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-02-09 09:30:18.949134",
+  "name": "Send to Sales Head",
+  "workflow_action_name": "Send to Sales Head"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-02-09 09:30:18.971982",
+  "name": "Send To HR Manager",
+  "workflow_action_name": "Send To HR Manager"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-02-09 09:30:18.997372",
+  "name": "Send",
+  "workflow_action_name": "Send"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-02-09 09:30:19.017538",
+  "name": "Accepted",
+  "workflow_action_name": "Accepted"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-02-09 09:30:19.060750",
+  "name": "Confirm",
+  "workflow_action_name": "Confirm"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-02-09 09:30:19.082758",
+  "name": "Confirm and Add To  Warehouse",
+  "workflow_action_name": "Confirm and Add To  Warehouse"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-02-09 09:30:19.105187",
+  "name": "Send To HQ Accountant",
+  "workflow_action_name": "Send To HQ Accountant"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-02-09 09:30:18.585448",
+  "name": "Unpaid",
+  "workflow_action_name": "Unpaid"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-02-09 09:30:18.609429",
+  "name": "Paid",
+  "workflow_action_name": "Paid"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-02-09 09:30:18.742027",
+  "name": "Send To Auditor",
+  "workflow_action_name": "Send To Auditor"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-02-09 09:30:18.764993",
+  "name": "Audit",
+  "workflow_action_name": "Audit"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-02-09 09:30:18.856178",
+  "name": "Send To Deputy Manager",
+  "workflow_action_name": "Send To Deputy Manager"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-02-09 09:30:18.656153",
+  "name": "Send To HQ Manager",
+  "workflow_action_name": "Send To HQ Manager"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-03-26 08:49:02.542169",
+  "name": "send To plan & Budget Manager",
+  "workflow_action_name": "send To plan & Budget Manager"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-02-09 09:30:18.785698",
+  "name": "Send To Finance Head",
+  "workflow_action_name": "Send To Finance Head"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-02-09 09:30:18.445363",
+  "name": "Send To Operation Manager",
+  "workflow_action_name": "Send To Operation Manager"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-02-09 09:30:18.515157",
+  "name": "Deny",
+  "workflow_action_name": "Deny"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-02-09 09:30:18.720216",
+  "name": "Receive",
+  "workflow_action_name": "Receive"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-02-09 09:30:19.037451",
+  "name": "Cancel",
+  "workflow_action_name": "Cancel"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-02-09 09:30:18.416351",
+  "name": "Authorize",
+  "workflow_action_name": "Authorize"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-02-09 09:30:18.833272",
+  "name": "Check",
+  "workflow_action_name": "Check"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-02-09 09:30:18.539421",
+  "name": "Accept",
+  "workflow_action_name": "Accept"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-02-08 19:03:24.136980",
+  "name": "Approve",
+  "workflow_action_name": "Approve"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-02-09 09:30:18.561823",
+  "name": "Send To Branch Manager",
+  "workflow_action_name": "Send To Branch Manager"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-02-08 19:03:24.140054",
+  "name": "Reject",
+  "workflow_action_name": "Reject"
+ }
+]

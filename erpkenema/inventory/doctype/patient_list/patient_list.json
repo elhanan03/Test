@@ -1,0 +1,95 @@
+{
+ "actions": [],
+ "autoname": "hash",
+ "creation": "2022-08-29 15:39:27.824220",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "name_of_patient",
+  "id_no",
+  "prescription_no",
+  "total",
+  "vat",
+  "total_for_vat_items",
+  "prescription_amount"
+ ],
+ "fields": [
+  {
+   "fetch_from": "prescription_no.full_name",
+   "fetch_if_empty": 1,
+   "fieldname": "id_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ID No.",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "prescription_no.full_name",
+   "fetch_if_empty": 1,
+   "fieldname": "name_of_patient",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name of Patient",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_if_empty": 1,
+   "fieldname": "prescription_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Prescription No",
+   "options": "Sales Attachment",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "prescription_no.total_inc_vat",
+   "fetch_if_empty": 1,
+   "fieldname": "prescription_amount",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Prescription Amount",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "prescription_no.total",
+   "fieldname": "total",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "prescription_no.vat",
+   "fieldname": "vat",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "15% Vat",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "prescription_no.total_for_vat_items",
+   "fetch_if_empty": 1,
+   "fieldname": "total_for_vat_items",
+   "fieldtype": "Data",
+   "label": "Total For VAT Items",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-01-11 12:16:03.975671",
+ "modified_by": "Administrator",
+ "module": "Inventory",
+ "name": "Patient List",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

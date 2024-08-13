@@ -1,0 +1,22 @@
+{
+ "creation": "2023-04-07 12:06:17.942146",
+ "docstatus": 0,
+ "doctype": "Number Card",
+ "filters_json": "{\"from_date\":\"2010-04-01\",\"to_date\":\"2023-04-07\"}",
+ "function": "Count",
+ "idx": 0,
+ "is_public": 0,
+ "is_standard": 1,
+ "label": "Average of Total_inc_vat",
+ "modified": "2023-04-07 12:06:17.968111",
+ "modified_by": "yonatan@12.com",
+ "module": "Accounting and Finance",
+ "name": "Average of Total_inc_vat",
+ "owner": "yonatan@12.com",
+ "report_field": "total_inc_vat",
+ "report_function": "Average",
+ "report_name": "Credit sales Report",
+ "show_percentage_stats": 1,
+ "stats_time_interval": "Daily",
+ "type": "Report"
+}

@@ -1,0 +1,324 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{DSS}-{DD}-{MM}-{YYYY}",
+ "creation": "2022-08-30 11:49:10.341682",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "branch",
+  "column_break_3",
+  "sales_date",
+  "section_break_3",
+  "sales_breakdown",
+  "section_break_17",
+  "update_variance",
+  "variance",
+  "section_break_10",
+  "sales_column",
+  "total_cash_over",
+  "total_cash_short",
+  "sales_ticket_amount",
+  "total_vat",
+  "actual_cash_deposit",
+  "cash_register_amount",
+  "other_income_column",
+  "adjusted_sales_amount",
+  "body_weight",
+  "compounding_fee",
+  "packing_fee",
+  "others",
+  "attachments_section",
+  "bank_deposit_slip",
+  "amount_in_birr_on_slip",
+  "column_break_22",
+  "cash_register__tape",
+  "amount_in_birr_for_cash_register",
+  "deposited_to_section",
+  "bank_name",
+  "account_number",
+  "branch_name",
+  "column_break_29",
+  "cashier",
+  "cashier_email",
+  "branch_accountant",
+  "branch_accountant_email",
+  "branch_manager",
+  "branch_manager_email"
+ ],
+ "fields": [
+  {
+   "fieldname": "branch",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Branch Shop Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sales_column",
+   "fieldtype": "Section Break",
+   "label": "Sales"
+  },
+  {
+   "fieldname": "actual_cash_deposit",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Actual Cash Deposit"
+  },
+  {
+   "fieldname": "cash_register_amount",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Cash Register Amount"
+  },
+  {
+   "fieldname": "sales_ticket_amount",
+   "fieldtype": "Float",
+   "label": "Sales Ticket Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "adjusted_sales_amount",
+   "fieldtype": "Float",
+   "label": "Adjusted Sales Amount"
+  },
+  {
+   "fieldname": "other_income_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "body_weight",
+   "fieldtype": "Float",
+   "label": "Body Weight "
+  },
+  {
+   "fieldname": "compounding_fee",
+   "fieldtype": "Float",
+   "label": "Compounding Fee"
+  },
+  {
+   "fieldname": "packing_fee",
+   "fieldtype": "Float",
+   "label": "Packing Fee"
+  },
+  {
+   "fieldname": "others",
+   "fieldtype": "Float",
+   "label": "Others"
+  },
+  {
+   "fieldname": "variance",
+   "fieldtype": "Table",
+   "label": "Variance",
+   "options": "Variance"
+  },
+  {
+   "fieldname": "sales_breakdown",
+   "fieldtype": "Table",
+   "label": "Sales Breakdown",
+   "options": "Sales Breakdown"
+  },
+  {
+   "fieldname": "attachments_section",
+   "fieldtype": "Section Break",
+   "label": "Attachments"
+  },
+  {
+   "fieldname": "bank_deposit_slip",
+   "fieldtype": "Attach Image",
+   "label": "Bank Deposit Slip"
+  },
+  {
+   "fieldname": "amount_in_birr_on_slip",
+   "fieldtype": "Float",
+   "label": "Amount In Birr On slip"
+  },
+  {
+   "fieldname": "cash_register__tape",
+   "fieldtype": "Attach Image",
+   "label": "Cash Register  Tape"
+  },
+  {
+   "fieldname": "amount_in_birr_for_cash_register",
+   "fieldtype": "Float",
+   "label": "Amount In Birr for Cash register"
+  },
+  {
+   "fieldname": "deposited_to_section",
+   "fieldtype": "Section Break",
+   "label": "Deposited To"
+  },
+  {
+   "fieldname": "bank_name",
+   "fieldtype": "Data",
+   "label": "Bank Name"
+  },
+  {
+   "fieldname": "account_number",
+   "fieldtype": "Int",
+   "label": "Account Number"
+  },
+  {
+   "fieldname": "branch_name",
+   "fieldtype": "Data",
+   "label": "Branch Name"
+  },
+  {
+   "fieldname": "cashier",
+   "fieldtype": "Link",
+   "label": "Cashier",
+   "options": "Cashier"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_29",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sales_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Sales Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break",
+   "options": "fa fa-table"
+  },
+  {
+   "fieldname": "total_vat",
+   "fieldtype": "Float",
+   "label": "Total VAT",
+   "read_only": 1
+  },
+  {
+   "fieldname": "update_variance",
+   "fieldtype": "Button",
+   "label": "Update Variance"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_cash_over",
+   "fieldtype": "Float",
+   "label": "Total Cash Over",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_cash_short",
+   "fieldtype": "Float",
+   "label": "Total Cash Short",
+   "read_only": 1
+  },
+  {
+   "fieldname": "branch_accountant",
+   "fieldtype": "Data",
+   "label": "Branch Accountant"
+  },
+  {
+   "fetch_from": "cashier.cashier",
+   "fieldname": "cashier_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": " Cashier Email",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "branch_accountant_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Branch Accountant Email",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "branch_manager",
+   "fieldtype": "Data",
+   "label": "Branch Manager"
+  },
+  {
+   "fieldname": "branch_manager_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Branch Manager Email",
+   "print_hide": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-07-10 10:53:25.387180",
+ "modified_by": "Administrator",
+ "module": "Inventory",
+ "name": "Daily Cash sales Summary",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Branch Accountant",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Branch manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Branch Cashier",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

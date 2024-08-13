@@ -1,0 +1,2930 @@
+[
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.307623",
+  "name": "BETABLOCK",
+  "title": "BETABLOCK"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.337188",
+  "name": "Dermatological",
+  "title": "Dermatological"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.357465",
+  "name": "ANTI HELMENTIC",
+  "title": "ANTI HELMENTIC"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.373580",
+  "name": "LINOMYCIN ANTIBIOTIC",
+  "title": "LINOMYCIN ANTIBIOTIC"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.385066",
+  "name": "ANTI HISTAMINE",
+  "title": "ANTI HISTAMINE"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.399483",
+  "name": "MACROLIDE ANTIBIOTICS",
+  "title": "MACROLIDE ANTIBIOTICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.414147",
+  "name": "PROTON PUMP INHIBITOR",
+  "title": "PROTON PUMP INHIBITOR"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.431311",
+  "name": "CORTICOSTROIDE",
+  "title": "CORTICOSTROIDE"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.447331",
+  "name": "CORTICOSTEOIDE",
+  "title": "CORTICOSTEOIDE"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.461087",
+  "name": "GLYCOPEPTIDE ANTIBIOTICS",
+  "title": "GLYCOPEPTIDE ANTIBIOTICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.476205",
+  "name": "ANTIPSYCHOTROPIC",
+  "title": "ANTIPSYCHOTROPIC"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.491317",
+  "name": "PENICILLIN ANTIBIOTIC",
+  "title": "PENICILLIN ANTIBIOTIC"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.504974",
+  "name": "ANTI-INFECTION",
+  "title": "ANTI-INFECTION"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.517938",
+  "name": "OPHTHALMIC",
+  "title": "OPHTHALMIC"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.531952",
+  "name": "SODIUM GLUCOSE CO TRANSPORTER 2 INHIBITOR",
+  "title": "SODIUM GLUCOSE CO TRANSPORTER 2 INHIBITOR"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.545329",
+  "name": "OMEGA 3 FATTY ACID",
+  "title": "OMEGA 3 FATTY ACID"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.560522",
+  "name": "ANTI ALLERGY",
+  "title": "ANTI ALLERGY"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.574744",
+  "name": "CORTICOSTEROIDE+",
+  "title": "CORTICOSTEROIDE+"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.589385",
+  "name": "SULPHONYLUREAS",
+  "title": "SULPHONYLUREAS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.602111",
+  "name": "ANALGESIC AND ANTIPYRETIC",
+  "title": "ANALGESIC AND ANTIPYRETIC"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.617363",
+  "name": "ANTIHISTAMINE",
+  "title": "ANTIHISTAMINE"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.632811",
+  "name": "ANTICONLVLSANT",
+  "title": "ANTICONLVLSANT"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.646198",
+  "name": "ANGIOTENSIN2 RECEPTOR BLOCKER",
+  "title": "ANGIOTENSIN2 RECEPTOR BLOCKER"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.660628",
+  "name": "ANTICONVELSANT",
+  "title": "ANTICONVELSANT"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.676160",
+  "name": "ANGIOTENSIN 2 RECEPTOR BLOCKER",
+  "title": "ANGIOTENSIN 2 RECEPTOR BLOCKER"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.690562",
+  "name": "CCB",
+  "title": "CCB"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.704761",
+  "name": "ANTICONVLSANT",
+  "title": "ANTICONVLSANT"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.719621",
+  "name": "ANTIHELMENTIC",
+  "title": "ANTIHELMENTIC"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.733838",
+  "name": "HMG-COA REDUCTASE INHIBITOR",
+  "title": "HMG-COA REDUCTASE INHIBITOR"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.747852",
+  "name": "ANTIBIOTIC",
+  "title": "ANTIBIOTIC"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.761779",
+  "name": "CORTICOSTEROIDE",
+  "title": "CORTICOSTEROIDE"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.776453",
+  "name": "5 ALPHA REDUCTASE INHIBITOR",
+  "title": "5 ALPHA REDUCTASE INHIBITOR"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.791764",
+  "name": "HISTAMIN 2 BLOCKER",
+  "title": "HISTAMIN 2 BLOCKER"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.808669",
+  "name": "MEDCAL SUPPLY",
+  "title": "MEDCAL SUPPLY"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.821057",
+  "name": "INSULIN",
+  "title": "INSULIN"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.837170",
+  "name": "MITOTIC INHIBIOR",
+  "title": "MITOTIC INHIBIOR"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.858581",
+  "name": "PROTON PUMP IHIBITOR",
+  "title": "PROTON PUMP IHIBITOR"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.873760",
+  "name": "BETABLOCKER",
+  "title": "BETABLOCKER"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.886684",
+  "name": "ANTIBACTERIAL MACROLID",
+  "title": "ANTIBACTERIAL MACROLID"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.900755",
+  "name": "ERGOT ALKAOID",
+  "title": "ERGOT ALKAOID"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.913811",
+  "name": "LOW MOLECULAR WEIGHT HEPARIN",
+  "title": "LOW MOLECULAR WEIGHT HEPARIN"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.929428",
+  "name": "ERYTHROPOIESIS-STIMULATING AGENTS",
+  "title": "ERYTHROPOIESIS-STIMULATING AGENTS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.945595",
+  "name": "ANTISPASMODIC DRUG",
+  "title": "ANTISPASMODIC DRUG"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.961741",
+  "name": "TETRACYCLINES",
+  "title": "TETRACYCLINES"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:52.980880",
+  "name": "ANTI GLAUCOMA",
+  "title": "ANTI GLAUCOMA"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.001215",
+  "name": "ANALGESIC & ANTIPYRETIC",
+  "title": "ANALGESIC & ANTIPYRETIC"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.021021",
+  "name": "ABORTIFACIENT",
+  "title": "ABORTIFACIENT"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.043909",
+  "name": "ANTIDYSRHYTHMICS",
+  "title": "ANTIDYSRHYTHMICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.066431",
+  "name": "ANTIINFLAMATORY & ALLERGIC",
+  "title": "ANTIINFLAMATORY & ALLERGIC"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.089735",
+  "name": "MINERALS & ELECTROLYTES",
+  "title": "MINERALS & ELECTROLYTES"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.113050",
+  "name": "ANTITUSSIVES",
+  "title": "ANTITUSSIVES"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.132556",
+  "name": "GLUCOCORTICOIDS & ANTIHISTAMINES",
+  "title": "GLUCOCORTICOIDS & ANTIHISTAMINES"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.153785",
+  "name": "HISTAMINE H1 ANTAGONIST",
+  "title": "HISTAMINE H1 ANTAGONIST"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.173816",
+  "name": "CLASS LL ANTIARRHYTHMIC",
+  "title": "CLASS LL ANTIARRHYTHMIC"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.197384",
+  "name": "CORTICOSTEROID & ANTIBIOTICS",
+  "title": "CORTICOSTEROID & ANTIBIOTICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.216226",
+  "name": "ANTHRACYCLINE",
+  "title": "ANTHRACYCLINE"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.238357",
+  "name": "PURINE ANALOGS",
+  "title": "PURINE ANALOGS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.256682",
+  "name": "ANTIMETABOLITE &ANTINEOPLASTIC AGENT",
+  "title": "ANTIMETABOLITE &ANTINEOPLASTIC AGENT"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.277787",
+  "name": "ANDROGEN",
+  "title": "ANDROGEN"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.298843",
+  "name": "IMMUNOSUPPRESSANTS",
+  "title": "IMMUNOSUPPRESSANTS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.317944",
+  "name": "BETA-LACTAM ANTIBIOTICS",
+  "title": "BETA-LACTAM ANTIBIOTICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.338048",
+  "name": "BRONCHODILATORS",
+  "title": "BRONCHODILATORS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.359626",
+  "name": "ANTI-ALLERGIC",
+  "title": "ANTI-ALLERGIC"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.381455",
+  "name": "SULFONAMIDES",
+  "title": "SULFONAMIDES"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.400216",
+  "name": "MEDICAL EQUPMENT",
+  "title": "MEDICAL EQUPMENT"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.425239",
+  "name": "SECRETOLYTIC AGENT",
+  "title": "SECRETOLYTIC AGENT"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.445070",
+  "name": "NON-PHARMACUTICAL",
+  "title": "NON-PHARMACUTICAL"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.466616",
+  "name": "REAGENT",
+  "title": "REAGENT"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.485556",
+  "name": "ANTI-GOUT AGENTS",
+  "title": "ANTI-GOUT AGENTS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.506289",
+  "name": "ESTROGENS/PROGESTRON",
+  "title": "ESTROGENS/PROGESTRON"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.529331",
+  "name": "ATYPICAL ANTIPSYCHOTIC",
+  "title": "ATYPICAL ANTIPSYCHOTIC"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.550294",
+  "name": "XANTHINE OXIDASE INHIBITOR",
+  "title": "XANTHINE OXIDASE INHIBITOR"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.570366",
+  "name": "SCABICIDAL AGENTS",
+  "title": "SCABICIDAL AGENTS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.588127",
+  "name": "ANTIPLATELET",
+  "title": "ANTIPLATELET"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.611625",
+  "name": "TRICYCLIC ANTIDEPRESANT",
+  "title": "TRICYCLIC ANTIDEPRESANT"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.631105",
+  "name": "OVULATORY STIMULANTS",
+  "title": "OVULATORY STIMULANTS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.652368",
+  "name": "ALPHA BLOCKERS",
+  "title": "ALPHA BLOCKERS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.671020",
+  "name": "MACROLID ANTIBIOTICS",
+  "title": "MACROLID ANTIBIOTICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.691346",
+  "name": "CHEMOTHERAPY DRUG",
+  "title": "CHEMOTHERAPY DRUG"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.712094",
+  "name": "SEROTONIN &HISTAMINE ANTAGONIST",
+  "title": "SEROTONIN &HISTAMINE ANTAGONIST"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.736500",
+  "name": "H2 BOLCKERS",
+  "title": "H2 BOLCKERS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.756647",
+  "name": "ANTIMALARIAL",
+  "title": "ANTIMALARIAL"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.767542",
+  "name": "MYDRIATICS",
+  "title": "MYDRIATICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.782400",
+  "name": "ANTIBIOTICS &CORTICOSTEROID",
+  "title": "ANTIBIOTICS &CORTICOSTEROID"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.804687",
+  "name": "1ST GENRATION CEPHALOSPORIN",
+  "title": "1ST GENRATION CEPHALOSPORIN"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.817538",
+  "name": "COX-2 INHIBITORS",
+  "title": "COX-2 INHIBITORS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.833846",
+  "name": "2ND CEPHALOSPORIN ANTIBIOTICS",
+  "title": "2ND CEPHALOSPORIN ANTIBIOTICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.852058",
+  "name": "3RD CEPHALOSPORIN ANTIBIOTICS",
+  "title": "3RD CEPHALOSPORIN ANTIBIOTICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.868071",
+  "name": "3RDCEPHALOSPORIN ANTIBIOTICS",
+  "title": "3RDCEPHALOSPORIN ANTIBIOTICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.883036",
+  "name": "PLATINUM-CONTAINING COMPOUNDS",
+  "title": "PLATINUM-CONTAINING COMPOUNDS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.897112",
+  "name": "ANTITHYROID AGENT",
+  "title": "ANTITHYROID AGENT"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.913066",
+  "name": "SYMPATHOMIMETIC AGENT",
+  "title": "SYMPATHOMIMETIC AGENT"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.927168",
+  "name": "ANTIBNEOPLASTICS",
+  "title": "ANTIBNEOPLASTICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.943090",
+  "name": "CLASS V ANTIARRHYTHMIC AGENT",
+  "title": "CLASS V ANTIARRHYTHMIC AGENT"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.957249",
+  "name": "ANTIIFLAMATORY & ANTIPRURITIC MEDICINE",
+  "title": "ANTIIFLAMATORY & ANTIPRURITIC MEDICINE"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.971013",
+  "name": "ARBS",
+  "title": "ARBS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:53.983964",
+  "name": "ALKYLATING AGENTS",
+  "title": "ALKYLATING AGENTS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.000590",
+  "name": "LONG-ACTING BETA AGONIST",
+  "title": "LONG-ACTING BETA AGONIST"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.016403",
+  "name": "DOPAMINE D2 AGONIST",
+  "title": "DOPAMINE D2 AGONIST"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.030797",
+  "name": "ALPHA-ADRENERGIC AGONISTS",
+  "title": "ALPHA-ADRENERGIC AGONISTS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.045782",
+  "name": "CYTOTOXIC CHEMOTHERAPY",
+  "title": "CYTOTOXIC CHEMOTHERAPY"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.061110",
+  "name": "NON STEROIDAL ANTIANDROGENS",
+  "title": "NON STEROIDAL ANTIANDROGENS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.076692",
+  "name": "BETA-LACTAM ANTIMICROBIALS",
+  "title": "BETA-LACTAM ANTIMICROBIALS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.094781",
+  "name": "CORTICOSTEROID & AMINOGLYCOSIDE",
+  "title": "CORTICOSTEROID & AMINOGLYCOSIDE"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.111454",
+  "name": "ANTI-ALLERGIC DRUGS",
+  "title": "ANTI-ALLERGIC DRUGS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.125966",
+  "name": "SCABICIDES & PEDICULICIDES",
+  "title": "SCABICIDES & PEDICULICIDES"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.141288",
+  "name": "TOPICAL ANTIFUNGAL",
+  "title": "TOPICAL ANTIFUNGAL"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.156769",
+  "name": "ANTIMUSCARINIC CLASS",
+  "title": "ANTIMUSCARINIC CLASS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.170915",
+  "name": "STEROID ANTIBIOTICS",
+  "title": "STEROID ANTIBIOTICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.185014",
+  "name": "MONOBACTAM ANTIBIOTICS",
+  "title": "MONOBACTAM ANTIBIOTICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.201293",
+  "name": "ANTIIFLAMATORY",
+  "title": "ANTIIFLAMATORY"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.216902",
+  "name": "SULFONAMIDES DRUGS",
+  "title": "SULFONAMIDES DRUGS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.233694",
+  "name": "5-HT3 ANTAGONIST",
+  "title": "5-HT3 ANTAGONIST"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.251195",
+  "name": "CARBONIC ANHYDRASE INHIBITOR",
+  "title": "CARBONIC ANHYDRASE INHIBITOR"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.266763",
+  "name": "PENCILLIN GROUP OF ANTIBIOTICS",
+  "title": "PENCILLIN GROUP OF ANTIBIOTICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.283650",
+  "name": "FUSIDANE ANTIBIOTICS",
+  "title": "FUSIDANE ANTIBIOTICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.297821",
+  "name": "SYNTHETIC PROGESTIN",
+  "title": "SYNTHETIC PROGESTIN"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.312345",
+  "name": "MINERALS & ELECTROLYTE",
+  "title": "MINERALS & ELECTROLYTE"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.326728",
+  "name": "NARCOTIC",
+  "title": "NARCOTIC"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.338598",
+  "name": "NONSTEROIDAL AROMATASE INHIBITOR",
+  "title": "NONSTEROIDAL AROMATASE INHIBITOR"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.353672",
+  "name": "SANITERY",
+  "title": "SANITERY"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.368415",
+  "name": "SGLT2 INHIBITORS",
+  "title": "SGLT2 INHIBITORS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.383618",
+  "name": "GASTROINTESTINAL SPASMS",
+  "title": "GASTROINTESTINAL SPASMS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.397305",
+  "name": "STEROID HORMONE",
+  "title": "STEROID HORMONE"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.413179",
+  "name": "NON STEROIDAL ANTIINFLAMATORY",
+  "title": "NON STEROIDAL ANTIINFLAMATORY"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.429369",
+  "name": "NRTIS",
+  "title": "NRTIS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.444416",
+  "name": "PHOSPHONIC ANTIBIOTICS",
+  "title": "PHOSPHONIC ANTIBIOTICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.459946",
+  "name": "ANTI INFLAMATORY",
+  "title": "ANTI INFLAMATORY"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.473016",
+  "name": "DICARBOXYLIC ACID",
+  "title": "DICARBOXYLIC ACID"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.488951",
+  "name": "TYPE 2 ANTIDIABETICS",
+  "title": "TYPE 2 ANTIDIABETICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.502789",
+  "name": "IMMUNOSUPPRESANTS",
+  "title": "IMMUNOSUPPRESANTS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.530080",
+  "name": "SECROLYTIC AGENT",
+  "title": "SECROLYTIC AGENT"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.559412",
+  "name": "STIMULANT LAXATIVE",
+  "title": "STIMULANT LAXATIVE"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.592158",
+  "name": "CEPHALOSPORIN ANTIBIOTICS",
+  "title": "CEPHALOSPORIN ANTIBIOTICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.618219",
+  "name": "OPOIDS",
+  "title": "OPOIDS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.647623",
+  "name": "SKELETAL MUSCLE RELAXANTS",
+  "title": "SKELETAL MUSCLE RELAXANTS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.674393",
+  "name": "TOPICAL STEROID",
+  "title": "TOPICAL STEROID"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.702174",
+  "name": "FLUOROQUINOLONE ANTIBIOTICS",
+  "title": "FLUOROQUINOLONE ANTIBIOTICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.730088",
+  "name": "STATINS",
+  "title": "STATINS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.756111",
+  "name": "MUCOLYTICS",
+  "title": "MUCOLYTICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.780340",
+  "name": "NASA ANTIHISTAMINES & DECONGESTANT",
+  "title": "NASA ANTIHISTAMINES & DECONGESTANT"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.801129",
+  "name": "ANI INFLAMATORY",
+  "title": "ANI INFLAMATORY"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.827553",
+  "name": "HYPNOTICS",
+  "title": "HYPNOTICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.847493",
+  "name": "ANTI-BIOTICS",
+  "title": "ANTI-BIOTICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.866062",
+  "name": "ANTINFLAMATORY/ANALESIC",
+  "title": "ANTINFLAMATORY/ANALESIC"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.887493",
+  "name": "ANTIHISTAMINE ANTI-VERTIGO",
+  "title": "ANTIHISTAMINE ANTI-VERTIGO"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.912048",
+  "name": "BENZYLISOQUINOLINIUM",
+  "title": "BENZYLISOQUINOLINIUM"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.932485",
+  "name": "ANTIMALARIALS",
+  "title": "ANTIMALARIALS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:54.977145",
+  "name": "ANTIRESORPTIVE",
+  "title": "ANTIRESORPTIVE"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.006219",
+  "name": "MINERAL AND SUPPLEMENTAL",
+  "title": "MINERAL AND SUPPLEMENTAL"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.033585",
+  "name": "ALPHA-ADRENERGIC AGONIST",
+  "title": "ALPHA-ADRENERGIC AGONIST"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.057476",
+  "name": "ANTIBOTIC",
+  "title": "ANTIBOTIC"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.077141",
+  "name": "ANTIOXIDANTS",
+  "title": "ANTIOXIDANTS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.099226",
+  "name": "SUPPLEMENT",
+  "title": "SUPPLEMENT"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.125832",
+  "name": "IRON SUPPLEMENT",
+  "title": "IRON SUPPLEMENT"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.145208",
+  "name": "ANTIFIBRINOLYTICS",
+  "title": "ANTIFIBRINOLYTICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.164573",
+  "name": "ANTIDIABETICS",
+  "title": "ANTIDIABETICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.188693",
+  "name": "IMMUNISING AGENTS",
+  "title": "IMMUNISING AGENTS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.207344",
+  "name": "EQUIPMENT",
+  "title": "EQUIPMENT"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.227590",
+  "name": "SANITARY",
+  "title": "SANITARY"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.248078",
+  "name": "ARB WITH CALCIUM CHANEL BLOKERS",
+  "title": "ARB WITH CALCIUM CHANEL BLOKERS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.272187",
+  "name": "ARB",
+  "title": "ARB"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.291226",
+  "name": "ARB/HCTZ COMBOS",
+  "title": "ARB/HCTZ COMBOS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.308111",
+  "name": "IMPOTENCE AGENTS",
+  "title": "IMPOTENCE AGENTS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.329861",
+  "name": "IODINATED CONTRAST MEDIA",
+  "title": "IODINATED CONTRAST MEDIA"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.349252",
+  "name": "ANTIMUSCARINICS",
+  "title": "ANTIMUSCARINICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.371450",
+  "name": "ANTIPSYCHOTICS",
+  "title": "ANTIPSYCHOTICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.391049",
+  "name": "A GLUCOCORTICOID",
+  "title": "A GLUCOCORTICOID"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.411534",
+  "name": "ACNE AGENT",
+  "title": "ACNE AGENT"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.432654",
+  "name": "TOPICAL CORTICOSTEROIDS",
+  "title": "TOPICAL CORTICOSTEROIDS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.459307",
+  "name": "ANTIANGINAL",
+  "title": "ANTIANGINAL"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.496041",
+  "name": "PROSTAGLANDIN ANALOGS",
+  "title": "PROSTAGLANDIN ANALOGS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.524776",
+  "name": "GLUCOCORTICOIDS",
+  "title": "GLUCOCORTICOIDS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.549427",
+  "name": "OPEN-ANGLE GLAUCOMA AGENT",
+  "title": "OPEN-ANGLE GLAUCOMA AGENT"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.581626",
+  "name": "TOPICAL FUNGICIDE",
+  "title": "TOPICAL FUNGICIDE"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.601522",
+  "name": "OPHTHALMOLOGICALS",
+  "title": "OPHTHALMOLOGICALS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.618360",
+  "name": "AMINOGLYCOSIDE ANTIBIOTICS",
+  "title": "AMINOGLYCOSIDE ANTIBIOTICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.633851",
+  "name": "ANTIMICROBIALS",
+  "title": "ANTIMICROBIALS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.649075",
+  "name": "OPHTHALMIC GLAUCOMA AGENTS",
+  "title": "OPHTHALMIC GLAUCOMA AGENTS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.664983",
+  "name": "THYROID HORMONE",
+  "title": "THYROID HORMONE"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.682476",
+  "name": "TYPICAL ANTIPSYCHOTIC",
+  "title": "TYPICAL ANTIPSYCHOTIC"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.696911",
+  "name": "ALPHA/BETA ADRENERGIC AGONIST",
+  "title": "ALPHA/BETA ADRENERGIC AGONIST"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.712177",
+  "name": "A BRONCHODILATOR",
+  "title": "A BRONCHODILATOR"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.728165",
+  "name": "OPHTHALMIC ANTIHISTAMINES &DECONGESTANTS",
+  "title": "OPHTHALMIC ANTIHISTAMINES &DECONGESTANTS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.745665",
+  "name": "AMINO-ESTER CLASS LOCAL ANESTHETIC",
+  "title": "AMINO-ESTER CLASS LOCAL ANESTHETIC"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.768258",
+  "name": "ANDROGENIC HORMONES",
+  "title": "ANDROGENIC HORMONES"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.793617",
+  "name": "GASTROINTESTINAL AGENT",
+  "title": "GASTROINTESTINAL AGENT"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.810936",
+  "name": "OPHTHALMIC LUBRICANTS",
+  "title": "OPHTHALMIC LUBRICANTS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.838752",
+  "name": "ANTIESTROGENS",
+  "title": "ANTIESTROGENS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.863722",
+  "name": "IMMUNOSUPRESSANTS",
+  "title": "IMMUNOSUPRESSANTS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.889893",
+  "name": "ANTIACID",
+  "title": "ANTIACID"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.914659",
+  "name": "ALPHA-GLUCOSIDASE INHIBITORS",
+  "title": "ALPHA-GLUCOSIDASE INHIBITORS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.941810",
+  "name": "SELECTIVE SEROTONIN RECEPTOR AGONISTS",
+  "title": "SELECTIVE SEROTONIN RECEPTOR AGONISTS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.966647",
+  "name": "CORTICOSTEROIDS AND ANTIINFECTIVES",
+  "title": "CORTICOSTEROIDS AND ANTIINFECTIVES"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:55.988222",
+  "name": "ARTIFICIAL SWEETENERS",
+  "title": "ARTIFICIAL SWEETENERS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.003127",
+  "name": "NONSTEROIDAL AROMATASE INHIBITORS",
+  "title": "NONSTEROIDAL AROMATASE INHIBITORS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.018307",
+  "name": "ALDOSTERONE RECEPTOR ANTAGONISTS",
+  "title": "ALDOSTERONE RECEPTOR ANTAGONISTS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.035172",
+  "name": "AMINOCYCLITOL",
+  "title": "AMINOCYCLITOL"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.053377",
+  "name": "BETA-BLOCKER",
+  "title": "BETA-BLOCKER"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.068442",
+  "name": "ANTICONVULSANTS",
+  "title": "ANTICONVULSANTS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.086952",
+  "name": "PENTAVALENT ANTIMONIALS",
+  "title": "PENTAVALENT ANTIMONIALS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.103741",
+  "name": "VASODILATOR",
+  "title": "VASODILATOR"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.121619",
+  "name": "ANTI-INFLAMMATORY",
+  "title": "ANTI-INFLAMMATORY"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.137761",
+  "name": "ISOTONIC SOLUTION",
+  "title": "ISOTONIC SOLUTION"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.153555",
+  "name": "ALKALINISING AGENTS",
+  "title": "ALKALINISING AGENTS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.169104",
+  "name": "DIPEPTIDYL PEPTIDASE-4 (DPP-4) INHIBITORS",
+  "title": "DIPEPTIDYL PEPTIDASE-4 (DPP-4) INHIBITORS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.184120",
+  "name": "GASTROINTESTINAL",
+  "title": "GASTROINTESTINAL"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.200042",
+  "name": "PENICILLINS",
+  "title": "PENICILLINS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.216378",
+  "name": "ANTIVIRALS",
+  "title": "ANTIVIRALS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.230741",
+  "name": "PHOSPHODIESTERASE INHIBITORS",
+  "title": "PHOSPHODIESTERASE INHIBITORS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.244806",
+  "name": "PDEIS",
+  "title": "PDEIS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.260871",
+  "name": "VITAMINS & SUPPLEMENTS",
+  "title": "VITAMINS & SUPPLEMENTS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.276549",
+  "name": "SSRIS",
+  "title": "SSRIS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.291653",
+  "name": "DPP-4 INHIBITORS",
+  "title": "DPP-4 INHIBITORS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.308782",
+  "name": "ANTI DIABETICS",
+  "title": "ANTI DIABETICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.337310",
+  "name": "ANTI-SEPTICS AND DISINFECTANT",
+  "title": "ANTI-SEPTICS AND DISINFECTANT"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.354169",
+  "name": "KERATOLYTIC",
+  "title": "KERATOLYTIC"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.370350",
+  "name": "SHORT-ACTING BETA-2 ADRENERGIC AGONIST",
+  "title": "SHORT-ACTING BETA-2 ADRENERGIC AGONIST"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.386644",
+  "name": "ANTI-COAGULANT",
+  "title": "ANTI-COAGULANT"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.404018",
+  "name": "ANTI-PSYCHOTROPICS",
+  "title": "ANTI-PSYCHOTROPICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.422611",
+  "name": "ANTI VIRAL",
+  "title": "ANTI VIRAL"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.444937",
+  "name": "ANTI PSYCHOTROPICS",
+  "title": "ANTI PSYCHOTROPICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.462583",
+  "name": "H2 BLOCKERS",
+  "title": "H2 BLOCKERS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.484565",
+  "name": "HIV INTEGRASE INHIBITOR",
+  "title": "HIV INTEGRASE INHIBITOR"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.509341",
+  "name": "ANTITUSSIVE",
+  "title": "ANTITUSSIVE"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.531956",
+  "name": "ALPHA 1-SELECTIVE ADRENERGIC BLOCKER",
+  "title": "ALPHA 1-SELECTIVE ADRENERGIC BLOCKER"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.556178",
+  "name": "ANTI-THYROID AGENT",
+  "title": "ANTI-THYROID AGENT"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.576184",
+  "name": "CLASS 1A ANTIARRHYTHMIC AGENT",
+  "title": "CLASS 1A ANTIARRHYTHMIC AGENT"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.594260",
+  "name": "BETA-LACTAMASE INHIBITOR/ANTIBIOTICS",
+  "title": "BETA-LACTAMASE INHIBITOR/ANTIBIOTICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.615284",
+  "name": "THIAZOLIDINEDIONE/TYPE2 ANTIDIABETICS",
+  "title": "THIAZOLIDINEDIONE/TYPE2 ANTIDIABETICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.638499",
+  "name": "CONVENTIONAL ANTISPYCHOTICS",
+  "title": "CONVENTIONAL ANTISPYCHOTICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.663829",
+  "name": "MIOTICS /ANTI GLAUCOMA",
+  "title": "MIOTICS /ANTI GLAUCOMA"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.687472",
+  "name": "MIOTICS/ANTI GLAUCOMA",
+  "title": "MIOTICS/ANTI GLAUCOMA"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.713743",
+  "name": "ANTICONVULSANTS/ANTIDYSRHYTHMICS",
+  "title": "ANTICONVULSANTS/ANTIDYSRHYTHMICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.752160",
+  "name": "ORAL ANTIDIABETICS",
+  "title": "ORAL ANTIDIABETICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.775458",
+  "name": "ANTI-SEIZURE",
+  "title": "ANTI-SEIZURE"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.794705",
+  "name": "MOISTURIZERS",
+  "title": "MOISTURIZERS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.817864",
+  "name": "OPOID",
+  "title": "OPOID"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.842746",
+  "name": "COSMETIC",
+  "title": "COSMETIC"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.860923",
+  "name": "ANALGESIC &ANTIPYRETIC DRUGS",
+  "title": "ANALGESIC &ANTIPYRETIC DRUGS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.887223",
+  "name": "NASAL ANTIHISTAMINES & DECONGESTANTS",
+  "title": "NASAL ANTIHISTAMINES & DECONGESTANTS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.920179",
+  "name": "ANTIMICROTUBULE AGENT",
+  "title": "ANTIMICROTUBULE AGENT"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.956456",
+  "name": "ANTINEOPLASTIC AGENTS",
+  "title": "ANTINEOPLASTIC AGENTS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:56.986146",
+  "name": "ANTISEPTIC",
+  "title": "ANTISEPTIC"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.017074",
+  "name": "DIARRHEA",
+  "title": "DIARRHEA"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.045452",
+  "name": "HORMONES",
+  "title": "HORMONES"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.068600",
+  "name": "SEROTONIN 5-HT3 RECEPTOR ANTAGONISTS",
+  "title": "SEROTONIN 5-HT3 RECEPTOR ANTAGONISTS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.093766",
+  "name": "PPIS",
+  "title": "PPIS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.115796",
+  "name": "MAST CELL STABILIZERS",
+  "title": "MAST CELL STABILIZERS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.140277",
+  "name": "ATYPICAL ANTIPSYCHOTICS",
+  "title": "ATYPICAL ANTIPSYCHOTICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.161875",
+  "name": "FLUOROQUINOLONE",
+  "title": "FLUOROQUINOLONE"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.179858",
+  "name": "ESTROGENIC STEROID",
+  "title": "ESTROGENIC STEROID"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.204874",
+  "name": "CRYSTALLOID FLUID",
+  "title": "CRYSTALLOID FLUID"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.228783",
+  "name": "QUINOLONE ANTIBIOTICS",
+  "title": "QUINOLONE ANTIBIOTICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.253813",
+  "name": "CALCIUM CHANNEL BLOKER",
+  "title": "CALCIUM CHANNEL BLOKER"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.270257",
+  "name": "OPIATE ANTAGONIST",
+  "title": "OPIATE ANTAGONIST"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.284405",
+  "name": "ANTI TUBERCULOSIS DRUG",
+  "title": "ANTI TUBERCULOSIS DRUG"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.297467",
+  "name": "IMMUNOSUPPRESSIVE AGENT",
+  "title": "IMMUNOSUPPRESSIVE AGENT"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.313101",
+  "name": "ANTIBACTERIAL",
+  "title": "ANTIBACTERIAL"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.328245",
+  "name": "NARCOTICS",
+  "title": "NARCOTICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.344167",
+  "name": "LTRAS",
+  "title": "LTRAS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.361207",
+  "name": "NUTRITION",
+  "title": "NUTRITION"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.376514",
+  "name": "BIOFLAVONOIDS",
+  "title": "BIOFLAVONOIDS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.391322",
+  "name": "ANPIFUNGAL",
+  "title": "ANPIFUNGAL"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.406805",
+  "name": "ANTIMICROBIAL",
+  "title": "ANTIMICROBIAL"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.422782",
+  "name": "ACEIS",
+  "title": "ACEIS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.442864",
+  "name": "BETA- BLOKER",
+  "title": "BETA- BLOKER"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.460092",
+  "name": "PROKINETIC AGENTS",
+  "title": "PROKINETIC AGENTS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.476273",
+  "name": "COUNTERIRRITANTS",
+  "title": "COUNTERIRRITANTS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.492919",
+  "name": "CORTICOSTEROID",
+  "title": "CORTICOSTEROID"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.509131",
+  "name": "ANTIHYPERTENSIVES",
+  "title": "ANTIHYPERTENSIVES"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.524096",
+  "name": "OPIATE  ANALGESICS",
+  "title": "OPIATE  ANALGESICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.539931",
+  "name": "ANTIHYPERGLYCEMIC",
+  "title": "ANTIHYPERGLYCEMIC"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.558557",
+  "name": "BIGUANIDE",
+  "title": "BIGUANIDE"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.573749",
+  "name": "3-OXO-5ALPHA-STEROID.",
+  "title": "3-OXO-5ALPHA-STEROID."
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.589310",
+  "name": "MEDICAL SUPPLY",
+  "title": "MEDICAL SUPPLY"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.604579",
+  "name": "PURINE ANTAGONISTS",
+  "title": "PURINE ANTAGONISTS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.624696",
+  "name": "ALKYLATING",
+  "title": "ALKYLATING"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.658631",
+  "name": "VASOCONSTRICTOR",
+  "title": "VASOCONSTRICTOR"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.692024",
+  "name": "BENZODIAZEPINE",
+  "title": "BENZODIAZEPINE"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.710450",
+  "name": "ANTISPASMODIC",
+  "title": "ANTISPASMODIC"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.727653",
+  "name": "ANTHELMINTIC",
+  "title": "ANTHELMINTIC"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.744642",
+  "name": "ANTHELMINTICS",
+  "title": "ANTHELMINTICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.761360",
+  "name": "DIURETIC",
+  "title": "DIURETIC"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.777494",
+  "name": "ELECTROLYTE SUPPLEMENT",
+  "title": "ELECTROLYTE SUPPLEMENT"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.792895",
+  "name": "LAXATIVE",
+  "title": "LAXATIVE"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.806913",
+  "name": "ORTHOPEDIC DEVICE",
+  "title": "ORTHOPEDIC DEVICE"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.820144",
+  "name": "HMG COA REDUCTASE INHIBITORS",
+  "title": "HMG COA REDUCTASE INHIBITORS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.833597",
+  "name": "ANGIOTENSIN II RECEPTOR ANTAGONISTS",
+  "title": "ANGIOTENSIN II RECEPTOR ANTAGONISTS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.858124",
+  "name": "ANGIOTENSIN II RECEPTOR BLOCKER",
+  "title": "ANGIOTENSIN II RECEPTOR BLOCKER"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.906730",
+  "name": "BENZODIAZEPINES",
+  "title": "BENZODIAZEPINES"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.936342",
+  "name": "ANTI-DIARRHEAL",
+  "title": "ANTI-DIARRHEAL"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.957753",
+  "name": "ANTIMANIC",
+  "title": "ANTIMANIC"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.979467",
+  "name": "ANGIOTENSIN-CONVERTING ENZYME",
+  "title": "ANGIOTENSIN-CONVERTING ENZYME"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:57.995423",
+  "name": "COSMOTICS",
+  "title": "COSMOTICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.011462",
+  "name": "ANTIBACTERIALS",
+  "title": "ANTIBACTERIALS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.028738",
+  "name": "LOCAL ANAESTHETIC",
+  "title": "LOCAL ANAESTHETIC"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.043834",
+  "name": "ANTIPARKINSONISM",
+  "title": "ANTIPARKINSONISM"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.057747",
+  "name": "ANTIVIRAL.",
+  "title": "ANTIVIRAL."
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.073962",
+  "name": "CHEMOTHERAPY",
+  "title": "CHEMOTHERAPY"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.097082",
+  "name": "IMIDAZOTHIAZOLES",
+  "title": "IMIDAZOTHIAZOLES"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.114506",
+  "name": "PROSTAGLANDIN F2 ALPHA ANALOG",
+  "title": "PROSTAGLANDIN F2 ALPHA ANALOG"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.129128",
+  "name": "PROTON PUMP INHIBITORS",
+  "title": "PROTON PUMP INHIBITORS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.144771",
+  "name": "ANTIEPILEPTIC",
+  "title": "ANTIEPILEPTIC"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.159862",
+  "name": "LAXATIVES",
+  "title": "LAXATIVES"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.174902",
+  "name": "BETA-BLOCKERS.",
+  "title": "BETA-BLOCKERS."
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.189717",
+  "name": "ANTIHISTAMINES",
+  "title": "ANTIHISTAMINES"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.210196",
+  "name": "IMIDAZOLE ANTIFUNGAL",
+  "title": "IMIDAZOLE ANTIFUNGAL"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.237309",
+  "name": "BETA-LACTAMASE INHIBITORS.",
+  "title": "BETA-LACTAMASE INHIBITORS."
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.252904",
+  "name": "RETINOID-LIKE AGENT",
+  "title": "RETINOID-LIKE AGENT"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.263447",
+  "name": "VASODILATORS.",
+  "title": "VASODILATORS."
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.284855",
+  "name": "BETA-LACTAMASE INHIBITORS",
+  "title": "BETA-LACTAMASE INHIBITORS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.306114",
+  "name": "IRON REPLACEMENT PRODUCT",
+  "title": "IRON REPLACEMENT PRODUCT"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.327979",
+  "name": "DAN TOPOISOMERASE L INHIBITOR",
+  "title": "DAN TOPOISOMERASE L INHIBITOR"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.350173",
+  "name": "ANGIOTENSION LL RECEPTOR ANTAGONIST",
+  "title": "ANGIOTENSION LL RECEPTOR ANTAGONIST"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.373740",
+  "name": "RADIOPAQUE CONTRAST AGENT",
+  "title": "RADIOPAQUE CONTRAST AGENT"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.392957",
+  "name": "ANTISEPTICS",
+  "title": "ANTISEPTICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.414073",
+  "name": "ANTINEOPLASTIC ANTIBIOTICS",
+  "title": "ANTINEOPLASTIC ANTIBIOTICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.436303",
+  "name": "SHORT ACTING INSULIN",
+  "title": "SHORT ACTING INSULIN"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.461135",
+  "name": "ANTIDIABETIC AGENT",
+  "title": "ANTIDIABETIC AGENT"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.482295",
+  "name": "ALKYLATING AGENT",
+  "title": "ALKYLATING AGENT"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.504501",
+  "name": "ANTISEPTIC &GERMICIDES",
+  "title": "ANTISEPTIC &GERMICIDES"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.521943",
+  "name": "BISPHOSPHONATES",
+  "title": "BISPHOSPHONATES"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.542827",
+  "name": "ANTICHOLINERGICS",
+  "title": "ANTICHOLINERGICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.567030",
+  "name": "PROGESTINS",
+  "title": "PROGESTINS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.605984",
+  "name": "DEPIGMENTING AGENTS",
+  "title": "DEPIGMENTING AGENTS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.650674",
+  "name": "CLASS 4 OXIDIZER",
+  "title": "CLASS 4 OXIDIZER"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.688347",
+  "name": "DIURETICS",
+  "title": "DIURETICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.740297",
+  "name": "ANTIVIRAL",
+  "title": "ANTIVIRAL"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.772750",
+  "name": "ANTICOAGULANT",
+  "title": "ANTICOAGULANT"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.794365",
+  "name": "CONVENTIONAL ANTIPSYCHOTICS",
+  "title": "CONVENTIONAL ANTIPSYCHOTICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.822516",
+  "name": "EXPECTORANTS",
+  "title": "EXPECTORANTS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.842256",
+  "name": "ANTI-FUNGAL",
+  "title": "ANTI-FUNGAL"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.870355",
+  "name": "HEMATOPOIETIC GROWTH FACTORS",
+  "title": "HEMATOPOIETIC GROWTH FACTORS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.892069",
+  "name": "5-HT3 RECEPTOR ANTAGONISTS",
+  "title": "5-HT3 RECEPTOR ANTAGONISTS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.911425",
+  "name": "LUTEINIZING HORMONE RELEASING(LHRH)",
+  "title": "LUTEINIZING HORMONE RELEASING(LHRH)"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.926705",
+  "name": "VASODILATORS",
+  "title": "VASODILATORS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.941745",
+  "name": "HYPEROSMOTIC LAXATIVES",
+  "title": "HYPEROSMOTIC LAXATIVES"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.957660",
+  "name": "SUPPLMENT",
+  "title": "SUPPLMENT"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.975265",
+  "name": "SULFONYLUREAS.",
+  "title": "SULFONYLUREAS."
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:58.990619",
+  "name": "SULFONYLUREA",
+  "title": "SULFONYLUREA"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:59.006486",
+  "name": "BETA BLOCKERS",
+  "title": "BETA BLOCKERS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:59.022966",
+  "name": "SULFONYLUREAS",
+  "title": "SULFONYLUREAS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:59.039480",
+  "name": "CVC DRUG",
+  "title": "CVC DRUG"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:59.055960",
+  "name": "ANTIFUNGALS",
+  "title": "ANTIFUNGALS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:59.071692",
+  "name": "NUCLEOSIDE METABOLIC INHIBITOR",
+  "title": "NUCLEOSIDE METABOLIC INHIBITOR"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:59.088774",
+  "name": "CONTRAST",
+  "title": "CONTRAST"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:59.106543",
+  "name": "ANTI-CANCER",
+  "title": "ANTI-CANCER"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:59.123633",
+  "name": "ANTIBIOTICS AND CORTICOSTEROID",
+  "title": "ANTIBIOTICS AND CORTICOSTEROID"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:59.142436",
+  "name": "ANTIBIOTICS",
+  "title": "ANTIBIOTICS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:59.164055",
+  "name": "LOOP DIURETIC",
+  "title": "LOOP DIURETIC"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:59.191042",
+  "name": "HUMAN CARCINOGEN.",
+  "title": "HUMAN CARCINOGEN."
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:59.207590",
+  "name": "VITAMINS",
+  "title": "VITAMINS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:59.223767",
+  "name": "HMG-COA REDUCTASE INHIBITORS",
+  "title": "HMG-COA REDUCTASE INHIBITORS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:59.239383",
+  "name": "STEROIDS/LAB",
+  "title": "STEROIDS/LAB"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:59.254655",
+  "name": "NONSTEROIDAL ANTIANDROGENS",
+  "title": "NONSTEROIDAL ANTIANDROGENS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:59.270659",
+  "name": "ANTIPSYCHOTIC",
+  "title": "ANTIPSYCHOTIC"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:59.285371",
+  "name": "SELECTIVE SEROTONIN REUPTAKE INHIBITORS",
+  "title": "SELECTIVE SEROTONIN REUPTAKE INHIBITORS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:59.298416",
+  "name": "ANTIMETABOLITES",
+  "title": "ANTIMETABOLITES"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:59.322083",
+  "name": "CORTICOSTEROIDS",
+  "title": "CORTICOSTEROIDS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:59.337420",
+  "name": "ANTIFUNGAL",
+  "title": "ANTIFUNGAL"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:59.353069",
+  "name": "CALCIUM CHANNEL BLOCKERS",
+  "title": "CALCIUM CHANNEL BLOCKERS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:59.368005",
+  "name": "NSAIDS",
+  "title": "NSAIDS"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:59.382925",
+  "name": "MEDICAL EQUIPMENT",
+  "title": "MEDICAL EQUIPMENT"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:59.396659",
+  "name": "NSAID",
+  "title": "NSAID"
+ },
+ {
+  "description": "Test description",
+  "docstatus": 0,
+  "doctype": "Pharmacological Category",
+  "modified": "2024-02-09 11:41:59.418016",
+  "name": "Test Category",
+  "title": "Test Category"
+ }
+]

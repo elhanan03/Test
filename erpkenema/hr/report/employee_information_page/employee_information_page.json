@@ -1,0 +1,36 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2022-11-26 09:42:07.115019",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2023-02-21 08:57:15.161794",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Employee Information page",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "\n SELECT \n first_name,middle_name,last_name,gender,birth_date,date_of_joining,phone_number,role,educational_qualification,branch,department,designation,employement_type,educational_qualification,sub_city__zone,woreda,kebele,house_number,status\nFROM \n`tabEmployee`;",
+ "ref_doctype": "Employee",
+ "report_name": "Employee Information page",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "HR Manager"
+  },
+  {
+   "role": "HR User"
+  },
+  {
+   "role": "Finance Head"
+  }
+ ]
+}

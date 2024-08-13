@@ -1,0 +1,40 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "creation": "2023-01-24 11:27:45.035989",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Payment Request",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Request for payment Approval",
+ "modified": "2023-02-08 11:05:17.652959",
+ "modified_by": "Administrator",
+ "module": "Accounting and Finance",
+ "name": "Payment Request  Alert",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "condition": "doc.workflow_state==\"pending Approval\"",
+   "receiver_by_document_field": "deputy_manager_email",
+   "receiver_by_role": ""
+  },
+  {
+   "condition": "doc.workflow_state==\"Pending Authorization\"",
+   "receiver_by_document_field": "hq_manager_email",
+   "receiver_by_role": ""
+  },
+  {
+   "condition": "doc.workflow_state==\"Authorized\"",
+   "receiver_by_document_field": "finance_head_email",
+   "receiver_by_role": ""
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Payment Request ",
+ "value_changed": "workflow_state"
+}

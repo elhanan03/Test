@@ -1,0 +1,43 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "creation": "2022-08-13 20:46:21.880552",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Stock Transfer Memo",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Transfer from branch to branch ",
+ "modified": "2023-02-22 14:35:35.266579",
+ "modified_by": "Administrator",
+ "module": "Inventory",
+ "name": "Stock Transfer Memo",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "condition": "doc.workflow_state==\"pending Approval\"",
+   "receiver_by_document_field": "approved_by_email"
+  },
+  {
+   "condition": "doc.workflow_state==\"Pending Authorization\"",
+   "receiver_by_document_field": "authorized_by_email",
+   "receiver_by_role": ""
+  },
+  {
+   "condition": "doc.workflow_state==\"Authorized\"",
+   "receiver_by_document_field": "accepted_by_email",
+   "receiver_by_role": ""
+  },
+  {
+   "condition": "doc.workflow_state==\"Accepted\"",
+   "receiver_by_document_field": "received_by_email"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Stock Transfer Memo :Alert",
+ "value_changed": "workflow_state"
+}

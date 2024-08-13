@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "field:department",
+ "creation": "2022-10-03 13:13:07.968390",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "department",
+  "position",
+  "salary_structure",
+  "column_break_4",
+  "educational_qualification",
+  "experience"
+ ],
+ "fields": [
+  {
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "position",
+   "fieldtype": "Link",
+   "label": "Position",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "salary_structure",
+   "fieldtype": "Data",
+   "label": "Salary Structure"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "educational_qualification",
+   "fieldtype": "Select",
+   "label": "Educational Qualification",
+   "options": "BSc\nBA\nMSc\nMA\nMBA\nPhD\nLevel IV\nLevel III\nLevel II\nLevel I\n10-12\n8-10"
+  },
+  {
+   "fieldname": "experience",
+   "fieldtype": "Data",
+   "label": "Experience"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-22 12:16:34.512156",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Department",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

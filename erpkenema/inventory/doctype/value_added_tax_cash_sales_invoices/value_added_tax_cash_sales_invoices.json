@@ -1,0 +1,230 @@
+{
+  "actions": [],
+  "allow_rename": 1,
+  "autoname": "format:CSI-{frombranch_no}-{datetime}",
+  "creation": "2022-08-29 23:12:10.649552",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "date",
+    "datetime",
+    "invoice_number",
+    "frombranch_no",
+    "sc",
+    "worod",
+    "house_number",
+    "column_break_7",
+    "to",
+    "subcity",
+    "woroda",
+    "housenumber",
+    "customers_tin_no",
+    "customers_vat_reg_no",
+    "vat_date_of_registration",
+    "section_break_15",
+    "purchased_medicine",
+    "section_break_17",
+    "total",
+    "total_for_vat_items",
+    "vat",
+    "total_inc_vat",
+    "column_break_22",
+    "amount_in_words",
+    "mode_of_payment",
+    "cheque_number",
+    "prepared_by",
+    "amended_from"
+  ],
+  "fields": [
+    {
+      "default": "Today",
+      "fieldname": "date",
+      "fieldtype": "Date",
+      "label": "Date"
+    },
+    {
+      "fieldname": "invoice_number",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "Invoice Number"
+    },
+    {
+      "fieldname": "frombranch_no",
+      "fieldtype": "Link",
+      "in_list_view": 1,
+      "label": "From(Branch No)",
+      "options": "Kenema Branches",
+      "reqd": 1
+    },
+    {
+      "fetch_from": "frombranch_no.subcity",
+      "fieldname": "sc",
+      "fieldtype": "Data",
+      "label": "Subcity."
+    },
+    {
+      "fetch_from": "frombranch_no.woreda",
+      "fieldname": "worod",
+      "fieldtype": "Data",
+      "label": "Woreda."
+    },
+    {
+      "fetch_from": "frombranch_no.house_number",
+      "fieldname": "house_number",
+      "fieldtype": "Data",
+      "label": "House Number"
+    },
+    {
+      "fieldname": "column_break_7",
+      "fieldtype": "Column Break",
+      "label": "Customer"
+    },
+    {
+      "fieldname": "to",
+      "fieldtype": "Link",
+      "in_list_view": 1,
+      "label": "To",
+      "options": "Customer Information"
+    },
+    {
+      "fetch_from": "to.subcity",
+      "fieldname": "subcity",
+      "fieldtype": "Data",
+      "label": "Subcity"
+    },
+    {
+      "fetch_from": "to.woreda",
+      "fieldname": "woroda",
+      "fieldtype": "Data",
+      "label": "Woreda"
+    },
+    {
+      "fetch_from": "to.house_number",
+      "fieldname": "housenumber",
+      "fieldtype": "Data",
+      "label": "House Number."
+    },
+    {
+      "fetch_from": "to.tin_number",
+      "fieldname": "customers_tin_no",
+      "fieldtype": "Data",
+      "label": "Customer's TIN No"
+    },
+    {
+      "fetch_from": "to.customer_vat_registration_number",
+      "fieldname": "customers_vat_reg_no",
+      "fieldtype": "Data",
+      "label": "Customer's VAT Reg No"
+    },
+    {
+      "fetch_from": "to.vat_date_of_registration",
+      "fieldname": "vat_date_of_registration",
+      "fieldtype": "Data",
+      "label": "VAT Date of Registration"
+    },
+    {
+      "fieldname": "section_break_15",
+      "fieldtype": "Section Break"
+    },
+    {
+      "fieldname": "purchased_medicine",
+      "fieldtype": "Table",
+      "label": "Purchased Medicine",
+      "options": "Purchased Medicine"
+    },
+    {
+      "fieldname": "section_break_17",
+      "fieldtype": "Section Break"
+    },
+    {
+      "fieldname": "total",
+      "fieldtype": "Float",
+      "label": "Total"
+    },
+    {
+      "fieldname": "total_for_vat_items",
+      "fieldtype": "Float",
+      "label": "Total for VAT items"
+    },
+    {
+      "fieldname": "total_inc_vat",
+      "fieldtype": "Float",
+      "label": "Total Inc. VAT"
+    },
+    {
+      "fieldname": "amount_in_words",
+      "fieldtype": "Data",
+      "label": "Amount in Words"
+    },
+    {
+      "fieldname": "mode_of_payment",
+      "fieldtype": "Select",
+      "label": "Mode of Payment",
+      "options": "Cash\nCheque"
+    },
+    {
+      "depends_on": "eval:doc.mode_of_payment==\"Cheque\";",
+      "fieldname": "cheque_number",
+      "fieldtype": "Data",
+      "label": "Cheque Number"
+    },
+    {
+      "fieldname": "prepared_by",
+      "fieldtype": "Link",
+      "label": "Prepared by",
+      "options": "Dispensary"
+    },
+    {
+      "fieldname": "column_break_22",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "vat",
+      "fieldtype": "Float",
+      "label": "15% VAT"
+    },
+    {
+      "default": "Now",
+      "fieldname": "datetime",
+      "fieldtype": "Datetime",
+      "hidden": 1,
+      "label": "datetime"
+    },
+    {
+      "fieldname": "amended_from",
+      "fieldtype": "Link",
+      "label": "Amended From",
+      "no_copy": 1,
+      "options": "Value Added Tax Cash Sales Invoices",
+      "print_hide": 1,
+      "read_only": 1
+    }
+  ],
+  "index_web_pages_for_search": 1,
+  "is_submittable": 1,
+  "links": [],
+  "modified": "2022-10-26 22:36:48.065128",
+  "modified_by": "Administrator",
+  "module": "Inventory",
+  "name": "Value Added Tax Cash Sales Invoices",
+  "naming_rule": "Expression",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "states": []
+}

@@ -1,0 +1,223 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{Issued}-{requisition_section}",
+ "creation": "2023-02-03 13:16:37.271962",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "requisition_section",
+  "branch_name",
+  "section_break_6",
+  "issued_items",
+  "section_break_8",
+  "branch_manager_name",
+  "branch_manager_email",
+  "column_break_13",
+  "finance_head",
+  "finance_head_email",
+  "column_break_11",
+  "hr_manager",
+  "hr_manager_email",
+  "column_break_15",
+  "hq_store_manager",
+  "hq_store_manager_email",
+  "column_break_14",
+  "operation_manager",
+  "operation_manager_email",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SIV For Non Medical Items",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SIV For Non Medical Items",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "issued_items",
+   "fieldtype": "Table",
+   "label": "Issued Items",
+   "options": "Issued Items"
+  },
+  {
+   "fieldname": "requisition_section",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "in_standard_filter": 1,
+   "label": "Requisition Section"
+  },
+  {
+   "fieldname": "branch_manager_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "branch Manager email",
+   "permlevel": 2,
+   "print_hide": 1
+  },
+  {
+   "fieldname": "finance_head",
+   "fieldtype": "Data",
+   "label": "Finance Head",
+   "permlevel": 3
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "operation_manager",
+   "fieldtype": "Data",
+   "label": "Operation Manager"
+  },
+  {
+   "fieldname": "operation_manager_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Operation Manager Email",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "finance_head_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Finance Head email",
+   "permlevel": 3,
+   "print_hide": 1
+  },
+  {
+   "fieldname": "hr_manager",
+   "fieldtype": "Data",
+   "label": "HR Manager",
+   "permlevel": 4
+  },
+  {
+   "fieldname": "hr_manager_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "HR Manager Email",
+   "permlevel": 4,
+   "print_hide": 1
+  },
+  {
+   "fieldname": "branch_name",
+   "fieldtype": "Data",
+   "label": "Branch Name",
+   "permlevel": 2
+  },
+  {
+   "fieldname": "branch_manager_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Branch Manager",
+   "permlevel": 2
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hq_store_manager",
+   "fieldtype": "Data",
+   "label": "HQ Store Manager"
+  },
+  {
+   "fieldname": "hq_store_manager_email",
+   "fieldtype": "Data",
+   "label": "HQ Store Manager Email"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-02-12 22:48:25.080491",
+ "modified_by": "Administrator",
+ "module": "Other Inventory",
+ "name": "SIV For Non Medical Items",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Store Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Dispensary",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

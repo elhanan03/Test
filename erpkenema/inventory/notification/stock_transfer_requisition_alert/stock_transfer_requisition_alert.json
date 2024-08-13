@@ -1,0 +1,43 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "creation": "2022-10-18 10:38:19.625570",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Stock Transfer Requisition Form",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Stock Transfer Requisition From {doc.branch}",
+ "modified": "2023-02-22 10:12:19.350176",
+ "modified_by": "Administrator",
+ "module": "Inventory",
+ "name": "Stock Transfer Requisition Alert",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "condition": "doc.workflow_state==\"pending Approval\"",
+   "receiver_by_document_field": "approved_by_email",
+   "receiver_by_role": ""
+  },
+  {
+   "condition": "doc.workflow_state==\"Pending Accept Transfer\"",
+   "receiver_by_document_field": "email",
+   "receiver_by_role": ""
+  },
+  {
+   "condition": "doc.workflow_state==\"Accepted\"",
+   "receiver_by_document_field": "requested_by_email"
+  },
+  {
+   "condition": "doc.workflow_state==\"Accepted\"",
+   "receiver_by_document_field": "approved_by_email"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Stock Transfer Requisition Form",
+ "value_changed": "workflow_state"
+}

@@ -1,0 +1,57 @@
+[
+ {
+  "department": "Minestery",
+  "docstatus": 0,
+  "doctype": "Department",
+  "educational_qualification": "BSc",
+  "experience": null,
+  "modified": "2024-07-10 09:32:16.726109",
+  "name": "Minestery",
+  "position": null,
+  "salary_structure": null
+ },
+ {
+  "department": "Pharmacy Technology",
+  "docstatus": 0,
+  "doctype": "Department",
+  "educational_qualification": "BSc",
+  "experience": null,
+  "modified": "2024-07-10 09:32:52.107254",
+  "name": "Pharmacy Technology",
+  "position": null,
+  "salary_structure": null
+ },
+ {
+  "department": "HR",
+  "docstatus": 0,
+  "doctype": "Department",
+  "educational_qualification": "BSc",
+  "experience": "10",
+  "modified": "2024-03-19 14:47:06.163770",
+  "name": "HR",
+  "position": "HR Manager",
+  "salary_structure": null
+ },
+ {
+  "department": "Pharmacist",
+  "docstatus": 0,
+  "doctype": "Department",
+  "educational_qualification": "BSc",
+  "experience": null,
+  "modified": "2024-07-10 09:32:41.048647",
+  "name": "Pharmacist",
+  "position": null,
+  "salary_structure": null
+ },
+ {
+  "department": "Accounting",
+  "docstatus": 0,
+  "doctype": "Department",
+  "educational_qualification": "BSc",
+  "experience": null,
+  "modified": "2024-07-10 09:32:28.082731",
+  "name": "Accounting",
+  "position": null,
+  "salary_structure": null
+ }
+]

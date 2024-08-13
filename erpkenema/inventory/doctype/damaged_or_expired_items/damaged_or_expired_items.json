@@ -1,0 +1,170 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2022-08-30 11:13:52.551020",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "description",
+  "unit",
+  "item_code",
+  "supplier",
+  "purchase_type",
+  "column_break_6",
+  "batch_number",
+  "pharmacological_category",
+  "quantity",
+  "unit_cost",
+  "total_cost",
+  "column_break_4",
+  "brand",
+  "manufacturer",
+  "country",
+  "exp_date",
+  "damaged_date"
+ ],
+ "fields": [
+  {
+   "fetch_if_empty": 1,
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Sales Area Store",
+   "reqd": 1
+  },
+  {
+   "fetch_if_empty": 1,
+   "fieldname": "description",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Description",
+   "options": "Inventory Items"
+  },
+  {
+   "fetch_if_empty": 1,
+   "fieldname": "unit",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Unit",
+   "options": "UOM",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "item_code.quantity",
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Quantity",
+   "read_only_depends_on": "item_code",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "item_code.unit_purchase_cost",
+   "fetch_if_empty": 1,
+   "fieldname": "unit_cost",
+   "fieldtype": "Float",
+   "label": "Unit Cost",
+   "read_only_depends_on": "item_code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_cost",
+   "fieldtype": "Float",
+   "label": "Total Cost",
+   "read_only_depends_on": "item_code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "damaged_date",
+   "fieldtype": "Date",
+   "label": "Damaged Date"
+  },
+  {
+   "fetch_from": "item_code.exp_date",
+   "fetch_if_empty": 1,
+   "fieldname": "exp_date",
+   "fieldtype": "Date",
+   "label": "Expiry Date",
+   "read_only_depends_on": "item_code"
+  },
+  {
+   "fetch_from": "item_code.purchase_type",
+   "fetch_if_empty": 1,
+   "fieldname": "purchase_type",
+   "fieldtype": "Data",
+   "label": "Purchase Type",
+   "read_only_depends_on": "item_code"
+  },
+  {
+   "fetch_from": "item_code.supplier",
+   "fetch_if_empty": 1,
+   "fieldname": "supplier",
+   "fieldtype": "Data",
+   "label": "Supplier",
+   "read_only_depends_on": "item_code"
+  },
+  {
+   "fetch_from": "item_code.batch_number",
+   "fetch_if_empty": 1,
+   "fieldname": "batch_number",
+   "fieldtype": "Data",
+   "label": "Batch Number",
+   "read_only_depends_on": "item_code"
+  },
+  {
+   "fetch_from": "item_code.pharmacological_category",
+   "fetch_if_empty": 1,
+   "fieldname": "pharmacological_category",
+   "fieldtype": "Data",
+   "label": "Pharmacological Category",
+   "read_only_depends_on": "item_code"
+  },
+  {
+   "fetch_from": "item_code.brand",
+   "fetch_if_empty": 1,
+   "fieldname": "brand",
+   "fieldtype": "Data",
+   "label": "Brand",
+   "read_only_depends_on": "item_code"
+  },
+  {
+   "fetch_from": "item_code.manufacturer",
+   "fetch_if_empty": 1,
+   "fieldname": "manufacturer",
+   "fieldtype": "Data",
+   "label": "Manufacturer",
+   "read_only_depends_on": "item_code"
+  },
+  {
+   "fetch_from": "item_code.country",
+   "fetch_if_empty": 1,
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Country",
+   "read_only_depends_on": "item_code"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-04-06 08:11:33.368578",
+ "modified_by": "Administrator",
+ "module": "Inventory",
+ "name": "Damaged or Expired Items",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

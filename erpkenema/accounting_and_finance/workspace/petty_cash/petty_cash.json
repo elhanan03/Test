@@ -1,0 +1,74 @@
+{
+ "charts": [
+  {
+   "chart_name": "Petty Cash",
+   "label": "Petty Cash"
+  }
+ ],
+ "content": "[{\"id\":\"39CQYzDak-\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Petty Cash</span>\",\"col\":12}},{\"id\":\"N1v26D_o5D\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Petty Cash Budget Allocation\",\"col\":4}},{\"id\":\"OQfJg7ePGy\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Petty Cash Payment  Voucher\",\"col\":4}},{\"id\":\"vWLNezPycX\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Petty Cash Report\",\"col\":4}},{\"id\":\"nTOcXs5g9L\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Petty Cash\",\"col\":12}}]",
+ "creation": "2024-07-12 16:33:37.662089",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "hide_custom": 0,
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Petty Cash",
+ "links": [],
+ "modified": "2024-07-15 13:57:20.528990",
+ "modified_by": "Administrator",
+ "module": "Accounting and Finance",
+ "name": "Petty Cash",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "Accounting & Finance",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Branch Accountant"
+  },
+  {
+   "role": "Finance Head"
+  },
+  {
+   "role": "Branch Cashier"
+  },
+  {
+   "role": "Branch Accountant"
+  },
+  {
+   "role": "Head Quarter Accountant"
+  },
+  {
+   "role": "Branch Manager"
+  }
+ ],
+ "sequence_id": 5.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Petty Cash Budget Allocation",
+   "link_to": "Budget Allocation Page",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Petty Cash Report",
+   "link_to": "Petty Cash Summary",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Petty Cash Payment  Voucher",
+   "link_to": "Petty Cash Payment  Voucher",
+   "type": "DocType"
+  }
+ ],
+ "title": "Petty Cash"
+}

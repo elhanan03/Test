@@ -1,0 +1,342 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:EMP-LOAN-{requested_by}-{YYYY}",
+ "creation": "2022-12-28 11:55:48.024394",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "column_break_2",
+  "name_of_borrower_section",
+  "employee_name",
+  "address",
+  "woreda",
+  "current_location",
+  "house_number",
+  "phone",
+  "department",
+  "column_break_7",
+  "position",
+  "basic_salary",
+  "basic_salary_in_words",
+  "requested_month",
+  "total_requested",
+  "monthly_payment",
+  "paid_amount",
+  "section_break_12",
+  "employee",
+  "address1",
+  "woreda1",
+  "current_location1",
+  "house_number1",
+  "column_break_20",
+  "phone_number1",
+  "basic_salary1",
+  "department1",
+  "position1",
+  "section_break_24",
+  "column_break_26",
+  "hr_manager",
+  "hr_manager_email",
+  "column_break_34",
+  "requested_by",
+  "column_break_36",
+  "guarenteed_by"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employee Name",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee_name.sub_city__zone",
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fetch_from": "employee_name.woreda",
+   "fieldname": "woreda",
+   "fieldtype": "Data",
+   "label": "Woreda"
+  },
+  {
+   "fetch_from": "employee_name.house_number",
+   "fieldname": "house_number",
+   "fieldtype": "Data",
+   "label": "House Number"
+  },
+  {
+   "fetch_from": "employee_name.phone_number",
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fetch_from": "employee_name.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Department"
+  },
+  {
+   "fetch_from": "employee_name.designation",
+   "fieldname": "position",
+   "fieldtype": "Data",
+   "label": "Position"
+  },
+  {
+   "fetch_from": "employee_name.basic_salary",
+   "fieldname": "basic_salary",
+   "fieldtype": "Currency",
+   "label": "Basic Salary",
+   "non_negative": 1,
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "basic_salary_in_words",
+   "fieldtype": "Data",
+   "label": "Basic Salary in Words",
+   "non_negative": 1,
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break",
+   "label": "Guarantor"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Guarantor Employee",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee.sub_city__zone",
+   "fieldname": "address1",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fetch_from": "employee.woreda",
+   "fieldname": "woreda1",
+   "fieldtype": "Data",
+   "label": "Woreda"
+  },
+  {
+   "fetch_from": "employee.house_number",
+   "fieldname": "house_number1",
+   "fieldtype": "Data",
+   "label": "House Number"
+  },
+  {
+   "fetch_from": "employee.phone_number",
+   "fieldname": "phone_number1",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  },
+  {
+   "fetch_from": "employee.basic_salary",
+   "fieldname": "basic_salary1",
+   "fieldtype": "Data",
+   "label": "Basic salary",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department1",
+   "fieldtype": "Data",
+   "label": "Department"
+  },
+  {
+   "fetch_from": "employee.designation",
+   "fieldname": "position1",
+   "fieldtype": "Data",
+   "label": "Position"
+  },
+  {
+   "fetch_from": "employee_name.full_name",
+   "fieldname": "requested_by",
+   "fieldtype": "Data",
+   "label": "Requested By"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_24",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "requested_month",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Requested Month",
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_requested",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Requested",
+   "non_negative": 1,
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "name_of_borrower_section",
+   "fieldtype": "Section Break",
+   "label": "Name Of Borrower"
+  },
+  {
+   "fieldname": "monthly_payment",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Monthly Payment",
+   "non_negative": 1,
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "approved_by.name1",
+   "fieldname": "hr_manager_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "HR Manager Email",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "column_break_34",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_36",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee.full_name",
+   "fieldname": "guarenteed_by",
+   "fieldtype": "Data",
+   "label": "Guarenteed By"
+  },
+  {
+   "fieldname": "hr_manager",
+   "fieldtype": "Data",
+   "label": "HR Manager"
+  },
+  {
+   "fetch_from": "employee_name.current_location",
+   "fieldname": "current_location",
+   "fieldtype": "Data",
+   "label": "Current Location"
+  },
+  {
+   "fetch_from": "employee.current_location",
+   "fieldname": "current_location1",
+   "fieldtype": "Data",
+   "label": "Current Location"
+  },
+  {
+   "default": "0",
+   "fieldname": "paid_amount",
+   "fieldtype": "Currency",
+   "label": "Paid Amount",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-12 15:06:39.540201",
+ "modified_by": "Administrator",
+ "module": "Accounting and Finance",
+ "name": "Loan management",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Head Quarter Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Finance Head",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

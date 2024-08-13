@@ -1,0 +1,173 @@
+{
+ "actions": [],
+ "autoname": "field:description",
+ "creation": "2022-08-30 09:42:27.329611",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "branch",
+  "item_code",
+  "batch_number",
+  "pharmacological_category",
+  "description",
+  "image",
+  "unit",
+  "column_break_8",
+  "quantity",
+  "unit_purchase_cost",
+  "total_cost",
+  "profit",
+  "vat",
+  "unit_selling_price",
+  "expired_date",
+  "entry_date",
+  "remark"
+ ],
+ "fields": [
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Kenema Branches",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "batch_number",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Batch Number",
+   "options": "Batch Number"
+  },
+  {
+   "fieldname": "pharmacological_category",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Pharmacological Category",
+   "options": "Pharmacological Category"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Description",
+   "unique": 1
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "unit",
+   "fieldtype": "Link",
+   "label": "Unit",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "label": "Quantity",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "unit_selling_price",
+   "fieldtype": "Float",
+   "label": "Unit Selling Price",
+   "reqd": 1
+  },
+  {
+   "fieldname": "expired_date",
+   "fieldtype": "Date",
+   "label": "Exp. Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "entry_date",
+   "fieldtype": "Date",
+   "label": "Entry Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Data",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_cost",
+   "fieldtype": "Float",
+   "label": "Total Cost",
+   "reqd": 1
+  },
+  {
+   "fieldname": "unit_purchase_cost",
+   "fieldtype": "Float",
+   "label": "Unit Purchase Cost",
+   "reqd": 1
+  },
+  {
+   "fieldname": "profit",
+   "fieldtype": "Select",
+   "label": "profit ",
+   "options": "0.2\n0.05\n0.02\n0",
+   "reqd": 1
+  },
+  {
+   "fieldname": "vat",
+   "fieldtype": "Float",
+   "label": "Vat"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-10-17 08:56:58.557969",
+ "modified_by": "Administrator",
+ "module": "Inventory",
+ "name": "Consignment Item Store",
+ "name_case": "Title Case",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Store Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

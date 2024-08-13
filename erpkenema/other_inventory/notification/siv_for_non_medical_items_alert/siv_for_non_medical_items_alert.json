@@ -1,0 +1,41 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "creation": "2023-02-03 14:23:16.181825",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "SIV For Non Medical Items",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "SIV For Non Medical Items",
+ "modified": "2023-02-03 14:58:19.203495",
+ "modified_by": "Administrator",
+ "module": "Other Inventory",
+ "name": "SIV For Non Medical Items Alert",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "condition": "doc.workflow_state==\"pending Approval\"",
+   "receiver_by_document_field": "operation_manager_email"
+  },
+  {
+   "condition": "doc.workflow_state==\"Approved\"",
+   "receiver_by_document_field": "branch_manager_email"
+  },
+  {
+   "condition": "doc.workflow_state==\"Approved\"",
+   "receiver_by_document_field": "finance_head_email"
+  },
+  {
+   "condition": "doc.workflow_state==\"Approved\"",
+   "receiver_by_document_field": "hr_manager_email"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "SIV For Non Medical Items",
+ "value_changed": "workflow_state"
+}

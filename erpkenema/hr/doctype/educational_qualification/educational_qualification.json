@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2022-10-03 09:57:03.374704",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "universitycollege",
+  "department",
+  "education_type",
+  "column_break_4",
+  "education",
+  "year_of_completing",
+  "cgpa"
+ ],
+ "fields": [
+  {
+   "fieldname": "universitycollege",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "University/College",
+   "options": "University List"
+  },
+  {
+   "fieldname": "cgpa",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "CGPA"
+  },
+  {
+   "fieldname": "education",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Educational Qualification",
+   "options": "\nPhD\nMSc\nMA\nMBA\nBSc\nBA\nLevel IV\nLevel III\nLevel II\nLevel I\n10-12\n8-10"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "year_of_completing",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Year Of Completing"
+  },
+  {
+   "fieldname": "education_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Education Type",
+   "options": "Education Type"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-11 09:48:16.416589",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Educational Qualification",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

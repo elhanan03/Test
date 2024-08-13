@@ -1,0 +1,306 @@
+{
+ "actions": [],
+ "autoname": "format:{PR}-{YYYY}-{requisition_section}",
+ "creation": "2022-07-06 15:10:12.669551",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "purchase_order",
+  "section_break_100",
+  "specification",
+  "list_of_items",
+  "requisition_section",
+  "section_break_18",
+  "description",
+  "column_break_5",
+  "branch_name",
+  "section_break_2",
+  "branch_manager_name",
+  "branch_manager_email",
+  "column_break_9",
+  "finance_head",
+  "finance_head_email",
+  "column_break_12",
+  "hr_manager",
+  "hr_manager_email",
+  "column_break_16",
+  "operation_manager",
+  "operation_manager_email",
+  "column_break_21",
+  "supplier",
+  "supplier_email",
+  "column_break_25",
+  "hq_store_manager",
+  "hq_store_manager_email",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "branch_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Branch Name",
+   "permlevel": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "specification",
+   "fieldtype": "Table",
+   "label": "Specification",
+   "options": "Specification",
+   "permlevel": 5
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "description"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "branch_manager_name",
+   "fieldtype": "Data",
+   "label": "Branch Manager",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "branch_manager_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Branch Manager Email",
+   "permlevel": 1,
+   "print_hide": 1
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "finance_head",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Finance Head",
+   "permlevel": 3,
+   "print_hide": 1
+  },
+  {
+   "fieldname": "finance_head_email",
+   "fieldtype": "Data",
+   "label": "Finance head Email",
+   "permlevel": 3
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hr_manager",
+   "fieldtype": "Data",
+   "label": "HR Manager",
+   "permlevel": 2
+  },
+  {
+   "fieldname": "hr_manager_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "HR Manager Email",
+   "permlevel": 2,
+   "print_hide": 1
+  },
+  {
+   "fieldname": "requisition_section",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "REQ. No",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Item purchase Requisition",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "operation_manager",
+   "fieldtype": "Data",
+   "label": "Operation Manager"
+  },
+  {
+   "fieldname": "operation_manager_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Operation Manager Email",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "purchase_order",
+   "fieldtype": "Link",
+   "label": "Purchase Order",
+   "options": "Item purchase Requisition",
+   "permlevel": 6
+  },
+  {
+   "fieldname": "section_break_100",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier_Lead",
+   "permlevel": 4
+  },
+  {
+   "fetch_from": "supplier.supplier",
+   "fieldname": "supplier_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Supplier Email",
+   "permlevel": 4,
+   "print_hide": 1
+  },
+  {
+   "fieldname": "list_of_items",
+   "fieldtype": "Table",
+   "label": "List Of Items",
+   "options": "Non Medical Items Child",
+   "permlevel": 4
+  },
+  {
+   "fieldname": "hq_store_manager",
+   "fieldtype": "Data",
+   "label": "HQ Store manager"
+  },
+  {
+   "fieldname": "hq_store_manager_email",
+   "fieldtype": "Data",
+   "label": "HQ Store manager Email"
+  },
+  {
+   "fieldname": "column_break_25",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-05-16 15:24:43.006065",
+ "modified_by": "Administrator",
+ "module": "Other Inventory",
+ "name": "Item purchase Requisition",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Operation Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Branch manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Finance Head",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Supplier",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HQ Store Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

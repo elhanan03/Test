@@ -1,0 +1,565 @@
+{
+ "charts": [
+  {
+   "chart_name": "Drug Purchase",
+   "label": "Drug Purchase"
+  },
+  {
+   "chart_name": "GRV",
+   "label": "GRV"
+  },
+  {
+   "chart_name": "SIV",
+   "label": "SIV"
+  }
+ ],
+ "content": "[{\"id\":\"7OSCmaJZ8c\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Inventory Management</span>\",\"col\":12}},{\"id\":\"9HcMlx4CMV\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"PR\",\"col\":4}},{\"id\":\"J5-1tg6cPg\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"GRV\",\"col\":4}},{\"id\":\"MjIBUAEeWp\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Back Store(Inventory Area Store)\",\"col\":4}},{\"id\":\"L32GFOrTaC\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"SIV\",\"col\":4}},{\"id\":\"HZJBNva79R\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sales Area Store\",\"col\":4}},{\"id\":\"swJ6SdtzOL\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Good Return Note\",\"col\":4}},{\"id\":\"5fhAdjNlTv\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sales\",\"col\":4}},{\"id\":\"jsH03nJ45P\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Store Return Note\",\"col\":4}},{\"id\":\"rCKzBUgoWl\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"p3Sw9bCP8T\",\"type\":\"card\",\"data\":{\"card_name\":\"Setup\",\"col\":3}},{\"id\":\"NfHZUd_M-i\",\"type\":\"card\",\"data\":{\"card_name\":\"Inventory Management\",\"col\":3}},{\"id\":\"oQ5bvGC0fK\",\"type\":\"card\",\"data\":{\"card_name\":\"Purchase Reports\",\"col\":3}},{\"id\":\"-5Ecn1NJ-m\",\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":3}},{\"id\":\"z4kzKRHzZO\",\"type\":\"chart\",\"data\":{\"chart_name\":\"GRV\",\"col\":6}},{\"id\":\"ldmtVBC2Fh\",\"type\":\"chart\",\"data\":{\"chart_name\":\"SIV\",\"col\":6}},{\"id\":\"WMf2vV_Sy0\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Drug Purchase\",\"col\":12}}]",
+ "creation": "2023-01-26 16:16:07.185551",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "stock",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Inventory",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "User",
+   "link_count": 0,
+   "link_to": "User",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Role",
+   "link_count": 0,
+   "link_to": "Role",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Role Profile",
+   "link_count": 0,
+   "link_to": "Role Profile",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Activity Log",
+   "link_count": 0,
+   "link_to": "Activity Log",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Access Log",
+   "link_count": 0,
+   "link_to": "Access Log",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Role Permissions Manager",
+   "link_count": 0,
+   "link_to": "permission-manager",
+   "link_type": "Page",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "User Permissions",
+   "link_count": 0,
+   "link_to": "User Permission",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Role Permission for Page and Report",
+   "link_count": 0,
+   "link_to": "Role Permission for Page and Report",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "User",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Permitted Documents For User",
+   "link_count": 0,
+   "link_to": "Permitted Documents For User",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "DocShare",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Document Share Report",
+   "link_count": 0,
+   "link_to": "Document Share Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Setup",
+   "link_count": 8,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Inventory Items",
+   "link_count": 0,
+   "link_to": "Inventory Items",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Store Manager",
+   "link_count": 0,
+   "link_to": "Store Manager",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Branch Manager",
+   "link_count": 0,
+   "link_to": "Branch Manager",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Branch Accountant",
+   "link_count": 0,
+   "link_to": "Branch Accountant",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Cashier",
+   "link_count": 0,
+   "link_to": "Cashier",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Batch Number",
+   "link_count": 0,
+   "link_to": "Batch Number",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Pharmacological Category",
+   "link_count": 0,
+   "link_to": "Pharmacological Category",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "UOM",
+   "link_count": 0,
+   "link_to": "UOM",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Reports",
+   "link_count": 8,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Stock Balance",
+   "link_count": 0,
+   "link_to": "Stock Balance",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Expiration Approached",
+   "link_count": 0,
+   "link_to": "Expiration Approached",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "GRV",
+   "link_count": 0,
+   "link_to": "Good Receiving Voucher Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Bonus",
+   "link_count": 0,
+   "link_to": "Bonus Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Stock Transfer In",
+   "link_count": 0,
+   "link_to": "Stock Transfer In",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Stock Transfer Out",
+   "link_count": 0,
+   "link_to": "Stock Transfer Out",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "SIV",
+   "link_count": 0,
+   "link_to": "Store Issue Voucher Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Monthly Performance Report",
+   "link_count": 0,
+   "link_to": "Monthly Performance Report",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Inventory Management",
+   "link_count": 9,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Purchase drug and medical",
+   "link_count": 0,
+   "link_to": "Purchase request for drug and medical supplies",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "GRV",
+   "link_count": 0,
+   "link_to": "Good Receiving Voucher",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "SIV",
+   "link_count": 0,
+   "link_to": "Store Issue Voucher",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Sales Area Store",
+   "link_count": 0,
+   "link_to": "Sales Area Store",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Stock Transfer Requisition",
+   "link_count": 0,
+   "link_to": "Stock Transfer Requisition Form",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Stock Transfer",
+   "link_count": 0,
+   "link_to": "Stock Transfer Memo",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Store Return Note",
+   "link_count": 0,
+   "link_to": "Store Return Note",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Good Return Note(GRN)",
+   "link_count": 0,
+   "link_to": "Good Return Note",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Out Of Service Items",
+   "link_count": 0,
+   "link_to": "Out of service items",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Purchase Reports",
+   "link_count": 4,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Cash purchase ",
+   "link_count": 0,
+   "link_to": "Cash purchase report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Credit Purchase",
+   "link_count": 0,
+   "link_to": "Credit Purchase Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Credit Purchase Register",
+   "link_count": 0,
+   "link_to": "Credit Purchase Register",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Purchase Return",
+   "link_count": 0,
+   "link_to": "Purchase Return",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2024-04-06 08:32:53.906160",
+ "modified_by": "Administrator",
+ "module": "Inventory",
+ "name": "Inventory",
+ "number_cards": [],
+ "owner": "robera@erpkpe.com",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Administrator"
+  },
+  {
+   "role": "Dispensary"
+  },
+  {
+   "role": "Store Manager"
+  },
+  {
+   "role": "Branch Accountant"
+  },
+  {
+   "role": "Branch Cashier"
+  },
+  {
+   "role": "Branch manager"
+  },
+  {
+   "role": "Operation Manager"
+  },
+  {
+   "role": "Head Quarter Manager"
+  },
+  {
+   "role": "Supplier"
+  }
+ ],
+ "sequence_id": 3.0,
+ "shortcuts": [
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "format": "{} ",
+   "label": "Back Store(Inventory Area Store)",
+   "link_to": "Inventory Area Store",
+   "stats_filter": "[[\"Inventory Area Store\",\"datetime\",\"Timespan\",\"today\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Pink",
+   "doc_view": "List",
+   "format": "{} Sold Today",
+   "label": "Sales",
+   "link_to": "Sales Attachment",
+   "stats_filter": "[[\"Sales Attachment\",\"date\",\"Timespan\",\"today\",false]]",
+   "type": "DocType"
+  },
+  {
+    "color": "Green",
+    "doc_view": "List",
+    "format": "{}  ",
+    "label": "PR",
+    "link_to": "Purchase request for drug and medical supplies",
+    "stats_filter": "[[\"Purchase request for drug and medical supplies\",\"branch\",\"=\",\"frm.doc.branch\",false],[\"Purchase request for drug and medical supplies\",\"date\",\"Timespan\",\"today\",false]]",
+    "type": "DocType"
+  },  
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "format": "{} Received Today",
+   "label": "GRV",
+   "link_to": "Good Receiving Voucher",
+   "stats_filter": "{\"date\":[\"Timespan\",\"today\"]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Good Return Note",
+   "link_to": "Good Return Note",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "label": "Sales Area Store",
+   "link_to": "Sales Area Store",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Store Return Note",
+   "link_to": "Store Return Note",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "format": "{} Issued Today",
+   "label": "SIV",
+   "link_to": "Store Issue Voucher",
+   "stats_filter": "{\"date\":[\"Timespan\",\"today\"]}",
+   "type": "DocType"
+  }
+ ],
+ "title": "Inventory"
+}

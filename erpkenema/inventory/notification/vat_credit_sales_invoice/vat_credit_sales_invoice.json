@@ -1,0 +1,33 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "creation": "2022-09-01 11:39:56.707767",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Value Added Tax Credit Sales Invoice",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Add your message here",
+ "modified": "2022-09-01 11:40:14.091789",
+ "modified_by": "Administrator",
+ "module": "Inventory",
+ "name": "VAT Credit Sales Invoice",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "condition": "doc.workflow_state==\"Checked\"",
+   "receiver_by_role": "Branch manager"
+  },
+  {
+   "condition": "doc.workflow_state==\"Authorized\"",
+   "receiver_by_role": "Headquarter Cashier"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "VAT Credit Sales Invoice",
+ "value_changed": "workflow_state"
+}

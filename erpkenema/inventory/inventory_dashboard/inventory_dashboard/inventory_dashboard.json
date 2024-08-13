@@ -1,0 +1,31 @@
+{
+ "cards": [
+  {
+   "card": "Credit Purchase Register"
+  },
+  {
+   "card": "Stock Balance"
+  },
+  {
+   "card": "Near Expiry"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "Drug Purchase",
+   "width": "Half"
+  }
+ ],
+ "creation": "2023-02-01 12:47:02.964659",
+ "dashboard_name": "Inventory Dashboard",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 1,
+ "is_standard": 1,
+ "modified": "2023-02-01 13:00:51.499908",
+ "modified_by": "Administrator",
+ "module": "Inventory",
+ "name": "Inventory Dashboard",
+ "owner": "Administrator"
+}

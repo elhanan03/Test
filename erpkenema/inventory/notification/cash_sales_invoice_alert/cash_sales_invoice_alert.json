@@ -1,0 +1,37 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "creation": "2022-10-12 11:24:18.048933",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Value Added Tax Cash Sales Invoices",
+ "enabled": 0,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Add your message here",
+ "modified": "2023-01-04 10:16:25.453775",
+ "modified_by": "Administrator",
+ "module": "Inventory",
+ "name": "Cash sales invoice alert",
+ "owner": "robera@erpkpe.com",
+ "recipients": [
+  {
+   "condition": "doc.workflow_state==\"Pending payment\"",
+   "receiver_by_role": "Branch Cashier"
+  },
+  {
+   "condition": "doc.workflow_state==\"Paid\"",
+   "receiver_by_role": "Dispensary"
+  },
+  {
+   "condition": "doc.workflow_state==\"Unpaid\"",
+   "receiver_by_role": "Dispensary"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Cash sales invoice alert",
+ "value_changed": "workflow_state"
+}

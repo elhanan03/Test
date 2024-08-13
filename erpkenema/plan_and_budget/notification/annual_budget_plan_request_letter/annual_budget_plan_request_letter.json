@@ -1,0 +1,30 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "creation": "2022-10-17 09:38:58.675293",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Annual Budget plan Request Letter",
+ "enabled": 1,
+ "event": "Submit",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Annual Budget plan Request Letter",
+ "modified": "2022-10-17 09:38:58.675293",
+ "modified_by": "Administrator",
+ "module": "Plan and Budget",
+ "name": "Annual Budget plan Request Letter",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_role": "Branch manager"
+  },
+  {
+   "receiver_by_role": "Head Quarter Department Manager"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Annual Budget plan Request Letter"
+}

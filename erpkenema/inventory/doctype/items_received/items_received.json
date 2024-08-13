@@ -1,0 +1,215 @@
+{
+ "actions": [],
+ "autoname": "hash",
+ "creation": "2022-07-22 09:42:01.712512",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "description",
+  "item_code",
+  "unit",
+  "pharmacological_category",
+  "brand",
+  "column_break_7",
+  "manufacturer",
+  "country",
+  "image",
+  "batch_number",
+  "barcode",
+  "column_break_13",
+  "exp_date",
+  "quantity",
+  "unit_purchase_cost",
+  "total_purchase_cost",
+  "profit_marigin_section",
+  "profit",
+  "uspbv",
+  "column_break_21",
+  "vatable_item",
+  "vat",
+  "unit_selling_price"
+ ],
+ "fields": [
+  {
+   "fetch_from": "description.uom",
+   "fetch_if_empty": 1,
+   "fieldname": "unit",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "UOM",
+   "options": "UOM",
+   "reqd": 1
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Quantity",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "unit_purchase_cost",
+   "fieldtype": "Currency",
+   "label": "Unit Purchase Cost",
+   "non_negative": 1,
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "item_code.batch_number",
+   "fetch_if_empty": 1,
+   "fieldname": "batch_number",
+   "fieldtype": "Data",
+   "label": "Batch Number"
+  },
+  {
+   "fieldname": "unit_selling_price",
+   "fieldtype": "Currency",
+   "label": "Unit Selling Price After VAT",
+   "non_negative": 1,
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "description.item_code",
+   "fetch_if_empty": 1,
+   "fieldname": "item_code",
+   "fieldtype": "Data",
+   "label": "Item Code",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "description.pharmacological_category",
+   "fetch_if_empty": 1,
+   "fieldname": "pharmacological_category",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Pharmacological Category",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "item_code.description",
+   "fetch_if_empty": 1,
+   "fieldname": "description",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Description",
+   "options": "Inventory Items"
+  },
+  {
+   "fetch_from": "item_code.image",
+   "fetch_if_empty": 1,
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "profit",
+   "fieldtype": "Select",
+   "label": "Profit margin",
+   "options": "\n0.2\n0.05\n0.02\n0"
+  },
+  {
+   "fieldname": "vat",
+   "fieldtype": "Float",
+   "label": "VAT",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_purchase_cost",
+   "fieldtype": "Currency",
+   "label": "Total Purchase Cost",
+   "non_negative": 1,
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "vatable_item",
+   "fieldtype": "Check",
+   "label": "Vatable item"
+  },
+  {
+   "fieldname": "uspbv",
+   "fieldtype": "Currency",
+   "label": "Unit Selling Price Before Vat",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fetch_from": "item_code.exp_date",
+   "fetch_if_empty": 1,
+   "fieldname": "exp_date",
+   "fieldtype": "Date",
+   "label": "Expiry Date",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "description.brand",
+   "fetch_if_empty": 1,
+   "fieldname": "brand",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Brand"
+  },
+  {
+   "fieldname": "manufacturer",
+   "fieldtype": "Data",
+   "label": "Manufacturer"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "fetch_from": "description.item_code",
+   "fetch_if_empty": 1,
+   "fieldname": "barcode",
+   "fieldtype": "Barcode",
+   "label": "Barcode",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "bold": 1,
+   "fieldname": "profit_marigin_section",
+   "fieldtype": "Section Break",
+   "label": "Profit MArigin"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-24 15:35:49.612418",
+ "modified_by": "Administrator",
+ "module": "Inventory",
+ "name": "Items Received",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

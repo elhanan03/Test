@@ -1,0 +1,525 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:{full_name}-{KPE}/{refno}/{YYYY}",
+ "creation": "2022-10-03 09:50:02.155219",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "personal_information_tab",
+  "get_from_employee_onboard",
+  "get_from_employee_onboarding",
+  "first_name",
+  "middle_name",
+  "last_name",
+  "column_break_cqun",
+  "full_name",
+  "gender",
+  "phone_number",
+  "email",
+  "refno",
+  "column_break_7",
+  "status",
+  "date_of_joining",
+  "birth_date",
+  "date_of_retirement",
+  "employee_detain_tab",
+  "is_system_user",
+  "user_id",
+  "division",
+  "branch",
+  "role",
+  "column_break_19",
+  "company",
+  "department",
+  "designation",
+  "employement_type",
+  "address_tab",
+  "county",
+  "regionstate",
+  "sub_city__zone",
+  "column_break_18",
+  "woreda",
+  "current_location",
+  "house_number",
+  "profile_tab",
+  "employee_photo",
+  "section_break_17",
+  "residence_id",
+  "section_break_16",
+  "educational_qualification",
+  "work_experience",
+  "emergency_contact_section",
+  "emergency",
+  "name1",
+  "addres",
+  "column_break_28",
+  "phone",
+  "relation",
+  "section_break_50",
+  "guarantor",
+  "witness_section",
+  "witness",
+  "salary_tab",
+  "salary_currency",
+  "salary_scale_name",
+  "level",
+  "scale",
+  "column_break_46",
+  "basic_salary",
+  "tin_number",
+  "account_number"
+ ],
+ "fields": [
+  {
+   "fetch_from": "get_from_employee_onboarding.gender",
+   "fetch_if_empty": 1,
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Gender",
+   "options": "\nMale\nFemale",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "get_from_employee_onboarding.birth_date",
+   "fetch_if_empty": 1,
+   "fieldname": "birth_date",
+   "fieldtype": "Date",
+   "label": "Birth Date",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "get_from_employee_onboarding.email",
+   "fetch_if_empty": 1,
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Active\nInactive"
+  },
+  {
+   "fieldname": "work_experience",
+   "fieldtype": "Table",
+   "label": "Work Experience",
+   "options": "Work Experience"
+  },
+  {
+   "fieldname": "personal_information_tab",
+   "fieldtype": "Tab Break",
+   "label": "Personal Information"
+  },
+  {
+   "fieldname": "profile_tab",
+   "fieldtype": "Tab Break",
+   "label": "Employee Profile"
+  },
+  {
+   "fieldname": "guarantor",
+   "fieldtype": "Table",
+   "label": "Guarantor",
+   "options": "guarantor"
+  },
+  {
+   "default": "Ethiopia",
+   "fieldname": "county",
+   "fieldtype": "Data",
+   "label": "County"
+  },
+  {
+   "fetch_from": "get_from_employee_onboarding.regionstate",
+   "fetch_if_empty": 1,
+   "fieldname": "regionstate",
+   "fieldtype": "Data",
+   "label": "Region/State",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "get_from_employee_onboarding.sub_city__zone",
+   "fetch_if_empty": 1,
+   "fieldname": "sub_city__zone",
+   "fieldtype": "Data",
+   "label": "Sub City / Zone",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "get_from_employee_onboarding.woreda",
+   "fetch_if_empty": 1,
+   "fieldname": "woreda",
+   "fieldtype": "Data",
+   "label": "Woreda",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "get_from_employee_onboarding.house_no",
+   "fetch_if_empty": 1,
+   "fieldname": "house_number",
+   "fieldtype": "Data",
+   "label": "House Number"
+  },
+  {
+   "default": "Today",
+   "fetch_from": "get_from_employee_onboarding.date_of_joining",
+   "fetch_if_empty": 1,
+   "fieldname": "date_of_joining",
+   "fieldtype": "Date",
+   "label": "Date Of Joining",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address_tab",
+   "fieldtype": "Tab Break",
+   "label": "Address"
+  },
+  {
+   "fieldname": "emergency_contact_section",
+   "fieldtype": "Tab Break",
+   "label": "Guarantor, Witness, Emergency Contact"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "addres",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "column_break_28",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "+251-",
+   "fieldname": "phone",
+   "fieldtype": "Phone",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "relation",
+   "fieldtype": "Data",
+   "label": "Relation"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval: doc.division == 'Branch'",
+   "fetch_from": "get_from_employee_onboarding.branch",
+   "fetch_if_empty": 1,
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Branch",
+   "mandatory_depends_on": "eval: doc.division == 'Branch'",
+   "options": "Kenema Branches"
+  },
+  {
+   "depends_on": "is_system_user",
+   "fieldname": "user_id",
+   "fieldtype": "Link",
+   "label": "User ID",
+   "options": "User"
+  },
+  {
+   "fieldname": "witness",
+   "fieldtype": "Table",
+   "label": "Witness",
+   "options": "Witness"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "salary_tab",
+   "fieldtype": "Tab Break",
+   "label": "Salary"
+  },
+  {
+   "fieldname": "column_break_46",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "employee_photo",
+   "fieldtype": "Attach Image",
+   "label": "Employee Photo"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "residence_id",
+   "fieldtype": "Attach Image",
+   "label": "Residence ID"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Kenema Pharmacies Enterprise",
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "label": "Company",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "get_from_employee_onboarding.department",
+   "fetch_if_empty": 1,
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "employement_type",
+   "fieldtype": "Select",
+   "label": "Employement Type",
+   "options": "\nFull Time\nContract\nCommission\nPart Time\nIntern\nOthers"
+  },
+  {
+   "fetch_from": "get_from_employee_onboarding.designation",
+   "fetch_if_empty": 1,
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Position",
+   "options": "Designation",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "get_from_employee_onboarding.first_name",
+   "fetch_if_empty": 1,
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "get_from_employee_onboarding.middle_name",
+   "fetch_if_empty": 1,
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle Name"
+  },
+  {
+   "fetch_from": "get_from_employee_onboarding.last_name",
+   "fetch_if_empty": 1,
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name",
+   "reqd": 1
+  },
+  {
+   "depends_on": "get_from_employee_onboard",
+   "fieldname": "get_from_employee_onboarding",
+   "fieldtype": "Link",
+   "label": "Get From Employee Onboarding",
+   "options": "Employee Onboarding"
+  },
+  {
+   "depends_on": "is_system_user",
+   "fieldname": "role",
+   "fieldtype": "Link",
+   "label": "Role",
+   "options": "Role"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "read_only": 1
+  },
+  {
+   "default": "0.00",
+   "fetch_from": "get_from_employee_onboarding.basic_salary",
+   "fieldname": "basic_salary",
+   "fieldtype": "Currency",
+   "label": "Basic Salary",
+   "options": "account.currency",
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "get_from_employee_onboarding.salary_scale_name",
+   "fieldname": "salary_scale_name",
+   "fieldtype": "Link",
+   "label": "Salary Scale Name",
+   "options": "Salary Scale Name",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "get_from_employee_onboarding.level",
+   "fieldname": "level",
+   "fieldtype": "Link",
+   "label": "Level",
+   "options": "Level",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "get_from_employee_onboarding.scale",
+   "fieldname": "scale",
+   "fieldtype": "Link",
+   "label": "Scale",
+   "options": "Scale",
+   "reqd": 1
+  },
+  {
+   "fieldname": "employee_detain_tab",
+   "fieldtype": "Tab Break",
+   "label": "Employee Detail"
+  },
+  {
+   "fetch_from": "get_from_employee_onboarding.tin_number",
+   "fieldname": "tin_number",
+   "fieldtype": "Data",
+   "label": "Tin Number"
+  },
+  {
+   "fetch_from": "get_from_employee_onboarding.bank_account_number",
+   "fieldname": "account_number",
+   "fieldtype": "Data",
+   "label": "Account Number",
+   "reqd": 1
+  },
+  {
+   "fetch_if_empty": 1,
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_system_user",
+   "fieldtype": "Check",
+   "label": "IS System User"
+  },
+  {
+   "fieldname": "section_break_50",
+   "fieldtype": "Section Break",
+   "label": "Guarantor"
+  },
+  {
+   "fieldname": "division",
+   "fieldtype": "Select",
+   "label": "Division",
+   "options": "Branch\nHead Office"
+  },
+  {
+   "fieldname": "witness_section",
+   "fieldtype": "Section Break",
+   "label": "Witness"
+  },
+  {
+   "fieldname": "emergency",
+   "fieldtype": "Section Break",
+   "label": "Emergency Contact"
+  },
+  {
+   "fieldname": "refno",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "ID. NO.-",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "get_from_employee_onboard",
+   "fieldtype": "Check",
+   "label": "Get From Employee Onboard"
+  },
+  {
+   "fieldname": "educational_qualification",
+   "fieldtype": "Table",
+   "label": "Educational Qualification",
+   "options": "Educational Qualification"
+  },
+  {
+   "default": "ETB",
+   "fieldname": "salary_currency",
+   "fieldtype": "Data",
+   "label": "Salary Currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date_of_retirement",
+   "fieldtype": "Data",
+   "label": "Date of Retirement",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "get_from_employee_onboarding.current_location",
+   "fetch_if_empty": 1,
+   "fieldname": "current_location",
+   "fieldtype": "Data",
+   "label": "Current Location",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_cqun",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-11 10:50:47.683534",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Employee",
+ "naming_rule": "Expression",
+ "nsm_parent_field": "parent_employee",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "full_name,phone_number,email",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "full_name",
+ "track_changes": 1,
+ "track_seen": 1
+}

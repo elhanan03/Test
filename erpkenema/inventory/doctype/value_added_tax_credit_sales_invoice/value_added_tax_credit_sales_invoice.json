@@ -1,0 +1,242 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:CR-S-I-{frombranch_no}-{date}-{##}",
+ "creation": "2022-08-29 16:19:37.578436",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "frombranch_no",
+  "sc",
+  "wr",
+  "house_number",
+  "column_break_7",
+  "from_date",
+  "to_date",
+  "credit_user_type",
+  "to",
+  "tin_number",
+  "subcity",
+  "woreda",
+  "housenumber",
+  "section_break_15",
+  "patient_list",
+  "section_break_17",
+  "column_break_17",
+  "amount_in_words",
+  "column_break_19",
+  "total",
+  "total_for_vat_items",
+  "vat",
+  "total_inc_vat",
+  "section_break_22",
+  "prepared_by",
+  "checked_by",
+  "column_break_25",
+  "authorized_by",
+  "received_by_name"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "frombranch_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "From/Branch Number",
+   "options": "Kenema Branches",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "frombranch_no.subcity",
+   "fieldname": "sc",
+   "fieldtype": "Data",
+   "label": "Subcity.",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "frombranch_no.house_number",
+   "fieldname": "house_number",
+   "fieldtype": "Data",
+   "label": "House Number"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "To",
+   "options": "Organization",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "to.address",
+   "fieldname": "subcity",
+   "fieldtype": "Data",
+   "label": "Subcity",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "to.house_number",
+   "fieldname": "housenumber",
+   "fieldtype": "Data",
+   "label": "House Number.",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break",
+   "label": "List Of Credit Customer"
+  },
+  {
+   "fieldname": "patient_list",
+   "fieldtype": "Table",
+   "label": "Patient List",
+   "options": "Patient List"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Float",
+   "label": "Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_for_vat_items",
+   "fieldtype": "Data",
+   "label": "Total for VAT items",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_inc_vat",
+   "fieldtype": "Float",
+   "label": "Total Inc. VAT",
+   "read_only": 1
+  },
+  {
+   "fieldname": "prepared_by",
+   "fieldtype": "Data",
+   "label": "Prepared by"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Data",
+   "label": "Checked by"
+  },
+  {
+   "fieldname": "authorized_by",
+   "fieldtype": "Data",
+   "label": "Authorized by"
+  },
+  {
+   "fieldname": "received_by_name",
+   "fieldtype": "Data",
+   "label": "Received by Name"
+  },
+  {
+   "fetch_from": "frombranch_no.woreda",
+   "fieldname": "wr",
+   "fieldtype": "Data",
+   "label": "Woreda."
+  },
+  {
+   "fetch_from": "to.woreda",
+   "fieldname": "woreda",
+   "fieldtype": "Data",
+   "label": "Woreda",
+   "read_only": 1
+  },
+  {
+   "fieldname": "credit_user_type",
+   "fieldtype": "Select",
+   "label": "Credit User Type",
+   "options": "\nFederal health insurance beneficiaries\nAddis Ababa health insurance beneficiaries\nOrganization beneficiaries\nOthers"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "vat",
+   "fieldtype": "Float",
+   "label": "15% VAT",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_22",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amount_in_words",
+   "fieldtype": "Data",
+   "label": "Amount In Words",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "to.tin_number",
+   "fieldname": "tin_number",
+   "fieldtype": "Data",
+   "label": "Tin Number",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-01-11 13:48:57.790213",
+ "modified_by": "Administrator",
+ "module": "Inventory",
+ "name": "Value Added Tax Credit Sales Invoice",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

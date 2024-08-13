@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:leave_type_name",
+ "creation": "2013-02-21 09:55:58",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "engine": "InnoDB",
+ "field_order": [
+  "leave_type_name",
+  "column_break_3",
+  "is_carry_forward",
+  "is_ppl",
+  "include_holiday"
+ ],
+ "fields": [
+  {
+   "fieldname": "leave_type_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Leave Type Name",
+   "oldfieldname": "leave_type_name",
+   "oldfieldtype": "Data",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_carry_forward",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Is Carry Forward",
+   "oldfieldname": "is_carry_forward",
+   "oldfieldtype": "Check"
+  },
+  {
+   "default": "0",
+   "fieldname": "include_holiday",
+   "fieldtype": "Check",
+   "label": "Include holidays within leaves as leaves"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.is_lwp == 0",
+   "fieldname": "is_ppl",
+   "fieldtype": "Check",
+   "label": "Is Partially Paid Leave"
+  }
+ ],
+ "icon": "fa fa-flag",
+ "idx": 1,
+ "links": [],
+ "modified": "2023-02-14 14:31:58.066085",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Leave Type",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "Employee"
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

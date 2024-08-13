@@ -1,0 +1,30 @@
+{
+ "add_total_row": 1,
+ "columns": [],
+ "creation": "2022-10-20 13:41:32.295071",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2022-12-19 10:32:17.001943",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Monthly Attendance sheet",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "Select employee,date,status,entry_detail,exit_detail from `tabAttendance`;",
+ "ref_doctype": "Attendance",
+ "report_name": "Monthly Attendance sheet",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "HR User"
+  }
+ ]
+}

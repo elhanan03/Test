@@ -1,0 +1,141 @@
+{
+ "charts": [],
+ "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Plan &amp; Budget</span>\",\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Budget plan Request Letter\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Action Plan\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Budget Request\",\"col\":3}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Plan\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Report\",\"col\":4}}]",
+ "creation": "2023-01-26 23:37:59.059281",
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "project-2",
+ "idx": 0,
+ "label": "Plan & Budget",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Plan",
+   "link_count": 4,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Plan and Budget Manager",
+   "link_count": 0,
+   "link_to": "Plan and Budget Manager",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Annual Budget plan Request Letter",
+   "link_count": 0,
+   "link_to": "Annual Budget plan Request Letter",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Action Plan",
+   "link_count": 0,
+   "link_to": "Action Plan",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Budget Request",
+   "link_count": 0,
+   "link_to": "Budget Request",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Report",
+   "link_count": 1,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Action  Plan report",
+   "link_count": 0,
+   "link_to": "Action  Plan report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2023-05-22 10:56:42.516435",
+ "modified_by": "Administrator",
+ "module": "Plan and Budget",
+ "name": "Plan & Budget",
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Plan & Budget Manager"
+  },
+  {
+   "role": "Branch manager"
+  },
+  {
+   "role": "Head Quarter Department Manager"
+  },
+  {
+   "role": "HR Manager"
+  },
+  {
+   "role": "Finance Head"
+  },
+  {
+   "role": "Head Quarter Manager"
+  },
+  {
+   "role": "Deputy Manager"
+  }
+ ],
+ "sequence_id": 9.0,
+ "shortcuts": [
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "format": "{}",
+   "label": "Action Plan",
+   "link_to": "Action Plan",
+   "stats_filter": "{\"modified\":[\"Timespan\",\"last year\"]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "format": "{} ",
+   "label": "Budget plan Request Letter",
+   "link_to": "Annual Budget plan Request Letter",
+   "stats_filter": "{\"date\":[\"Timespan\",\"last year\"]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Cyan",
+   "doc_view": "List",
+   "format": "{}",
+   "label": "Budget Request",
+   "link_to": "Budget Request",
+   "type": "DocType"
+  }
+ ],
+ "title": "Plan & Budget"
+}

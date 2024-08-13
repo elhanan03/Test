@@ -1,0 +1,232 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{EMP}-{TRN}-{YYYY}-{requisition_number}",
+ "creation": "2022-11-30 15:53:22.057749",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "get_from_employee",
+  "employee1",
+  "employee",
+  "column_break_3",
+  "transfer_date",
+  "requisition_number",
+  "section_break_5",
+  "from_branch",
+  "department",
+  "designation",
+  "role",
+  "current_location",
+  "column_break_9",
+  "to_branch",
+  "department1",
+  "designation1",
+  "role1",
+  "section_break_8",
+  "transfer_reason",
+  "section_break_14",
+  "approved_by",
+  "approved_by_email",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "depends_on": "eval: doc.get_from_employee==1",
+   "fetch_from": "employee1.employee",
+   "fetch_if_empty": 1,
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "default": "Today",
+   "fieldname": "transfer_date",
+   "fieldtype": "Date",
+   "label": "Transfer Date",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee1.transfer_from",
+   "fetch_if_empty": 1,
+   "fieldname": "from_branch",
+   "fieldtype": "Data",
+   "label": "From Branch"
+  },
+  {
+   "fetch_from": "employee1.transfer_to",
+   "fetch_if_empty": 1,
+   "fieldname": "to_branch",
+   "fieldtype": "Link",
+   "label": "To Branch",
+   "options": "Kenema Branches"
+  },
+  {
+   "fetch_from": "employee1.from_department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Data",
+   "label": "Approved By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "employee1.from_position",
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee1.from_department",
+   "fetch_if_empty": 1,
+   "fieldname": "department1",
+   "fieldtype": "Link",
+   "label": "To Department",
+   "options": "Department"
+  },
+  {
+   "fetch_from": "employee1.to_position",
+   "fetch_if_empty": 1,
+   "fieldname": "designation1",
+   "fieldtype": "Link",
+   "label": "To Designation",
+   "options": "Designation"
+  },
+  {
+   "fetch_from": "employee1.transfer_reason",
+   "fieldname": "transfer_reason",
+   "fieldtype": "Small Text",
+   "label": "Transfer Reason"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Employee Transfer",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "requisition_number",
+   "fieldtype": "Int",
+   "label": "Requisition Number",
+   "read_only": 1
+  },
+  {
+   "fieldname": "approved_by_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Approved By Email",
+   "print_hide": 1
+  },
+  {
+   "depends_on": "eval: doc.get_from_employee==0",
+   "fieldname": "employee1",
+   "fieldtype": "Link",
+   "label": "EMP. REQ",
+   "options": "Employee Transfer Request"
+  },
+  {
+   "fetch_from": "employee1.from_role",
+   "fieldname": "role",
+   "fieldtype": "Data",
+   "label": "Role"
+  },
+  {
+   "fetch_from": "employee1.to_role",
+   "fieldname": "role1",
+   "fieldtype": "Link",
+   "label": "To Role",
+   "options": "Role"
+  },
+  {
+   "default": "0",
+   "fieldname": "get_from_employee",
+   "fieldtype": "Check",
+   "label": "Get from employee"
+  },
+  {
+   "fetch_from": "employee.current_location",
+   "fieldname": "current_location",
+   "fieldtype": "Data",
+   "label": "Current Location"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-07-11 10:42:12.099038",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Employee Transfer",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Head Quarter Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

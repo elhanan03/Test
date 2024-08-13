@@ -1,0 +1,36 @@
+{
+ "_liked_by": "[]",
+ "attach_print": 0,
+ "channel": "System Notification",
+ "condition": "",
+ "creation": "2022-10-20 14:15:24.901956",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Shift Request",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "HEllo,\n\nNew Shift Request Message: <a href=\"{{frappe.utils.get_url_to_form(doc.doctype, doc.name)}}\">{{doc.name}}</a>. \n\nfrom {{doc.employee}}\nThank You!\n",
+ "modified": "2022-11-04 15:12:33.363906",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Shift Request Alert",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_role": "HR User"
+  },
+  {
+   "receiver_by_role": "HR Manager"
+  },
+  {
+   "receiver_by_role": "Branch manager"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Shift Request",
+ "value_changed": "status"
+}

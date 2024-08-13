@@ -1,0 +1,41 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "creation": "2023-02-02 13:23:41.979858",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Item purchase Requisition",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "List Of non-medical items to Be Purchased ",
+ "modified": "2023-05-16 15:37:17.047118",
+ "modified_by": "Administrator",
+ "module": "Other Inventory",
+ "name": "List Of Items To Be Purchased Alert",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "condition": "doc.workflow_state==\"Sent\"",
+   "receiver_by_document_field": "operation_manager_email"
+  },
+  {
+   "condition": "doc.workflow_state==\"Pending Supplier Acceptance\"",
+   "receiver_by_document_field": "supplier_email"
+  },
+  {
+   "condition": "doc.workflow_state==\"Accepted\"",
+   "receiver_by_document_field": "operation_manager_email"
+  },
+  {
+   "condition": "doc.workflow_state==\"Approved\"",
+   "receiver_by_document_field": "hq_store_manager_email"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Item purchase Requisition",
+ "value_changed": "workflow_state"
+}

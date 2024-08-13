@@ -1,0 +1,221 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "format:{GRV}-{NMI}-{requisition_section}",
+ "creation": "2023-02-03 09:35:35.998010",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "requisition_section",
+  "section_break_2",
+  "date",
+  "datetime",
+  "purchase_order",
+  "supplier",
+  "supplier_name",
+  "supplier_tin_number",
+  "column_break_3",
+  "purchase_registration_number",
+  "cash_register_number",
+  "purchase_invoice_number",
+  "fs_date",
+  "section_break_7",
+  "non_medical_items",
+  "section_break_8",
+  "total",
+  "received_by",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "Now",
+   "fieldname": "datetime",
+   "fieldtype": "Datetime",
+   "hidden": 1,
+   "label": "datetime"
+  },
+  {
+   "fieldname": "purchase_order",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Purchase order",
+   "options": "Item purchase Requisition"
+  },
+  {
+   "fetch_from": "purchase_order.supplier",
+   "fetch_if_empty": 1,
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier_Lead"
+  },
+  {
+   "fetch_from": "supplier.supplier_name",
+   "fetch_if_empty": 1,
+   "fieldname": "supplier_name",
+   "fieldtype": "Data",
+   "label": "Supplier Name"
+  },
+  {
+   "fetch_from": "supplier.tin",
+   "fetch_if_empty": 1,
+   "fieldname": "supplier_tin_number",
+   "fieldtype": "Data",
+   "label": "Supplier TIN Number"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "purchase_order.requisition_section",
+   "fetch_if_empty": 1,
+   "fieldname": "purchase_registration_number",
+   "fieldtype": "Data",
+   "label": "Purchase Registration Number"
+  },
+  {
+   "fieldname": "cash_register_number",
+   "fieldtype": "Data",
+   "label": "Cash Register Number"
+  },
+  {
+   "fieldname": "purchase_invoice_number",
+   "fieldtype": "Data",
+   "label": "Purchase Invoice number (FS NO)"
+  },
+  {
+   "fieldname": "fs_date",
+   "fieldtype": "Date",
+   "label": "FS Date"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Float",
+   "label": "Total"
+  },
+  {
+   "default": "User",
+   "fieldname": "received_by",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Received By"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "GRV For Non Medical Items",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "non_medical_items",
+   "fieldtype": "Table",
+   "label": "Non Medical Items ",
+   "options": "GRV For Non Medical Items Child",
+   "reqd": 1,
+   "width": "444"
+  },
+  {
+   "fieldname": "requisition_section",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Requisition Section"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-05-10 11:30:48.620651",
+ "modified_by": "Administrator",
+ "module": "Other Inventory",
+ "name": "GRV For Non Medical Items",
+ "naming_rule": "Expression",
+ "nsm_parent_field": "parent_good_receiving_voucher",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Operation Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Branch manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Store Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

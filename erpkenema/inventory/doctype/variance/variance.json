@@ -1,0 +1,64 @@
+{
+ "actions": [],
+ "autoname": "hash",
+ "creation": "2022-08-30 12:05:37.895602",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "cashier",
+  "ticket_number",
+  "shortage_birr",
+  "overage_birr",
+  "signature"
+ ],
+ "fields": [
+  {
+   "fieldname": "shortage_birr",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Shortage Birr",
+   "read_only": 1
+  },
+  {
+   "fieldname": "overage_birr",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Overage Birr",
+   "read_only": 1
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Signature"
+  },
+  {
+   "fieldname": "ticket_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sales Ticket number",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cashier",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name of Cashier",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-02-01 11:38:38.243948",
+ "modified_by": "Administrator",
+ "module": "Inventory",
+ "name": "Variance",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

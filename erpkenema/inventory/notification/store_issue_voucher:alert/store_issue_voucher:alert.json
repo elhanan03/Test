@@ -1,0 +1,42 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "creation": "2022-08-18 09:54:58.306424",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Store Issue Voucher",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Store Issue Voucher",
+ "modified": "2023-05-24 11:07:46.549745",
+ "modified_by": "Administrator",
+ "module": "Inventory",
+ "name": "Store Issue Voucher:Alert",
+ "owner": "shibeshi156@gmail.com",
+ "recipients": [
+  {
+   "condition": "doc.workflow_state==\"pending Approval\"",
+   "receiver_by_document_field": "approved_by_email",
+   "receiver_by_role": ""
+  },
+  {
+   "condition": "doc.workflow_state==\"Pending issue\"",
+   "receiver_by_document_field": "issued_by_email"
+  },
+  {
+   "condition": "doc.workflow_state==\"Issued\"",
+   "receiver_by_document_field": "requested_by_email"
+  },
+  {
+   "condition": "doc.workflow_state==\"Accepted\"",
+   "receiver_by_document_field": "confirmed_by_email"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Store Issue Voucher",
+ "value_changed": "workflow_state"
+}

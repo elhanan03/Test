@@ -1,0 +1,31 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2022-12-06 11:06:10.336028",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "json": "{\"filters\":[],\"fields\":[[\"name\",\"Action Plan\"],[\"docstatus\",\"Action Plan\"],[\"date\",\"Action Plan\"],[\"goal_and_main_plan\",\"Action plan child\"],[\"annual_plan\",\"Action plan child\"],[\"measurement\",\"Action plan child\"],[\"september\",\"Action plan child\"],[\"october\",\"Action plan child\"],[\"november\",\"Action plan child\"],[\"december\",\"Action plan child\"],[\"january\",\"Action plan child\"],[\"february\",\"Action plan child\"],[\"march\",\"Action plan child\"],[\"april\",\"Action plan child\"],[\"may\",\"Action plan child\"],[\"june\",\"Action plan child\"],[\"july\",\"Action plan child\"],[\"august\",\"Action plan child\"]],\"order_by\":\"`tabAction Plan`.`modified` desc\",\"page_length\":20,\"column_widths\":{\"name\":120,\"docstatus\":120,\"date\":120,\"Action plan child:goal_and_main_plan\":120,\"Action plan child:annual_plan\":120,\"Action plan child:measurement\":120,\"Action plan child:september\":120,\"Action plan child:october\":120,\"Action plan child:november\":120,\"Action plan child:december\":120,\"Action plan child:january\":120,\"Action plan child:february\":120,\"Action plan child:march\":120,\"Action plan child:april\":120,\"Action plan child:may\":120,\"Action plan child:june\":120,\"Action plan child:july\":120,\"Action plan child:august\":120},\"group_by\":null}",
+ "letter_head": "Kenema Pharmacies Enterprise",
+ "modified": "2023-01-03 10:42:02.020563",
+ "modified_by": "Administrator",
+ "module": "Plan and Budget",
+ "name": "Annual  Action Plan Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Action Plan",
+ "report_name": "Annual  Action Plan Report",
+ "report_type": "Report Builder",
+ "roles": [
+  {
+   "role": "Branch manager"
+  },
+  {
+   "role": "Plan & Budget Manager"
+  }
+ ]
+}

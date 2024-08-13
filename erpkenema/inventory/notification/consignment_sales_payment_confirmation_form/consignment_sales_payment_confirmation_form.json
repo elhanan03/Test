@@ -1,0 +1,45 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "creation": "2022-09-01 09:47:30.535705",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Consignment Sales Payment Confirmation Form",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Add your message here",
+ "modified": "2022-09-01 10:10:35.326081",
+ "modified_by": "Administrator",
+ "module": "Inventory",
+ "name": "Consignment Sales Payment Confirmation Form",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "condition": "doc.workflow_state==\"Pending Approval\"",
+   "receiver_by_document_field": "owner",
+   "receiver_by_role": "Branch manager"
+  },
+  {
+   "condition": "doc.workflow_state==\"Pending Acceptance\"",
+   "receiver_by_document_field": "owner",
+   "receiver_by_role": "Store Manager"
+  },
+  {
+   "condition": "doc.workflow_state==\"Accepted\"",
+   "receiver_by_document_field": "owner",
+   "receiver_by_role": "Supplier"
+  },
+  {
+   "condition": "doc.workflow_state==\"Rejected\"",
+   "receiver_by_document_field": "owner",
+   "receiver_by_role": "Supplier"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Consignment Sales Payment Confirmation",
+ "value_changed": "workflow_state"
+}

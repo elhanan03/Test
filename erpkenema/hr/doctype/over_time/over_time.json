@@ -1,0 +1,288 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{OT}-{YYYY}-{employee_name}-{requisition_section}-{####}",
+ "creation": "2022-11-28 09:47:14.484524",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "period_section",
+  "from_date",
+  "column_break_3",
+  "to_date",
+  "requisition_section",
+  "section_break_4",
+  "division",
+  "branch",
+  "column_break_7",
+  "employee_name",
+  "basic_salary",
+  "designation",
+  "section_break_10",
+  "working_time",
+  "section_break_13",
+  "total_working_time",
+  "column_break_16",
+  "total_payment",
+  "section_break_17",
+  "prepared_by",
+  "prepared_by_email",
+  "column_break_20",
+  "approved_by",
+  "approved_by_email",
+  "column_break_23",
+  "hr_manager",
+  "hr_manager_email",
+  "column_break_26",
+  "finance_head",
+  "finance_head_email"
+ ],
+ "fields": [
+  {
+   "fieldname": "division",
+   "fieldtype": "Select",
+   "label": "Division",
+   "options": "\nHead Office\nBranch"
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Link",
+   "label": "Employee Name",
+   "options": "Employee"
+  },
+  {
+   "depends_on": "eval: doc.division=='Branch'",
+   "fetch_from": "employee_name.branch",
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Kenema Branches"
+  },
+  {
+   "fetch_from": "employee_name.designation",
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "working_time",
+   "fieldtype": "Table",
+   "label": "Working Time",
+   "options": "Working Time"
+  },
+  {
+   "fieldname": "period_section",
+   "fieldtype": "Section Break",
+   "label": "Period"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To date"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break",
+   "label": "Working Time"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_working_time",
+   "fieldtype": "Float",
+   "label": "Total Working Time",
+   "precision": "2"
+  },
+  {
+   "fieldname": "total_payment",
+   "fieldtype": "Currency",
+   "label": "Total Payment",
+   "options": "account.currency",
+   "precision": "2"
+  },
+  {
+   "fetch_from": "employee_name.basic_salary",
+   "fieldname": "basic_salary",
+   "fieldtype": "Currency",
+   "label": "Basic Salary ",
+   "options": "account.currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "prepared_by",
+   "fieldtype": "Data",
+   "label": "Prepared By"
+  },
+  {
+   "fieldname": "prepared_by_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Prepared By Email",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Data",
+   "label": "Approved By "
+  },
+  {
+   "fieldname": "approved_by_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Approved By Email",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "requisition_section",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Requisition Section",
+   "print_hide": 1,
+   "print_hide_if_no_value": 1
+  },
+  {
+   "fieldname": "hr_manager",
+   "fieldtype": "Data",
+   "label": "HR Manager"
+  },
+  {
+   "fetch_from": "authorized_by.name1",
+   "fieldname": "hr_manager_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "HR Manager Email",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "finance_head",
+   "fieldtype": "Data",
+   "label": "Finance Head"
+  },
+  {
+   "fetch_from": "checked_by.finance",
+   "fieldname": "finance_head_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Finance Head Email",
+   "print_hide": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-12 13:19:53.340859",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Over Time",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Branch manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Branch Accountant",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Finance Head",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

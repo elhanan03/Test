@@ -1,0 +1,274 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:{Budg}-{Req}-{requisition_section}",
+ "creation": "2023-02-03 15:46:17.466606",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "column_break_2",
+  "requisition_section",
+  "branch_name",
+  "section_break_3",
+  "list_of_items",
+  "section_break_5",
+  "total",
+  "section_break_8",
+  "operation_manager",
+  "operation_manager_email",
+  "column_break_12",
+  "hq_manager",
+  "hq_manager_email",
+  "section_break_12",
+  "branch_manager_name",
+  "branch_manager_email",
+  "column_break_15",
+  "finance_head",
+  "finance_head_email",
+  "column_break_18",
+  "hr_manager",
+  "hr_manager_email",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "requisition_section",
+   "fieldtype": "Int",
+   "label": "Requisition Number",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "list_of_items",
+   "fieldtype": "Table",
+   "label": "List Of Items",
+   "options": "List Of Items"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "branch_manager_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Branch Manager Email",
+   "permlevel": 1,
+   "print_hide": 1
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "finance_head",
+   "fieldtype": "Data",
+   "label": "Finance Head",
+   "permlevel": 2,
+   "read_only": 1
+  },
+  {
+   "fieldname": "finance_head_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Finance Head Email",
+   "permlevel": 2,
+   "print_hide": 1
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hr_manager",
+   "fieldtype": "Data",
+   "label": "HR Manager",
+   "permlevel": 3,
+   "read_only": 1
+  },
+  {
+   "fieldname": "hr_manager_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "HR Manager Email",
+   "permlevel": 3,
+   "print_hide": 1
+  },
+  {
+   "fieldname": "branch_manager_name",
+   "fieldtype": "Data",
+   "label": "Branch Manager",
+   "permlevel": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "operation_manager",
+   "fieldtype": "Data",
+   "label": "Operation Manager",
+   "read_only": 1
+  },
+  {
+   "fieldname": "operation_manager_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Operation Manager Email",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "hq_manager",
+   "fieldtype": "Data",
+   "label": "HQ Manager",
+   "read_only": 1
+  },
+  {
+   "fieldname": "hq_manager_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "HQ Manager Email",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Float",
+   "label": "Total",
+   "non_negative": 1,
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Budget Request",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "branch_name",
+   "fieldtype": "Data",
+   "label": "Branch",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-02-28 15:48:23.744442",
+ "modified_by": "Administrator",
+ "module": "Plan and Budget",
+ "name": "Budget Request",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Branch manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Finance Head",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Operation Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Head Quarter Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}
